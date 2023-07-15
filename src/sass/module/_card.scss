@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.card {
+  display: inline-block;
+  padding: rem(15) rem(16) rem(24);
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  @include mq("md") {
+    padding: rem(24);
+  }
+}
+
+.card__box {
+  display: flex;
+  @include mq("md") {
+    // padding-top: rem(24);
+  }
+}
+
+.card__mete {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card__item {
+  max-width: rem(150);
+  width: 100%;
+
+  @include mq("md") {
+    max-width: rem(276);
+    width: 100%;
+  }
+}
+
+.card__category {
+  font-size: rem(12);
+  line-height: 1.8;
+  font-family: $jp-family;
+  font-weight: normal;
+  color: $green;
+  @include mq("md") {
+    max-width: rem(58);
+    width: 100%;
+  }
+}
+
+.card__tag {
+  display: inline-block;
+  font-size: rem(12);
+  line-height: 2.2;
+  font-family: $jp-family;
+  color: $green2;
+  padding: rem(4) rem(12);
+  border: rem(1) solid $green2;
+
+  @include mq("md") {
+    padding: rem(6) rem(16);
+  }
+}
+
+.card__title {
+  font-size: rem(16);
+  line-height: 1.5;
+  font-family: $jp-family;
+  font-weight: normal;
+  margin-top: rem(4);
+  padding-bottom: rem(4);
+  border-bottom: 1px solid $green2;
+
+  @include mq("md") {
+    font-size: rem(24);
+    margin-top: rem(8);
+  }
+}
+
+.cars__image {
+  max-width: rem(150);
+  width: 100%;
+  margin-left: rem(13);
+
+  @include mq("md") {
+    margin-left: rem(16);
+  }
+}
+
+.cars__image img {
+  width: 100%;
+  aspect-ratio: 150/117;
+  object-fit: cover;
+  @include mq("md") {
+  aspect-ratio: 180/140;
+  }
+}
+
+.card__body {}
+
+.card__text {
+  margin-top: rem(20);
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: 1.5;
+  font-family: $jp-family;
+  color: $black;
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
