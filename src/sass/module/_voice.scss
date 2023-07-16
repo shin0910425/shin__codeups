@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.voice__cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(-40);
+
+  @include mq("md") {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.voice__card {
+  margin-top: rem(40);
+  @include mq("md") {
+    max-width: calc((100% - rem(40)) / 2);
+    width: 100%;
+  }
+}

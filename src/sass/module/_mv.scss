@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(/assets/images/common/top-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq("md") {
+    background-image: url(/assets/images/common/top-pc_img.jpg);
+  }
+}
+
+.mv_inner {
+  // padding: 0 rem(64) 0 rem(63);
+}
+
+.mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(50);
+  color: $white;
+  @include mq("md") {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.mv__title {
+  font-size: rem(40);
+  font-weight: $regular;
+  font-family: $en-family;
+  line-height: 1;
+  // letter-spacing: 1.16em;
+  color: $white;
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: 1.25;
+    letter-spacing: 1em;
+  }
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.item-child__list a:nth-child(1),
+.item-child__list a:nth-child(2),
+.item-child__list a:nth-child(3) {
+  color: $white;
+  display: block;
+  padding: rem(12);
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.125;
+}

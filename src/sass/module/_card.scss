@@ -74,7 +74,7 @@
   }
 }
 
-.cars__image {
+.card__image {
   max-width: rem(150);
   width: 100%;
   margin-left: rem(13);
@@ -84,7 +84,7 @@
   }
 }
 
-.cars__image img {
+.card__image img {
   width: 100%;
   aspect-ratio: 150/117;
   object-fit: cover;
