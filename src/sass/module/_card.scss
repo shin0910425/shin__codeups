@@ -50,9 +50,9 @@
   font-size: rem(12);
   line-height: 2.2;
   font-family: $jp-family;
-  color: $green2;
+  color: $green3;
   padding: rem(4) rem(12);
-  border: rem(1) solid $green2;
+  border: rem(1) solid $green3;
 
   @include mq("md") {
     padding: rem(6) rem(16);
@@ -66,7 +66,7 @@
   font-weight: normal;
   margin-top: rem(4);
   padding-bottom: rem(4);
-  border-bottom: 1px solid $green2;
+  border-bottom: 1px solid $green3;
 
   @include mq("md") {
     font-size: rem(24);

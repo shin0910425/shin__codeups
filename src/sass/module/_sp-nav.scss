@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.sp-nav__title {
+.sp-nav__title {  
   color: $white;
   display: block;
   padding: rem(12);
@@ -42,6 +42,3 @@
   content: url(/assets/images/common/hitode_img.svg);
 }
 
-.item-child__list a {
-  margin-left: rem(15);
-}

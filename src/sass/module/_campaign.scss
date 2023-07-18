@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.campaign__cards {
+  // display: grid;
+  // grid-template-columns: repeat(4, 1fr);
+  //   gap: 24px;
+}
+
+.campaign__card.card {
+  padding: 0;
+}
+
+.campaign__card {
+  max-width: rem(280);
+  width: 100%;
+}
+
+.campaign__card-body {
+  padding: rem(16);
+  padding-bottom: rem(24);
+}

@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.section-header__engtitle {
+  font-size: rem(32);
+  font-family: $en-family;
+  font-weight: $regular;
+  line-height: 1.25;
+  color: $green;
+}
+
+.section-header__engtitle span {
+  color: $green3;
+}

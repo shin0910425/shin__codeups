@@ -1,0 +1,127 @@
+@use "global" as *;
+
+.footer{
+  padding-top: rem(48);
+  padding-bottom: rem(56);
+  @include mq("md") {
+    // padding: rem(80) rem(180);
+  }
+}
+
+.footer__logo-body {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.footer__logo {
+  max-width: rem(120);
+  width: 100%;
+  padding-left: rem(15);
+}
+
+.footer__icon {
+  display: flex;
+  padding-left: rem(15);
+}
+
+.footer__icon img {
+  max-width: rem(24);
+  width: 100%;
+  height: rem(24);
+}
+
+.footer__sp-nav {
+
+}
+
+.footer__sp-nav {
+  background-color: $green3;
+}
+
+.footer__sp-nav__body {
+  display: flex;
+  padding: rem(40) 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer__sp-nav__items {
+  @include mq("md") {
+   
+  }
+}
+
+.footer__sp-nav__item {
+  width: 100%;
+  position: relative;
+  @include mq("md") {
+   ;
+  }
+}
+
+.footer__sp-nav__title {
+  color: $white;
+  display: block;
+  padding: rem(12);
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $bold;
+  line-height: 1.125;
+}
+
+.footer__sp-nav__title::before {
+  content: url(/assets/images/common/hitode_img.svg);
+}
+
+.footer__pc-blocks {
+  @include mq("md") {
+
+  }
+}
+
+.pc-block {
+  @include mq("md") {
+    
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  font-size: rem(12);
+  font-family: $en-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $white;
+}
+
+.footer__sp-nav--item__left,
+.footer__sp-nav--item__right {
+  @include mq("md") {
+    display: inline-block;
+      width: 50%;
+      vertical-align: top;
+  }
+}
+
+.footer__sp-nav--item__right {
+  @include mq("md") {
+    text-align: right;
+  }
+}
+
+.footer__sp-nav__items {
+  @include mq("md") {
+    columns: 2;
+      column-gap: rem(5);
+      margin: 0;
+      padding: 0;
+  }
+}
+
+.footer__sp-nav__item {
+  @include mq("md") {
+    display: block;
+      margin-bottom: 10px;
+  }
+}

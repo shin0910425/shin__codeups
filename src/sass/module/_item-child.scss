@@ -11,3 +11,7 @@
   font-weight: $regular;
   line-height: 1.125;
 }
+
+.item-child__list a {
+  margin-left: rem(15);
+}
