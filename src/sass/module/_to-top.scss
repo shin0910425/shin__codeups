@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.to-top {
+  position: fixed;
+  right: rem(10);
+  bottom: rem(10);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid $green3;
+}
+
+.to-top a {
+  display: block;
+  width: rem(50);
+  height: rem(50);
+  background-color: $white;
+  position: relative;
+}
+
+.to-top a span::before {
+  // position: absolute;
+  // background-color: transparent;
+  // width: rem(20);
+  // height: rem(20);
+  // border-top: 2px solid;
+  // border-right: 2px solid;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, calc(-50% + 0.25em)) rotate(-45deg);
+  /* くの字の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: rem(17);
+    /* 要素の右からの距離 */
+    width: rem(12);
+    height: rem(20);
+    border-top: rem(1) solid $green3;
+    transform: rotate(-45deg);
+    /* 角度調整 */
+}
+
+.to-top a span::after {
+  /* 棒の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: rem(10);
+    /* 要素の右からの距離 */
+    width: rem(28);
+    height: rem(1);
+    background: $green3;
+    transform: rotate(-90deg);
+}

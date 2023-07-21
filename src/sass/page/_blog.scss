@@ -1,6 +1,21 @@
 @use "global" as *;
 
-.blog__cards {
+.blog {
+  padding-top: rem(50);
+  // margin-bottom: rem(300);
+  
+}
+
+.blog__bg {
+  @include mq("md") {
+      background-image: url(/assets/images/common/blog-bg_img.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      // background: linear-gradient(180deg, transparent 0%, transparent 50%, blue 50%, blue 100%);
+    }
+}
+
+.blog-cards {
   display: grid;
   gap: rem(40);
 
@@ -9,9 +24,14 @@
   }
 }
 
-.blog__card {
+.blog-card {
   margin-top: rem(40);
   @include mq("md") {
    
   }
+}
+
+.blog__btn {
+  margin-top: rem(40);
+  text-align: center;
 }

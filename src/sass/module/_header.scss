@@ -92,3 +92,10 @@
     display: block;
   }
 }
+
+.header__sp-nav.sp-nav {
+  @include mq("md") {
+    display: none;
+  }
+}
+

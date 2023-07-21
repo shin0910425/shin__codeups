@@ -6,8 +6,18 @@
   font-weight: $regular;
   line-height: 1.25;
   color: $green;
+  text-align: center;
 }
 
 .section-header__engtitle span {
   color: $green3;
+}
+
+.section-header__jatitle {
+  font-size: rem(12);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $green3;
+  text-align: center;
 }

@@ -66,6 +66,7 @@
   font-weight: normal;
   margin-top: rem(4);
   padding-bottom: rem(4);
+  color: $green;
   border-bottom: 1px solid $green3;
 
   @include mq("md") {

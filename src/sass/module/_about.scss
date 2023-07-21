@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.about {
+  margin-top: rem(80);
+  padding-bottom: rem(80);
+  @include mq("md") {
+  padding-bottom: rem(140);
+  }
+}
+
+.about__img_box {
+  display: flex;
+  position: relative;
+}
+
+.about__image-1 {
+  max-width: rem(128);
+  width: 100%;
+  z-index: -10;
+  @include mq("md") {
+    max-width: rem(399);
+  }
+}
+
+.about__image-1 img {
+  width: 100%;
+  aspect-ratio: 100 / 150;
+  object-fit: cover;
+}
+
+.about__image-2 {
+  max-width: rem(281);
+  width: 100%;
+  position: absolute;
+    content: "";
+    top: rem(26);
+    left: rem(64);
+    z-index: -100;
+  @include mq("md") {
+      max-width: rem(880);
+      top: rem(80);
+      left: rem(200);
+    }
+}
+
+.about__image-2 img {
+  width: 100%;
+  aspect-ratio: 150 / 100;
+  object-fit: cover;
+}
+
+.about__body {
+  margin-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq("md") {
+    display: flex;
+    margin-top: rem(-300);
+  }
+}
+
+.about__title {
+  font-size: rem(40);
+  font-family: $en-family;
+  font-weight: $regular;
+  line-height: 1;
+  color: $green3;
+  @include mq("md") {
+    margin-left: rem(200);
+    font-size: rem(80);
+    line-height: 1.25;
+    color: $white;
+  }
+}
+
+.about__text-box {
+  margin-top: rem(16);
+}
+
+.about__text {
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $green;
+  @include mq("md") {
+    color: $white;
+    margin-left: rem(40);
+  }
+}
+
+.about__btn {
+  margin-top: rem(40);
+  text-align: center;
+}

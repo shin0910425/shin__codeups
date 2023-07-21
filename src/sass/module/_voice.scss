@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.voice {
+  padding: rem(80) 0;
+  @include mq("md") {
+  padding: rem(140) rem(130);
+  }
+}
+
 .voice__cards {
   display: flex;
   flex-direction: column;
@@ -17,5 +24,13 @@
   @include mq("md") {
     max-width: calc((100% - rem(40)) / 2);
     width: 100%;
+  }
+}
+
+.voice__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(80);
   }
 }
