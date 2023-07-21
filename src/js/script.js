@@ -27,4 +27,49 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-sp-nav").fadeIn(300);
     }
   });
+
+  // スライダー
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
+  // スライダー
+  // const swiper = new Swiper(".card-swiper", {
+  //   loop: true,
+  //   effect: "fade",
+  //   speed: 3000,
+  //   autoplay: {
+  //     delay: 3000,
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next', // 次へボタンのセレクタ
+  //     prevEl: '.swiper-button-prev', // 戻るボタンのセレクタ
+  //   },
+  // });
+
+
+  const mySwiper = new Swiper('.card-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    grabCursor: true,
+    pagination: {
+      el: '.card02 .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.card02 .swiper-button-next',
+      prevEl: '.card02 .swiper-button-prev',
+    },
+    breakpoints: {
+      1025: {
+        spaceBetween: 32,
+      }
+    },
+  });
 });
