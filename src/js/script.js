@@ -28,8 +28,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // スライダー
-  const swiper = new Swiper(".swiper", {
+  // mvスライダー
+  const fadeswiper = new Swiper(".swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -39,37 +39,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-  // スライダー
-  // const swiper = new Swiper(".card-swiper", {
-  //   loop: true,
-  //   effect: "fade",
-  //   speed: 3000,
-  //   autoplay: {
-  //     delay: 3000,
-  //   },
-  //   navigation: {
-  //     nextEl: '.swiper-button-next', // 次へボタンのセレクタ
-  //     prevEl: '.swiper-button-prev', // 戻るボタンのセレクタ
-  //   },
-  // });
-
-
-  const mySwiper = new Swiper('.card-swiper', {
-    slidesPerView: 'auto',
-    spaceBetween: 16,
-    grabCursor: true,
-    pagination: {
-      el: '.card02 .swiper-pagination',
-      clickable: true,
+  // カードスライダー
+  const slideswiper = new Swiper(".card-swiper", {
+    loop: true,
+    slidesPerView: '3.2',
+    spaceBetween: 40,
+    centeredSlides : true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
+    speed: 3000,
+    effect: "slide",
     navigation: {
-      nextEl: '.card02 .swiper-button-next',
-      prevEl: '.card02 .swiper-button-prev',
-    },
-    breakpoints: {
-      1025: {
-        spaceBetween: 32,
-      }
+      nextEl: '.swiper-button-next', // 次へボタンのセレクタ
+      prevEl: '.swiper-button-prev', // 戻るボタンのセレクタ
     },
   });
+
 });

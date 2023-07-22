@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.campaign {
+  width: 100%;
+  @include mq("md") {
+    max-width: rem(1440);
+  }
+}
 .campaign__cards {
   @include mq("md") {
     margin-top: rem(40);

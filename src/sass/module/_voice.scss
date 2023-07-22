@@ -4,7 +4,28 @@
   padding: rem(80) 0;
   @include mq("md") {
   padding: rem(140) rem(130);
+  position: relative;
   }
+}
+
+.voice__icon-image1 {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  left: rem(100);
+  top: rem(35);
+  width: rem(300);
+  height: rem(138);
+}
+
+.voice__icon-image2 {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  right: rem(180);
+  bottom: rem(73);
+  width: rem(70);
+  height: rem(162);
 }
 
 .voice__cards {

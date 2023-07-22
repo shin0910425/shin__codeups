@@ -6,7 +6,18 @@
 
   @include mq("md") {
     padding: rem(140) 0 rem(160);
+    position: relative;
   }
+}
+
+.contact__icon-image {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  right: rem(50);
+  top: rem(100);
+  width: rem(300);
+  height: rem(138);
 }
 
 .contact-inner.inner {

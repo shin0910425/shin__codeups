@@ -11,6 +11,12 @@
   height: inherit;
 }
 
+.pc-nav__items li a {
+  // padding: 10px 30px;
+  //   text-decoration: none;
+  //   color: #333;
+}
+
 .pc-nav__item,
 .pc-nav__item a {
   height: inherit;
@@ -20,6 +26,7 @@
   display: flex;
   align-items: center;
   height: inherit;
+  position: relative;
 }
 
 .pc-nav__item:not(:first-child) {
@@ -35,6 +42,27 @@
   font-size: rem(10);
   line-height: 1.5;
   color: $white;
+}
+
+.pc-nav__item--link:hover {
+  color: $white;
+}
+
+.pc-nav__item--link::after {
+  content: '';
+    position: absolute;
+    bottom: rem(-4);
+    left: 5%;
+    width: 100%;
+    height: rem(1);
+    background: $white;
+    transition: all .3s;
+    transform: scale(0, 1);
+    transform-origin: center top;
+}
+
+.pc-nav__item--link:hover::after {
+  transform: scale(1, 1);
 }
 
 .pc-nav__item--link span {

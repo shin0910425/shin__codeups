@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.swiper {
+
+}
+
+.swiper-container {
+  width: 90%;
+}
+
+.swiper-controller {
+  display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3.2rem;
+}
+
+ .swiper-pagination {
+  margin-right: auto;
+ }
