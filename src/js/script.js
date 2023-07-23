@@ -29,7 +29,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // mvスライダー
-  const fadeswiper = new Swiper(".swiper", {
+  const fadeswiper = new Swiper(".mv-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -40,7 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // カードスライダー
-  const slideswiper = new Swiper(".card-swiper", {
+  const slideswiper = new Swiper(".campaign-swiper", {
     loop: true,
     slidesPerView: '3.2',
     spaceBetween: 40,
@@ -55,6 +55,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       nextEl: '.swiper-button-next', // 次へボタンのセレクタ
       prevEl: '.swiper-button-prev', // 戻るボタンのセレクタ
     },
+
+  });
+
+  var EffectH = 100;
+  $(window).on('scroll load', function () {
+    var scTop = $(this).scrollTop();
+    var scBottom = scTop + $(this).height();
+    var effectPos = scBottom - EffectH;
+    $('.js-scroll').each(function () {
+      var thisPos = $(this).offset().top;
+      if (thisPos < effectPos) {
+        // .js-scrollという要素が可視範囲に入ったら
+        $.when(
+          // .js-scrollにshowというclassを付与
+          $(this).addClass("show")
+        ).done(function () {
+          //  その後、0.5秒遅らせて.js-scrollにdoneというclassを付与
+          $(this).delay(500).queue(function () {
+            $(this).addClass("done")
+          })
+        });
+      }
+    });
   });
 
 });
