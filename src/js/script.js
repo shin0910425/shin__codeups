@@ -1,6 +1,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+//トップへ戻る------------------------------------------
   let topBtn = $('.to-top');
   topBtn.hide();
 
@@ -15,7 +16,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー
+  // ヘッダークラス名付与-------------------------------------
+  let header = $('.header');
+  let headerHeight = $('.header').height();
+  let height = $('.mv').height();
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > height - (headerHeight)) {
+      header.addClass('is-color');
+    } else {
+      header.removeClass('is-color');
+    }
+  });
+  
+  //ドロワーメニュー ------------------------------------------
   $(".js-hamburger").click(function () {
     if ($(".js-hamburger").hasClass('is-active')) {
       $('.js-hamburger').removeClass("is-active");
@@ -28,7 +41,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  // mvスライダー
+  // mvスライダー ------------------------------------------
   const fadeswiper = new Swiper(".mv-swiper", {
     loop: true,
     effect: "fade",
@@ -39,12 +52,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     },
   });
 
-  // カードスライダー
+  // カードスライダー ------------------------------------------
   const slideswiper = new Swiper(".campaign-swiper", {
     loop: true,
-    slidesPerView: '3.2',
+    slidesPerView: getSlidesPerView(),
     spaceBetween: 40,
-    centeredSlides : true,
+    centeredSlides: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -55,9 +68,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       nextEl: '.swiper-button-next', // 次へボタンのセレクタ
       prevEl: '.swiper-button-prev', // 戻るボタンのセレクタ
     },
-
   });
 
+  function getSlidesPerView() {
+    if (window.innerWidth <= 767) {
+      return 1.2;
+    } else {
+      return 3.2;
+    }
+  }
+
+  window.addEventListener('resize', function () {
+    slideswiper.params.slidesPerView = getSlidesPerView();
+    slideswiper.update();
+  });
+
+
+  // 背景から画像が出る-------------------------------------------
   var EffectH = 100;
   $(window).on('scroll load', function () {
     var scTop = $(this).scrollTop();
