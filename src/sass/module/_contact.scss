@@ -11,13 +11,15 @@
 }
 
 .contact__icon-image {
-  position: absolute;
-  content: "";
-  z-index: 10;
-  right: rem(50);
-  top: rem(100);
-  width: rem(300);
-  height: rem(138);
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    right: rem(50);
+    top: rem(100);
+    width: rem(300);
+    height: rem(138);
+  }
 }
 
 .contact-inner.inner {

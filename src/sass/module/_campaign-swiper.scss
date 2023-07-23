@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.swiper-slide {
+  /*スライド要素の幅と高さを調整*/
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+
+  /*テキストの位置調整*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mq("md") {
+  width: rem(333);
+  }
+}
+
+.swiper-button-prev {
+  position: fixed;
+    right: rem(10);
+    bottom: rem(10);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid $green3;
+}
+
+.swiper-button-prev {
+  display: block;
+    width: rem(50);
+    height: rem(50);
+    bottom: rem(430);
+    left: rem(800);
+    background-color: $white;
+    position: relative;
+}
+
+.swiper-button-next {
+  position: fixed;
+    right: rem(10);
+    bottom: rem(10);
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid $green3;
+}
+
+.swiper-button-next {
+  display: block;
+    width: rem(50);
+    height: rem(50);
+    bottom: rem(458);
+      left: rem(930);
+    background-color: $white;
+    position: relative;
+}
+
+.swiper-button-prev::before {
+  content: "";
+    margin: auto;
+    position: absolute;
+    top: rem(3);
+    bottom: 0;
+    right: rem(19);
+    /* 要素の右からの距離 */
+    width: rem(10);
+    height: rem(20);
+    border-top: rem(1) solid $green3;
+    transform: rotate(-45deg);
+    /* 角度調整 */
+}
+
+.swiper-button-prev::after {
+  /* 棒の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: rem(10);
+    /* 要素の右からの距離 */
+    width: rem(28);
+    height: rem(1);
+    background: $green3;
+    transform: rotate(0deg);
+}
+
+.swiper-button-next::before {
+  content: "";
+    margin: auto;
+    position: absolute;
+    top: rem(3);
+    bottom: 0;
+    right: rem(17);
+    /* 要素の右からの距離 */
+    width: rem(10);
+    height: rem(20);
+    border-top: rem(1) solid $green3;
+    transform: rotate(45deg);
+    /* 角度調整 */
+}
+
+.swiper-button-next::after {
+  /* 棒の表示設定 */
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: rem(10);
+    /* 要素の右からの距離 */
+    width: rem(28);
+    height: rem(1);
+    background: $green3;
+    transform: rotate(0deg);
+}
+
+.swiper-button-prev::after {
+  // top: 40%;
+  // left: 44%;
+  // transform: rotate(-135deg);
+}

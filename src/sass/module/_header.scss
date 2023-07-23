@@ -5,11 +5,13 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
-  // top: 0;
-  // right: 0;
-  // left: 0;
-  background-color: #0D2936;
+  background-color: $green;
   opacity: 0.68;
+}
+
+.header.is-color {
+  background-color: $green;
+  opacity: 1;
 }
 
 .header__inner {
@@ -30,9 +32,9 @@
 
 .header__logo img {
   width: rem(133);
+  max-width: 100%;
   padding-top: rem(10);
   display: block;
-  max-width: 100%;
   height: auto;
 }
 

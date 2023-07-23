@@ -9,7 +9,6 @@
   width: 100%;
   height: 100vh;
   background-color: $green3;
-  opacity: 1;
 }
 
 .sp-nav__body {
@@ -28,7 +27,7 @@
   position: relative;
 }
 
-.sp-nav__title {  
+.sp-nav__title {
   color: $white;
   display: block;
   padding: rem(12);
