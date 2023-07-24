@@ -7,6 +7,11 @@
   background-color: $white;
 }
 
+.blog-card:not(:first-child) {
+  margin-top: rem(-1);
+  @include mq("md") {}
+}
+
 .blog-card__image {
   max-width: rem(300);
   width: 100%;
@@ -16,6 +21,10 @@
   width: 100%;
   aspect-ratio: 300/200;
   object-fit: cover;
+}
+
+.blog-card__mete {
+  margin-top: rem(18);
 }
 
 .blog-card__time {

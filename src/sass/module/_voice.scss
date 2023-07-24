@@ -1,11 +1,16 @@
 @use "global" as *;
 
 .voice {
-  padding: rem(80) 0;
+  padding: rem(84) 0 rem(85);
   @include mq("md") {
   padding: rem(140) rem(130);
   position: relative;
   }
+}
+
+.voice__inner.inner {
+  padding-left: rem(15);
+  padding-right: rem(15);
 }
 
 .voice__icon-image1 {
@@ -35,7 +40,7 @@
 .voice__cards {
   display: flex;
   flex-direction: column;
-  margin-top: rem(-40);
+  margin-top: rem(44);
 
   @include mq("md") {
     flex-direction: row;
@@ -45,11 +50,15 @@
 }
 
 .voice__card {
-  margin-top: rem(40);
+  padding: rem(24) rem(16);
   @include mq("md") {
     max-width: calc((100% - rem(40)) / 2);
     width: 100%;
   }
+}
+
+.voice__card:not(:first-child) {
+  margin-top: rem(40);
 }
 
 .voice__btn {

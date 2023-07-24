@@ -28,11 +28,11 @@
     background-size: 100% rem(3);
     background-repeat: repeat-x;
     text-decoration: none;
-    padding: 0 rem(2);
+    padding: 0 rem(2) rem(3) rem(17);
 }
 
 .charge__price-2 {
-  font-size: rem(32);
+  font-size: rem(30);
   font-weight: $bold;
   line-height: 1;
   color: $green3;

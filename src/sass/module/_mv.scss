@@ -36,10 +36,11 @@
 }
 
 .mv__title {
-  font-size: rem(40);
+  font-size: rem(39);
   font-weight: $regular;
   font-family: $en-family;
   line-height: 1;
+  letter-spacing: 0.52em;
   color: $white;
   @include mq("md") {
     font-size: rem(80);
@@ -48,8 +49,14 @@
   }
 }
 
+.mv__title span {
+  margin-left: rem(-77);
+}
+
 .mv__subtitle {
   font-size: rem(20);
+  margin-top: rem(7);
+  margin-left: rem(-27);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;

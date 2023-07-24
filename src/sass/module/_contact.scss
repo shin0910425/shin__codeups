@@ -1,20 +1,25 @@
 @use "global" as *;
 
 .contact {
-  padding: rem(80) 0 rem(100);
+  padding: rem(68) 0 rem(30);
   width: 100%;
+  position: relative;
 
   @include mq("md") {
     padding: rem(140) 0 rem(160);
-    position: relative;
   }
 }
 
 .contact__icon-image {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  right: rem(8);
+  top: rem(57);
+  width: rem(109);
+  height: rem(50);
+
   @include mq("md") {
-    position: absolute;
-    content: "";
-    z-index: 10;
     right: rem(50);
     top: rem(100);
     width: rem(300);
@@ -23,7 +28,7 @@
 }
 
 .contact-inner.inner {
-  // padding: 0 rem(130);
+  padding: 0 rem(15) 0 rem(16);
   text-align: center;
 }
 
@@ -94,6 +99,7 @@
 
 .contact__box {
   margin-top: rem(16);
+  margin-left: rem(-6);
 
   @include mq("md") {
     // max-width: calc(33.333% - 34px * 1 / 2);
@@ -114,8 +120,9 @@
   font-weight: $regular;
   line-height: 1.5;
   color: $green;
+
   @include mq("md") {
-  text-align: left;
+    text-align: left;
   }
 }
 
@@ -130,8 +137,8 @@
 .contact__item {
   margin-top: rem(16);
   padding: rem(5);
-  width: rem(265);
-  height: rem(150);
+  width: rem(295);
+  height: rem(160);
   background-color: $gray;
   display: inline-block;
 
@@ -150,7 +157,7 @@
 }
 
 .contact__title.section-header {
-  margin-top: rem(40);
+  margin-top: rem(25);
 }
 
 .contact__title.section-header h2 {
@@ -160,11 +167,12 @@
 }
 
 .contact__title.section-header p {
-  margin-top: rem(-4);
+  margin-top: rem(-18);
   font-size: rem(12);
   font-family: $jp-family;
   font-weight: $regular;
-  line-height: 1.5;
+  line-height: 2;
+  letter-spacing: 0.15em;
 }
 
 .contact__btn {

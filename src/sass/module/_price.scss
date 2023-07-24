@@ -10,6 +10,10 @@
   }
 }
 
+.price-inner.inner {
+  padding: 0 rem(15);
+}
+
 .price__icon-image {
   @include mq("md") {
     position: absolute;
@@ -23,6 +27,7 @@
 }
 
 .price-card__box {
+  margin-top: rem(30);
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
@@ -83,12 +88,12 @@
 }
 
 .price-card.card__title {
-  margin-top: rem(40);
+  margin-top: rem(39);
   font-size: rem(16);
   line-height: 1.5;
   font-family: $jp-family;
   font-weight: $bold;
-  padding-bottom: rem(4);
+  padding-bottom: rem(2);
   color: $green;
   border-bottom: 1px solid $green3;
 }
@@ -96,10 +101,9 @@
 .price-card__menu {
   margin-top: rem(8);
   font-size: rem(14);
-  line-height: 1.7142;
+  line-height: 2;
   font-family: $jp-family;
   font-weight: $regular;
-  padding-bottom: rem(8);
   color: $green;
 
   @include mq("md") {
@@ -111,10 +115,9 @@
 .price-card__money {
   margin-top: rem(8);
   font-size: rem(14);
-  line-height: 1.7142;
+  line-height: 2;
   font-family: $jp-family;
   font-weight: $regular;
-  padding-bottom: rem(8);
   color: $green;
   text-align: right;
 

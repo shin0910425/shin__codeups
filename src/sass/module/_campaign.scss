@@ -3,9 +3,19 @@
 .campaign {
   overflow: hidden;
   width: 100%;
+  margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(120);
   }
+}
+
+.campaign__title p {
+  // margin-top: 10px;
+}
+
+.campaign__box {
+  margin-top: rem(28);
+  margin-left: rem(-67);
 }
 
 .campaign-swiper {
@@ -37,5 +47,6 @@
 
 .campaign__btn {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(-14);
+  padding-bottom: rem(15);
 }

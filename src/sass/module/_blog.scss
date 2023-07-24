@@ -2,7 +2,7 @@
 @use "global" as *;
 
 .blog {
-  // padding-top: rem(50);
+  margin-top: rem(81);
   // margin-bottom: rem(300);
   position: relative;
 }
@@ -30,7 +30,6 @@
     background-image: url(/assets/images/common/blog-bg_img.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    // background: linear-gradient(180deg, transparent 0%, transparent 50%, transparent 50%, transparent 100%), url(/assets/images/common/blog-bg_img.jpg);
   }
 }
 
@@ -41,12 +40,6 @@
   @include mq("md") {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-.blog-card {
-  margin-top: rem(40);
-
-  @include mq("md") {}
 }
 
 .blog__btn {

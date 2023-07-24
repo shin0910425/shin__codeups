@@ -2,8 +2,8 @@
 
 .about {
   width: 100%;
-  margin-top: rem(80);
-  padding-bottom: rem(80);
+  margin-top: rem(70);
+  padding-bottom: rem(45);
   @include mq("md") {
   padding-bottom: rem(140);
   position: relative;
@@ -28,6 +28,7 @@
 }
 
 .about__img_box {
+  margin-top: rem(27);
   width: 100%;
   display: flex;
   position: relative;
@@ -76,7 +77,7 @@
 }
 
 .about__body {
-  margin-top: rem(40);
+  margin-top: rem(60);
   padding-bottom: rem(40);
   @include mq("md") {
     display: flex;
@@ -86,6 +87,7 @@
 
 .about__title {
   font-size: rem(40);
+  margin-left: rem(-3);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;
@@ -104,6 +106,7 @@
 
 .about__text {
   font-size: rem(16);
+  margin-left: rem(-6);
   font-family: $jp-family;
   font-weight: $regular;
   line-height: 1.5;
