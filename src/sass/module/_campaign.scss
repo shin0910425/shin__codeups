@@ -5,17 +5,22 @@
   width: 100%;
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(120);
+    margin-top: rem(117);
   }
 }
 
 .campaign__title p {
-  // margin-top: 10px;
+  @include mq("md") {
+  }
 }
 
 .campaign__box {
   margin-top: rem(28);
   margin-left: rem(-67);
+  @include mq("md") {
+    margin-top: rem(-84);
+    margin-left: rem(-10);
+  }
 }
 
 .campaign-swiper {
@@ -37,16 +42,36 @@
 .campaign__card {
   max-width: rem(280);
   width: 100%;
+  @include mq("md") {
+    max-width: rem(333);
+      width: 100%;
+  }
 }
 
 .campaign__card-body {
   width: 100%;
   padding: rem(16);
   padding-bottom: rem(24);
+  @include mq("md") {
+    padding: rem(23) rem(16) rem(38);
+  }
+}
+
+.campaign__card.card__title {
+  @include mq("md") {
+    font-size: rem(16);
+    font-family: $jp-family;
+    font-weight: $normal;
+    line-height: 1;
+    color: $green;
+  }
 }
 
 .campaign__btn {
   text-align: center;
   margin-top: rem(-14);
   padding-bottom: rem(15);
+  @include mq("md") {
+    margin-top: rem(-27);
+  }
 }

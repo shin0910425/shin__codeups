@@ -5,8 +5,25 @@
   margin-top: rem(70);
   padding-bottom: rem(45);
   @include mq("md") {
-  padding-bottom: rem(140);
+    margin-top: rem(124);
+  padding-bottom: rem(320);
   position: relative;
+  }
+}
+
+.about__title {
+  font-size: rem(40);
+  margin-left: rem(-3);
+  font-family: $en-family;
+  font-weight: $regular;
+  line-height: 1;
+  color: $green3;
+
+  @include mq("md") {
+    margin-left: rem(0);
+    font-size: rem(80);
+    line-height: 1.25;
+    color: $white;
   }
 }
 
@@ -32,6 +49,9 @@
   width: 100%;
   display: flex;
   position: relative;
+  @include mq("md") {
+    margin-top: rem(-42);
+  }
 }
 
 .about__img_box img {
@@ -81,27 +101,17 @@
   padding-bottom: rem(40);
   @include mq("md") {
     display: flex;
-    margin-top: rem(-300);
-  }
-}
-
-.about__title {
-  font-size: rem(40);
-  margin-left: rem(-3);
-  font-family: $en-family;
-  font-weight: $regular;
-  line-height: 1;
-  color: $green3;
-  @include mq("md") {
-    margin-left: rem(200);
-    font-size: rem(80);
-    line-height: 1.25;
-    color: $white;
+    margin-top: rem(-398);
+      margin-left: rem(198);
   }
 }
 
 .about__text-box {
   margin-top: rem(16);
+  @include mq("md") {
+  margin-top: rem(2);
+  margin-right: rem(-132);
+  }
 }
 
 .about__text {
@@ -119,5 +129,6 @@
 
 .about__btn {
   margin-top: rem(40);
+  margin-left: rem(41);
   text-align: center;
 }

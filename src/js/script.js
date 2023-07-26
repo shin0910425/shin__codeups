@@ -27,7 +27,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       header.removeClass('is-color');
     }
   });
-  
+
   //ドロワーメニュー ------------------------------------------
   $(".js-hamburger").click(function () {
     if ($(".js-hamburger").hasClass('is-active')) {
@@ -74,7 +74,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     if (window.innerWidth <= 767) {
       return 1.2;
     } else {
-      return 3.2;
+      return 3;
     }
   }
 

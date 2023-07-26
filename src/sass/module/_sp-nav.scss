@@ -13,7 +13,7 @@
 
 .sp-nav__body {
   display: flex;
-  padding: rem(100) 0;
+  padding: rem(90) 0;
   width: 100%;
   justify-content: center;
 }
@@ -37,7 +37,15 @@
   line-height: 1.125;
 }
 
+.sp-nav__box {
+  margin-top: rem(12);
+}
+
 .sp-nav__title::before {
   content: url(/assets/images/common/hitode_img.svg);
+}
+
+.sp-nav--item__right {
+  margin-right: auto;
 }
 

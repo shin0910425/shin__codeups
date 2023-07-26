@@ -7,6 +7,9 @@
   line-height: 1.25;
   color: $green;
   text-align: center;
+  @include mq("md") {
+    font-size: rem(40);
+  }
 }
 
 .section-header__engtitle span {
@@ -21,4 +24,7 @@
   line-height: 1.5;
   color: $green3;
   text-align: center;
+  @include mq("md") {
+    padding-bottom: 80px;
+  }
 }

@@ -15,6 +15,10 @@
   height: rem(50);
   background-color: $white;
   position: relative;
+  @include mq("md") {
+    width: rem(78);
+      height: rem(78);
+  }
 }
 
 .to-top a span::before {

@@ -44,13 +44,17 @@
   color: $white;
   @include mq("md") {
     font-size: rem(80);
-    line-height: 1.25;
-    letter-spacing: 1em;
+    line-height: 1;
+    margin-left: rem(37);
+      margin-top: rem(104);
   }
 }
 
 .mv__title span {
   margin-left: rem(-77);
+  @include mq("md") {
+    margin-left: rem(5);
+  }
 }
 
 .mv__subtitle {
@@ -61,4 +65,8 @@
   font-weight: $regular;
   line-height: 1;
   color: $white;
+  @include mq("md") {
+    margin-top: rem(10);
+    margin-left: rem(3);
+  }
 }

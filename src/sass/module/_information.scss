@@ -5,20 +5,24 @@
   background-color: $green2;
 
   @include mq("md") {
-    padding: rem(100) rem(155);
+    padding: rem(97) rem(155) rem(90);
   }
 }
 
 .information-card__box {
   margin-top: rem(28);
+
   @include mq("md") {
     display: flex;
+    margin-top: rem(-41);
+    padding-bottom: rem(81);
   }
 }
 
 .information-card__image {
   max-width: rem(345);
   width: 100%;
+
   @include mq("md") {
     max-width: rem(540);
     width: 50%;
@@ -27,16 +31,18 @@
 
 .information-card__image img {
   width: 100%;
-    aspect-ratio: 345/227;
-    object-fit: cover;
-    @include mq("md") {
+  aspect-ratio: 345/227;
+  object-fit: cover;
+
+  @include mq("md") {
     aspect-ratio: 540/356;
-    }
+  }
 }
 
 .information-card__body {
   @include mq("md") {
-    margin-left: rem(48);
+    margin-top: rem(43);
+    padding-left: rem(53);
     width: 50%;
   }
 }

@@ -114,6 +114,7 @@
 }
 
 .footer__sp-nav--item__right {
+  margin-right: rem(-9);
   @include mq("md") {
     text-align: right;
   }

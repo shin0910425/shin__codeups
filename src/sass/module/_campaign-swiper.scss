@@ -1,5 +1,18 @@
 @use "global" as *;
 
+.campaign-swiper {
+  @include mq("md") {
+    // max-width: 1400px;
+  }
+}
+
+.swiper-wrapper {
+  @include mq("md") {
+    // margin-top: rem(6);
+    // height: 100%;
+  }
+}
+
 .swiper-slide {
   /*スライド要素の幅と高さを調整*/
   width: 100%;
@@ -12,6 +25,8 @@
   align-items: center;
   @include mq("md") {
   width: rem(333);
+  max-width: 100%;
+  margin: 0 auto;
   }
 }
 
@@ -32,6 +47,49 @@
     left: rem(800);
     background-color: $white;
     position: relative;
+    @include mq("md") {
+        width: rem(78);
+        height: rem(78);
+        bottom: rem(524);
+        left: rem(1012);
+      }
+}
+
+.swiper-button-prev::before {
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: rem(3);
+  bottom: 0;
+  right: rem(19);
+  /* 要素の右からの距離 */
+  width: rem(10);
+  height: rem(20);
+  border-top: rem(1) solid $green3;
+  transform: rotate(-45deg);
+  /* 角度調整 */
+  @include mq("md") {
+      transform: rotate(45deg);
+    }
+}
+
+.swiper-button-prev::after {
+  /* 棒の表示設定 */
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: rem(10);
+  /* 要素の右からの距離 */
+  width: rem(28);
+  height: rem(1);
+  background: $green3;
+  transform: rotate(0deg);
+
+  @include mq("md") {
+    width: rem(48);
+  }
 }
 
 .swiper-button-next {
@@ -51,36 +109,12 @@
       left: rem(930);
     background-color: $white;
     position: relative;
-}
-
-.swiper-button-prev::before {
-  content: "";
-    margin: auto;
-    position: absolute;
-    top: rem(3);
-    bottom: 0;
-    right: rem(19);
-    /* 要素の右からの距離 */
-    width: rem(10);
-    height: rem(20);
-    border-top: rem(1) solid $green3;
-    transform: rotate(-45deg);
-    /* 角度調整 */
-}
-
-.swiper-button-prev::after {
-  /* 棒の表示設定 */
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: rem(10);
-    /* 要素の右からの距離 */
-    width: rem(28);
-    height: rem(1);
-    background: $green3;
-    transform: rotate(0deg);
+    @include mq("md") {
+      width: rem(78);
+        height: rem(78);
+        bottom: rem(579);
+        left: rem(851);
+    }
 }
 
 .swiper-button-next::before {
@@ -96,6 +130,10 @@
     border-top: rem(1) solid $green3;
     transform: rotate(45deg);
     /* 角度調整 */
+    @include mq("md") {
+         right: rem(40);
+        transform: rotate(-45deg);
+      }
 }
 
 .swiper-button-next::after {
@@ -111,6 +149,9 @@
     height: rem(1);
     background: $green3;
     transform: rotate(0deg);
+    @include mq("md") {
+        width: rem(48);
+      }
 }
 
 .swiper-button-prev::after {

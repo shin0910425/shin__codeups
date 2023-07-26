@@ -9,6 +9,13 @@
   line-height: 1.7142;
   color: $green;
   text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(18);
+    padding-bottom: rem(8);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
 }
 
 .charge__box {
@@ -24,11 +31,14 @@
   color: $green;
   // text-decoration-line: line-through;
   background-image: linear-gradient($red, $red);
-    background-position: 0 50%;
-    background-size: 100% rem(3);
-    background-repeat: repeat-x;
-    text-decoration: none;
-    padding: 0 rem(2) rem(3) rem(17);
+  background-position: 0 50%;
+  background-size: 100% rem(3);
+  background-repeat: repeat-x;
+  text-decoration: none;
+  padding: 0 rem(2) rem(3) rem(17);
+  @include mq("md") {
+  font-size: rem(24);
+  }
 }
 
 .charge__price-2 {
@@ -37,4 +47,7 @@
   line-height: 1;
   color: $green3;
   margin-left: rem(16);
+  @include mq("md") {
+  font-size: rem(40);
+  }
 }
