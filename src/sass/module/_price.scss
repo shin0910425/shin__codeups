@@ -31,6 +31,7 @@
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: rem(-78);
   }
 }
 
@@ -96,6 +97,9 @@
   padding-bottom: rem(2);
   color: $green;
   border-bottom: 1px solid $green3;
+  @include mq("md") {
+    margin-top: rem(38);
+  }
 }
 
 .price-card__menu {
@@ -108,7 +112,7 @@
 
   @include mq("md") {
     font-size: rem(16);
-    line-height: 1.5;
+    line-height: 1.8;
   }
 }
 
@@ -131,4 +135,7 @@
 .price__btn {
   margin-top: rem(40);
   text-align: center;
+  @include mq("md") {
+    margin-top: rem(59);
+  }
 }
