@@ -1,36 +1,39 @@
-
 @use "global" as *;
 
 .blog {
   margin-top: rem(81);
   // margin-bottom: rem(300);
   position: relative;
+
   @include mq("md") {
-      margin-top: rem(-81);
-    }
+    margin-top: rem(-81);
+  }
 }
 
 .blog__bg {
   @include mq("md") {
     background-size: contain;
+    // background-size: cover;
     background-repeat: no-repeat;
-      background: url(/assets/images/common/blog-bg_img.jpg), -webkit-linear-gradient(top, transparent 0%, transparent 100%);
-      ;
-      border: 1px solid transparent;
-      width: 100%;
+    background: url(/assets/images/common/blog-bg_img.jpg), -webkit-linear-gradient(top, transparent 0%, transparent 100%);
+    ;
+    border: 1px solid transparent;
+    width: 100%;
+    // max-width: 2880px;
+    // height: 500px;
   }
 }
 
 .blog__title.section-header__engtitle {
   @include mq("md") {
     margin-top: rem(93);
-   color: $white;
+    color: $white;
   }
 }
 
 .blog__title.section-header__jatitle {
   @include mq("md") {
-   color: $white;
+    color: $white;
   }
 }
 
@@ -49,6 +52,7 @@
 .blog__btn {
   margin-top: rem(40);
   text-align: center;
+
   @include mq("md") {
     margin-top: rem(78);
   }

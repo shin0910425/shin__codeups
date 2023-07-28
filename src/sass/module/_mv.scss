@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .mv {
+  width: 100%;
   position: relative;
   // height: 100vh;
   // background-image: url(/assets/images/common/top-sp_img1.jpg);
@@ -13,11 +14,13 @@
 }
 
 .mv_inner {
+  width: 100%;
   // padding: 0 rem(64) 0 rem(63);
 }
 
 .mv picture img {
-  height: 100vh;
+  width: 100%;
+  // height: 100vh;
 }
 
 .mv__header {

@@ -57,7 +57,7 @@
             <a class="pc-nav__item--link" href="#campaign"><span>Campaign</span>キャンペーン</a>
           </li>
           <li class="pc-nav__item">
-            <a class="pc-nav__item--link" href="About&nbsp;us"><span>About us</span>私たちについて</a>
+            <a class="pc-nav__item--link" href="#about"><span>About us</span>私たちについて</a>
           </li>
           <li class="pc-nav__item">
             <a class="pc-nav__item--link" href="#information"><span>Information</span>ダイビング情報</a>
@@ -169,26 +169,30 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source srcset="/assets/images/common/top-pc_img1.jpg" media="(min-width: 768px)">
-              <img src="/assets/images/common/top-sp_img1.jpg" alt="亀が泳いでいる">
+              <source media="(max-width: 767px)" srcset="/assets/images/common/top-sp_img1.jpg" >
+              <source media="(min-width: 768px)" srcset="/assets/images/common/top-pc_img1.jpg" >
+              <img src="/assets/images/common/top-pc_img1.jpg" width="1440" alt="亀が泳いでいる">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="/assets/images/common/top-pc_img2.jpg" media="(min-width: 768px)">
-              <img src="/assets/images/common/top-sp_img2.jpg" alt="亀が泳いでいる">
+              <source media="(max-width: 767px)" srcset="/assets/images/common/top-sp_img2.jpg" >
+              <source media="(min-width: 768px)" srcset="/assets/images/common/top-pc_img2.jpg" >
+              <img src="/assets/images/common/top-pc_img2.jpg" width="1440" alt="亀とダイバー">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="/assets/images/common/top-pc_img3.jpg" media="(min-width: 768px)">
-              <img src="/assets/images/common/top-sp_img3.jpg" alt="亀が泳いでいる">
+              <source media="(max-width: 767px)" srcset="/assets/images/common/top-sp_img3.jpg" >
+              <source media="(min-width: 768px)" srcset="/assets/images/common/top-pc_img3.jpg" >
+              <img src="/assets/images/common/top-pc_img3.jpg" width="1440" alt="綺麗な海に船">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source srcset="/assets/images/common/top-pc_img4.jpg" media="(min-width: 768px)">
-              <img src="/assets/images/common/top-sp_img4.jpg" alt="亀が泳いでいる">
+              <source media="(max-width: 767px)" srcset="/assets/images/common/top-sp_img4.jpg" >
+              <source media="(min-width: 768px)" srcset="/assets/images/common/top-pc_img4.jpg" >
+              <img src="/assets/images/common/top-pc_img4.jpg" width="1440" alt="キレイな砂浜と青空">
             </picture>
           </div>
         </div>
@@ -203,7 +207,7 @@
 
   <main>
     <!-- campaign -->
-    <section class="campaign">
+    <section id="campaign" class="campaign">
       <div class="campaign__inner inner">
         <div class="section-header">
           <h2 class="campaign__title section-header__engtitle"><span class="title__color">C</span>ampaign</h2>
@@ -211,7 +215,7 @@
         </div>
 
         <div class="campaign__box">
-          <!-- <div class="swiper campaign-swiper"> -->
+          <div class="swiper campaign-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <a class="campaign__card card">
@@ -297,7 +301,7 @@
     </section>
 
     <!-- about -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__icon-image">
         <img class="u-desktop" src="/assets/images/common/sango_img.png" alt="サンゴのアイコン">
       </div>
@@ -331,7 +335,7 @@
     </section>
 
     <!-- information -->
-    <section class="information">
+    <section id="information" class="information">
       <div class="information__title section-header">
         <h2 class="section-header__engtitle"><span class="title__color">I</span>nformation</h2>
         <p class="section-header__jatitle">ダイビング情報</p>
@@ -356,7 +360,7 @@
     </section>
 
     <!-- blog -->
-    <section class="blog">
+    <section id="blog" class="blog">
       <div class="blog__icon-image">
         <img class="u-desktop" src="/assets/images/common/hanadai_img1.png" alt="キンギョハナダイのアイコン">
       </div>
@@ -427,7 +431,7 @@
     </section>
 
     <!-- voice -->
-    <section class="voice">
+    <section id="voice" class="voice">
       <div class="voice__icon-image1">
         <img class="u-desktop" src="/assets/images/common/hanadai_img2.png" alt="キンギョハナダイのアイコン">
       </div>
@@ -494,7 +498,7 @@
     </section>
 
     <!-- price -->
-    <section class="price">
+    <section id="price" class="price">
       <div class="price-inner inner">
         <div class="price__icon-image">
           <img class="u-desktop" src="/assets/images/common/hanadai_img3.png" alt="キンギョハナダイのアイコン">
@@ -586,7 +590,7 @@
     </section>
 
     <!-- contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
       <div class="contact__icon-image">
         <img src="/assets/images/common/hanadai_img4.png" alt="キンギョハナダイのアイコン">
       </div>
@@ -636,6 +640,7 @@
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer">
       <nav class="footer footer__sp-nav">
