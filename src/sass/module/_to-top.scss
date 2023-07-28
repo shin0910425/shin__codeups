@@ -7,6 +7,11 @@
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid $green3;
+
+  @include mq("md") {
+    right: rem(22);
+    bottom: rem(580);
+  }
 }
 
 .to-top a {
@@ -15,9 +20,10 @@
   height: rem(50);
   background-color: $white;
   position: relative;
+
   @include mq("md") {
     width: rem(78);
-      height: rem(78);
+    height: rem(78);
   }
 }
 
@@ -32,31 +38,39 @@
   // left: 50%;
   // transform: translate(-50%, calc(-50% + 0.25em)) rotate(-45deg);
   /* くの字の表示設定 */
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: rem(17);
-    /* 要素の右からの距離 */
-    width: rem(12);
-    height: rem(20);
-    border-top: rem(1) solid $green3;
-    transform: rotate(-45deg);
-    /* 角度調整 */
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: rem(17);
+  /* 要素の右からの距離 */
+  width: rem(12);
+  height: rem(20);
+  border-top: rem(1) solid $green3;
+  transform: rotate(-45deg);
+  /* 角度調整 */
+  @include mq("md") {
+    right: rem(19);
+    height: rem(44);
+  }
 }
 
 .to-top a span::after {
   /* 棒の表示設定 */
-    content: "";
-    margin: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: rem(10);
-    /* 要素の右からの距離 */
-    width: rem(28);
-    height: rem(1);
-    background: $green3;
-    transform: rotate(-90deg);
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: rem(10);
+  /* 要素の右からの距離 */
+  width: rem(28);
+  height: rem(1);
+  background: $green3;
+  transform: rotate(-90deg);
+  @include mq("md") {
+    right: rem(14);
+    width: rem(43);
+  }
 }

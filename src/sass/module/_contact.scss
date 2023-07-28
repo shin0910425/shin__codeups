@@ -6,7 +6,7 @@
   position: relative;
 
   @include mq("md") {
-    padding: rem(152) 0 rem(160);
+    padding: rem(152) 0 rem(148);
   }
 }
 
@@ -39,7 +39,7 @@
     display: inline-block;
     max-width: rem(1080);
     width: 100%;
-    padding: rem(80) rem(112) rem(80) rem(50);
+    padding: rem(80) rem(112) rem(91) rem(50);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
   }
 }
@@ -83,7 +83,7 @@
 
   @include mq("md") {
     max-width: rem(440);
-    padding-bottom: rem(8);
+    padding-bottom: rem(0);
   }
 }
 
@@ -145,6 +145,8 @@
   @include mq("md") {
     margin-top: 0;
     margin-left: rem(20);
+    width: rem(273);
+    height: rem(148);
     // width: 52%;
   }
 }
@@ -152,7 +154,7 @@
 .contact-card__body {
   @include mq("md") {
     margin-left: rem(80);
-    // width: 50%;
+    margin-top: rem(-21);
   }
 }
 
@@ -178,4 +180,8 @@
 .contact__btn {
   margin-top: rem(40);
   text-align: center;
+
+  @include mq("md") {
+    margin-top: rem(-45);
+  }
 }
