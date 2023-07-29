@@ -2,11 +2,12 @@
 
 .to-top {
   position: fixed;
-  right: rem(10);
+  right: rem(14);
   bottom: rem(10);
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid $green3;
+  z-index: 999;
 
   @include mq("md") {
     right: rem(22);
@@ -28,15 +29,6 @@
 }
 
 .to-top a span::before {
-  // position: absolute;
-  // background-color: transparent;
-  // width: rem(20);
-  // height: rem(20);
-  // border-top: 2px solid;
-  // border-right: 2px solid;
-  // top: 50%;
-  // left: 50%;
-  // transform: translate(-50%, calc(-50% + 0.25em)) rotate(-45deg);
   /* くの字の表示設定 */
   content: "";
   margin: auto;

@@ -2,46 +2,62 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
 //トップへ戻る------------------------------------------
-  // let topBtn = $('.to-top');
-  // topBtn.hide();
-
-  // // // ボタンの表示設定
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 70) {
-  //     // 指定px以上のスクロールでボタンを表示
-  //     topBtn.fadeIn();
-  //   } else {
-  //     // 画面が指定pxより上ならボタンを非表示
-  //     topBtn.fadeOut();
-  //   }
-  // });
-  // JavaScriptの処理を変更
   let topBtn = $('.to-top');
-  let footHeight = $("footer").innerHeight(); // フッターの高さを先に取得
-
   topBtn.hide();
 
+  // // ボタンの表示設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      // 指定px以上のスクロールでボタンを表示
+      topBtn.fadeIn();
+    } else {
+      // 画面が指定pxより上ならボタンを非表示
+      topBtn.fadeOut();
+    }
+  });
+
+  // フッターの位置を計算する関数
+  function updateToTopButtonPosition() {
+    let footer = $('#footer');
+    let footerTop = footer.offset().top;
+    let windowHeight = $(window).height();
+    let scrollTop = $(window).scrollTop();
+    let windowWidth = $(window).width();
+
+    let buttonOffset; // ボタンの位置を保持する変数
+
+    if (windowWidth <= 767) {
+      // 767px以下の場合
+      buttonOffset = 30; // -30pxのオフセット
+    } else {
+      // 767pxより大きい場合
+      buttonOffset = -20; // 20pxのオフセット
+    }
+
+    if (scrollTop + windowHeight >= footerTop + buttonOffset) {
+      // ウィンドウの下部がフッターの上部よりオフセット値以上下にある場合
+      let diff = (scrollTop + windowHeight) - (footerTop + buttonOffset);
+      topBtn.css('bottom', diff + 'px');
+    } else {
+      // ウィンドウの下部がフッターの上部よりオフセット値より上にある場合
+      topBtn.css('bottom', buttonOffset + 'px');
+    }
+  }
+
+
+  // ページ読み込み時とウィンドウのリサイズ時に関数を呼び出す
+  $(window).on('load resize', function () {
+    updateToTopButtonPosition();
+  });
+
+  // スクロール時にも関数を呼び出す
   $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
     }
-
-    // フッター手前でボタンを止める処理
-    let scrollHeight = $(document).height();
-    let scrollPosition = $(window).height() + $(window).scrollTop();
-    if (scrollHeight - scrollPosition <= footHeight) {
-      topBtn.css({
-        position: "absolute",
-        bottom: footHeight,
-      });
-    } else {
-      topBtn.css({
-        position: "fixed",
-        bottom: "0",
-      });
-    }
+    updateToTopButtonPosition(); // スクロール時にボタンの位置を更新
   });
 
 
