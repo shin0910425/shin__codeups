@@ -2,19 +2,48 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
 //トップへ戻る------------------------------------------
+  // let topBtn = $('.to-top');
+  // topBtn.hide();
+
+  // // // ボタンの表示設定
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 70) {
+  //     // 指定px以上のスクロールでボタンを表示
+  //     topBtn.fadeIn();
+  //   } else {
+  //     // 画面が指定pxより上ならボタンを非表示
+  //     topBtn.fadeOut();
+  //   }
+  // });
+  // JavaScriptの処理を変更
   let topBtn = $('.to-top');
+  let footHeight = $("footer").innerHeight(); // フッターの高さを先に取得
+
   topBtn.hide();
 
-  // ボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
       topBtn.fadeIn();
     } else {
-      // 画面が指定pxより上ならボタンを非表示
       topBtn.fadeOut();
     }
+
+    // フッター手前でボタンを止める処理
+    let scrollHeight = $(document).height();
+    let scrollPosition = $(window).height() + $(window).scrollTop();
+    if (scrollHeight - scrollPosition <= footHeight) {
+      topBtn.css({
+        position: "absolute",
+        bottom: footHeight,
+      });
+    } else {
+      topBtn.css({
+        position: "fixed",
+        bottom: "0",
+      });
+    }
   });
+
 
   // ヘッダークラス名付与-------------------------------------
   let header = $('.header');

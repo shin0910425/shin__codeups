@@ -12,15 +12,15 @@
 
 .blog__bg {
   @include mq("md") {
-    background-size: contain;
-    // background-size: cover;
+    // background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background: url(/assets/images/common/blog-bg_img.jpg), -webkit-linear-gradient(top, transparent 0%, transparent 100%);
     ;
     border: 1px solid transparent;
     width: 100%;
-    // max-width: 2880px;
-    // height: 500px;
+    max-width: 2880px;
+    height: 500px;
   }
 }
 
