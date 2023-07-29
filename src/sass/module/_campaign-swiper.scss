@@ -4,7 +4,6 @@
   width: 100%;
   height: 100%;
   overflow: visible;
-  //ここ
   @include mq("md") {
     position: relative;
       // overflow: visible;
@@ -55,7 +54,7 @@
     bottom: rem(10);
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid $green3;
+    border: rem(1) solid $green3;
 }
 
 .swiper-button-prev {
@@ -129,7 +128,7 @@
     bottom: rem(10);
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid $green3;
+    border: rem(1) solid $green3;
 }
 
 .swiper-button-next {

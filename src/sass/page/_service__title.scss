@@ -17,7 +17,7 @@
     top: rem(320);
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid;
+    border: rem(1) solid;
   }
 }
 
@@ -36,8 +36,8 @@
   background-color: transparent;
   width: rem(20);
   height: rem(20);
-  border-top: 2px solid;
-  border-right: 2px solid;
+  border-top: rem(2) solid;
+  border-right: rem(2) solid;
   top: 50%;
   left: 50%;
   transform: translate(-50%, calc(-50% + 0.25em)) rotate(45deg);

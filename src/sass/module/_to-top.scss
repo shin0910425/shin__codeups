@@ -6,7 +6,7 @@
   bottom: rem(10);
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid $green3;
+  border: rem(1) solid $green3;
   z-index: 999;
 
   @include mq("md") {

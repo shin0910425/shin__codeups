@@ -25,6 +25,6 @@
   color: $green3;
   text-align: center;
   @include mq("md") {
-    padding-bottom: 80px;
+    padding-bottom: rem(80);
   }
 }

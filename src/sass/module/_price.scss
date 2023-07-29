@@ -96,7 +96,7 @@
   font-weight: $bold;
   padding-bottom: rem(2);
   color: $green;
-  border-bottom: 1px solid $green3;
+  border-bottom: rem(1) solid $green3;
   @include mq("md") {
     margin-top: rem(38);
   }

@@ -55,7 +55,7 @@
   font-family: $jp-family;
   font-weight: $bold;
   padding-bottom: rem(4);
-  border-bottom: 1px solid $green3;
+  border-bottom: rem(1) solid $green3;
 
   @include mq("md") {
     font-size: rem(24);
