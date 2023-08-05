@@ -1,12 +1,14 @@
 @use "global" as *;
 
 .contact {
-  padding: rem(68) 0 rem(30);
+  margin-top: rem(68);
+  padding-bottom: rem(30);
   width: 100%;
   position: relative;
 
   @include mq("md") {
-    padding: rem(152) 0 rem(148);
+    margin-top: rem(152);
+    padding-bottom: rem(148);
   }
 }
 
@@ -27,8 +29,9 @@
   }
 }
 
-.contact-inner.inner {
-  padding: 0 rem(15) 0 rem(16);
+.contact-inner {
+  padding-right: rem(15);
+  margin-left: rem(16);
   text-align: center;
 }
 

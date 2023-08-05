@@ -4,10 +4,21 @@
   width: 100%;
   margin-top: rem(70);
   padding-bottom: rem(45);
+
   @include mq("md") {
     margin-top: rem(124);
-  padding-bottom: rem(320);
-  position: relative;
+    padding-bottom: rem(320);
+    position: relative;
+  }
+}
+
+.about__inner {
+  max-width: rem(600);
+  width: 100%;
+  // margin: auto;
+
+  @include mq("md") {
+    // max-width: 100%;
   }
 }
 
@@ -39,18 +50,20 @@
   }
 }
 
-.about__inner.inner {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .about__img_box {
   margin-top: rem(27);
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
+  max-width: rem(600);
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+
   @include mq("md") {
     margin-top: rem(-42);
+    max-width: rem(1080);
   }
 }
 
@@ -62,6 +75,7 @@
   max-width: rem(128);
   width: 100%;
   z-index: -10;
+
   @include mq("md") {
     max-width: rem(399);
   }
@@ -69,48 +83,54 @@
 
 .about__image-1 img {
   width: 100%;
-  aspect-ratio: 100 / 150;
+  aspect-ratio: 399 / 606;
   object-fit: cover;
 }
 
 .about__image-2 {
   max-width: rem(281);
   width: 100%;
-  position: absolute;
-    content: "";
-    top: rem(26);
-    right: 0;
-    // left: rem(64);
-    z-index: -100;
+  position: relative;
+  transform: translate(-11%, 14%);
+  // content: "";
+  // top: rem(26);
+  // right: 0;
+  z-index: -100;
+
   @include mq("md") {
-      max-width: rem(880);
-      top: rem(80);
-      right: rem(0);
-      // left: rem(200);
-    }
+    max-width: rem(880);
+    top: rem(80);
+    right: rem(0);
+    // left: rem(200);
+  }
 }
 
 .about__image-2 img {
   width: 100%;
-  aspect-ratio: 150 / 100;
+  aspect-ratio: 880/581;
   object-fit: cover;
+  @include mq("md") {
+    max-width: rem(880);
+  }
 }
 
 .about__body {
   margin-top: rem(60);
   padding-bottom: rem(40);
+
   @include mq("md") {
     display: flex;
     margin-top: rem(-398);
-      margin-left: rem(198);
+    margin-left: rem(198);
   }
 }
 
 .about__text-box {
   margin-top: rem(16);
+
   @include mq("md") {
-  margin-top: rem(2);
-  margin-right: rem(-132);
+    margin-top: rem(2);
+    // margin-right: rem(-132);
   }
 }
 
@@ -121,6 +141,7 @@
   font-weight: $regular;
   line-height: 1.5;
   color: $green;
+
   @include mq("md") {
     color: $white;
     margin-left: rem(40);
@@ -130,8 +151,9 @@
 .about__btn {
   margin-top: rem(40);
   text-align: center;
+
   @include mq("md") {
     margin-top: rem(40);
-      margin-left: rem(41);
+    margin-left: rem(41);
   }
 }

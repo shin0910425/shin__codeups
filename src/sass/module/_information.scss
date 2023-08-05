@@ -1,11 +1,23 @@
 @use "global" as *;
 
 .information {
-  padding: rem(80) 0 rem(84);
+  padding-top: rem(80);
+  padding-bottom: rem(80);
   background-color: $green2;
 
   @include mq("md") {
-    padding: rem(97) rem(155) rem(90);
+    padding-top: rem(97);
+    padding-bottom: rem(90);
+  }
+}
+
+.information-inner {
+  max-width: rem(600);
+  width: 100%;
+  // margin: auto;
+
+  @include mq("md") {
+    // max-width: 100%;
   }
 }
 
@@ -20,7 +32,6 @@
 }
 
 .information-card__image {
-  max-width: rem(345);
   width: 100%;
 
   @include mq("md") {

@@ -37,6 +37,13 @@
   }
 }
 
+.blog-inner {
+  max-width: rem(600);
+  width: 100%;
+  @include mq("md") {
+  }
+}
+
 .blog__icon-image {
   @include mq("md") {
     position: absolute;

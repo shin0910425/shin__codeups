@@ -10,7 +10,7 @@
   }
 }
 
-.campaign__inner.inner {
+.campaign__inner {
   @include mq("md") {
   // overflow: hidden;
   }
@@ -20,7 +20,7 @@
   margin-top: rem(28);
   margin-left: rem(-67);
   @include mq("md") {
-    margin-top: rem(-84);
+    margin-top: rem(0);
     margin-left: rem(-10);
   }
 }

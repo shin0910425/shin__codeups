@@ -81,6 +81,7 @@
       </nav>
 
       <div class="header__sp-nav sp-nav js-sp-nav is-active">
+        <div class="sp-nav__inner inner">
         <div class="sp-nav__body">
           <div class="sp-nav--item__left">
             <ul class="sp-nav__items">
@@ -96,7 +97,7 @@
               </li>
               <li class="sp-nav__item">
                 <div class="sp-nav__box">
-                  <a class="sp-nav__title" href="#">私たちについて</a>
+                  <a class="sp-nav__title" href="#about">私たちについて</a>
                 </div>
               </li>
               <li class="sp-nav__item">
@@ -143,8 +144,8 @@
               <li class="sp-nav__item">
                 <div class="sp-nav__box">
                   <a class="sp-nav__title" href="#faq">プライバシー<br>
-                  ポリシー</a>
-                  </div>
+                    ポリシー</a>
+                </div>
               </li>
               <li class="sp-nav__item">
                 <div class="sp-nav__box">
@@ -153,11 +154,12 @@
               </li>
               <li class="sp-nav__item">
                 <div class="sp-nav__box">
-                  <a class="sp-nav__title" href="#Contact">お問い合わせ</a>
+                  <a class="sp-nav__title" href="#contact">お問い合わせ</a>
                 </div>
               </li>
             </ul>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -169,29 +171,29 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img1.jpg" >
-              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img1.jpg" >
+              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img1.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img1.jpg">
               <img src="./assets/images/common/top-pc_img1.jpg" width="1440" alt="亀が泳いでいる">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img2.jpg" >
-              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img2.jpg" >
+              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img2.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img2.jpg">
               <img src="./images/common/top-pc_img2.jpg" width="1440" alt="亀とダイバー">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img3.jpg" >
-              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img3.jpg" >
+              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img3.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img3.jpg">
               <img src="./assets/images/common/top-pc_img3.jpg" width="1440" alt="綺麗な海に船">
             </picture>
           </div>
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img4.jpg" >
-              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img4.jpg" >
+              <source media="(max-width: 767px)" srcset="./assets/images/common/top-sp_img4.jpg">
+              <source media="(min-width: 768px)" srcset="./assets/images/common/top-pc_img4.jpg">
               <img src="./assets/images/common/top-pc_img4.jpg" width="1440" alt="キレイな砂浜と青空">
             </picture>
           </div>
@@ -296,16 +298,16 @@
         </div>
       </div>
       <div class="campaign__btn">
-        <a href="" class="button button--right button--border">View more</a>
+        <a href="" class="button button--right button--border"><span>View more</span></a>
       </div>
     </section>
 
     <!-- about -->
     <section id="about" class="about">
+      <div class="about__inner inner">
       <div class="about__icon-image">
         <img class="u-desktop" src="./assets/images/common/sango_img.png" alt="サンゴのアイコン">
       </div>
-      <div class="about__inner inner">
         <div class="about__title section-header">
           <h3 class="section-header__engtitle"><span class="title__color">A</span>bout us</h3>
           <p class="section-header__jatitle">私たちについて</p>
@@ -336,11 +338,11 @@
 
     <!-- information -->
     <section id="information" class="information">
+      <div class="information-inner inner">
       <div class="information__title section-header">
         <h3 class="section-header__engtitle"><span class="title__color">I</span>nformation</h3>
         <p class="section-header__jatitle">ダイビング情報</p>
       </div>
-      <div class="information-inner inner">
         <div class="information-card__box">
           <div class="information-card__image">
             <div class="js-scroll"><span class="js-motion-txt"><span class="js-motion-inner">
@@ -349,11 +351,12 @@
           </div>
           <div class="information-card__body">
             <h4 class="information-card card__title">ライセンス講習</h4>
-            <p class="information-card__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADI<br class="u-desktop">の「正規店」として店舗登録されています。<br>
+            <p class="information-card__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADI<br
+                class="u-desktop">の「正規店」として店舗登録されています。<br>
               正規登録店として、安心安全に初めての方でも安心安全にライセン<br class="u-desktop">ス取得をサポート致します。</p>
-              <div class="information__btn">
-                <a href="" class="button button--right button--border">View more</a>
-              </div>
+            <div class="information__btn">
+              <a href="" class="button button--right button--border">View more</a>
+            </div>
           </div>
         </div>
       </div>
@@ -365,11 +368,11 @@
         <img class="u-desktop" src="./assets/images/common/hanadai_img1.png" alt="キンギョハナダイのアイコン">
       </div>
       <div class="blog__bg">
+        <div class="blog-inner inner">
         <div class="section-header">
           <h3 class="blog__title section-header__engtitle">Blog</h3>
           <p class="blog__title section-header__jatitle">ブログ</p>
         </div>
-        <div class="blog-inner inner">
           <ul class="blog-cards cards">
             <li class="blog-cards blog-card">
               <a href="#" class="blog-card__items">
@@ -383,8 +386,8 @@
                   </div>
                 </div>
                 <div class="blog-card__body">
-                  <p class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</p>
+                  <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
             </li>
@@ -400,8 +403,8 @@
                   </div>
                 </div>
                 <div class="blog-card__body">
-                  <p class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</p>
+                  <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
             </li>
@@ -417,8 +420,8 @@
                   </div>
                 </div>
                 <div class="blog-card__body">
-                  <p class="blog-card__text">ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキストが入り<br>ます。ここにテキストが入ります。<br>
-                    ここにテキストが入ります。ここにテキ<br>ストが入ります。ここにテキスト</p>
+                  <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
                 </div>
               </a>
             </li>
@@ -643,104 +646,106 @@
 
   <footer>
     <div id="footer" class="footer">
-      <nav class="footer footer__sp-nav">
-        <div class="footer__logo-body">
-          <div class="footer__logo">
-            <a href="#">
-              <img src="./assets/images/common/CodeUps.svg" alt="CodeUps">
-            </a>
-          </div>
-          <div class="footer__icon">
-            <div class="footer__icon-facebook">
-              <img src="./assets/images/common/FacebookLogo.svg" alt="facebooklogo">
+      <div class="footer__inner inner">
+        <nav class="footer footer__sp-nav">
+          <div class="footer__logo-body">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="./assets/images/common/CodeUps.svg" alt="CodeUps">
+              </a>
             </div>
-            <div class="footer__icon-instagram">
-              <img src="./assets/images/common/InstagramLogo.svg" alt="instagram">
+            <div class="footer__icon">
+              <a href="#" class="footer__icon-facebook">
+                <img src="./assets/images/common/FacebookLogo.svg" alt="facebooklogo">
+              </a>
+              <a href="#" class="footer__icon-instagram">
+                <img src="./assets/images/common/InstagramLogo.svg" alt="instagram">
+              </a>
             </div>
           </div>
-        </div>
-        <div class="footer__sp-nav__body">
-          <div class="footer__sp-nav--item__left">
-            <ul class="footer__sp-nav__items">
-              <li class="footer__sp-nav__item pc-item">
-                <a class="footer__sp-nav__title" href="#campaign">キャンペーン</a>
-                <ul class="footer__sp-nav__item item-child">
-                  <li class="item-child__list">
-                    <a href="#">ライセンス取得</a>
-                    <a href="#">貸切体験ダイビング</a>
-                    <a href="#">ナイトダイビング</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#">私たちについて</a>
-                </div>
-              </li>
-              <li class="footer__sp-nav__item pc-item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#information">ダイビング情報</a>
-                </div>
-                <ul class="footer__sp-nav__item item-child">
-                  <li class="item-child__list">
-                    <a href="#">ライセンス講習</a>
-                    <a href="#">体験ダイビング</a>
-                    <a href="#">ファンダイビング</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#blog">ブログ</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__sp-nav--item__right">
-            <ul class="footer__sp-nav__items">
-              <li class="footer__sp-nav__item pc-item">
-                <a class="footer__sp-nav__title" href="#voice">お客様の声</a>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#price">料金一覧</a>
-                </div>
-                <ul class="footer__sp-nav__item item-child">
-                  <li class="item-child__list">
-                    <a href="#">ライセンス取得</a>
-                    <a href="#">貸切体験ダイビング</a>
-                    <a href="#">ファンダイビング</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="footer__sp-nav__item pc-item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#faq">よくある質問</a>
-                </div>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#faq">プライバシー<br class="u-mobile">
-                  ポリシー</a>
+          <div class="footer__sp-nav__body">
+            <div class="footer__sp-nav--item__left">
+              <ul class="footer__sp-nav__items">
+                <li class="footer__sp-nav__item pc-item">
+                  <a class="footer__sp-nav__title" href="#campaign">キャンペーン</a>
+                  <ul class="footer__sp-nav__item item-child">
+                    <li class="item-child__list">
+                      <a href="#">ライセンス取得</a>
+                      <a href="#">貸切体験ダイビング</a>
+                      <a href="#">ナイトダイビング</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#">私たちについて</a>
                   </div>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#faq">利用規約</a>
-                </div>
-              </li>
-              <li class="footer__sp-nav__item">
-                <div class="footer__sp-box">
-                <a class="footer__sp-nav__title" href="#Contact">お問い合わせ</a>
-                </div>
-              </li>
-            </ul>
+                </li>
+                <li class="footer__sp-nav__item pc-item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#information">ダイビング情報</a>
+                  </div>
+                  <ul class="footer__sp-nav__item item-child">
+                    <li class="item-child__list">
+                      <a href="#">ライセンス講習</a>
+                      <a href="#">体験ダイビング</a>
+                      <a href="#">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#blog">ブログ</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__sp-nav--item__right">
+              <ul class="footer__sp-nav__items">
+                <li class="footer__sp-nav__item pc-item">
+                  <a class="footer__sp-nav__title" href="#voice">お客様の声</a>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#price">料金一覧</a>
+                  </div>
+                  <ul class="footer__sp-nav__item item-child">
+                    <li class="item-child__list">
+                      <a href="#">ライセンス取得</a>
+                      <a href="#">貸切体験ダイビング</a>
+                      <a href="#">ファンダイビング</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer__sp-nav__item pc-item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#faq">よくある質問</a>
+                  </div>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#faq">プライバシー<br class="u-mobile">
+                      ポリシー</a>
+                  </div>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#faq">利用規約</a>
+                  </div>
+                </li>
+                <li class="footer__sp-nav__item">
+                  <div class="footer__sp-box">
+                    <a class="footer__sp-nav__title" href="#Contact">お問い合わせ</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="footer__copyright">
-          <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
-        </div>
-      </nav>
+          <div class="footer__copyright">
+            <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
+          </div>
+        </nav>
+      </div>
     </div>
   </footer>
 </body>

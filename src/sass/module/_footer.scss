@@ -2,13 +2,25 @@
 
 .footer {
   padding-top: rem(48);
+  background-color: $green3;
 
   @include mq("md") {
     padding-top: rem(36);
     padding-bottom: rem(11);
-    padding-left: rem(81);
-    padding-right: rem(85);
-    background-color: $green3;
+    // padding-left: rem(81);
+    // padding-right: rem(85);
+  }
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer__inner {
+  max-width: rem(600);
+  @include mq("md") {
+    // max-width: rem(1440);
+      // margin: auto;
   }
 }
 

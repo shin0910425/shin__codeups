@@ -8,13 +8,16 @@
   z-index: 100;
 }
 
+.blog-card a:hover {
+  opacity: 0.7;
+}
+
 .blog-card:not(:first-child) {
   margin-top: rem(-1);
   @include mq("md") {}
 }
 
 .blog-card__image {
-  max-width: rem(300);
   width: 100%;
 }
 

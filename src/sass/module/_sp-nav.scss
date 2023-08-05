@@ -11,11 +11,16 @@
   background-color: $green3;
 }
 
+.sp-nav__inner {
+  max-width: rem(600);
+}
+
 .sp-nav__body {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: rem(90) 0;
   width: 100%;
-  justify-content: center;
 }
 
 .sp-nav.is-active {
