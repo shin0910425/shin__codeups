@@ -19,17 +19,24 @@
 .pc-nav__item,
 .pc-nav__item a {
   height: inherit;
+  align-items: center;
+  justify-content: center;
 }
 
 .pc-nav__item a {
   display: flex;
-  align-items: center;
+  // align-items: center;
   height: inherit;
   position: relative;
 }
 
 .pc-nav__item:not(:first-child) {
-  margin-left: rem(40);
+  @include mq("lg") {
+    margin-left: rem(40);
+  }
+  @include mq("md") {
+    margin-left: rem(22);
+  }
 }
 
 .pc-nav__item--link {
@@ -50,7 +57,7 @@
 .pc-nav__item--link::after {
   content: '';
     position: absolute;
-    bottom: rem(-4);
+    bottom: rem(12);
     left: 5%;
     width: 100%;
     height: rem(1);
