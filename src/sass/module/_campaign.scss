@@ -74,9 +74,9 @@
 
 .campaign__btn {
   text-align: center;
-  margin-top: rem(-14);
+  margin-top: rem(80);
   padding-bottom: rem(15);
   @include mq("md") {
-    margin-top: rem(-27);
+    margin-top: rem(80);
   }
 }

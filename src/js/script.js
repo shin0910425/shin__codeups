@@ -102,6 +102,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loop: true,
     slidesPerView: getSlidesPerView(),
     spaceBetween: 40,
+    autoHeight: true,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
