@@ -155,8 +155,8 @@
 
 .contact-card__body {
   @include mq("md") {
-    margin-left: rem(80);
-    margin-top: rem(-21);
+    margin-left: rem(70);
+    margin-top: rem(4);
   }
 }
 
@@ -164,14 +164,15 @@
   margin-top: rem(25);
 }
 
-.contact__title.section-header h2 {
+.contact-section-header__engtitle {
   font-size: rem(80);
   font-family: $en-family;
   font-weight: $regular;
+  line-height: 1;
 }
 
-.contact__title.section-header p {
-  margin-top: rem(-18);
+.contact__title.section-header {
+  margin-top: rem(4);
   font-size: rem(12);
   font-family: $jp-family;
   font-weight: $regular;
@@ -179,11 +180,20 @@
   letter-spacing: 0.15em;
 }
 
+.contact__text {
+  font-size: rem(14);
+  margin-top: rem(8);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.28517;
+  color: $green3;
+}
+
 .contact__btn {
   margin-top: rem(40);
   text-align: center;
 
   @include mq("md") {
-    margin-top: rem(-45);
+    margin-top: rem(35);
   }
 }

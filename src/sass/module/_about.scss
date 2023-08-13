@@ -7,7 +7,7 @@
 
   @include mq("md") {
     margin-top: rem(124);
-    padding-bottom: rem(320);
+    padding-bottom: rem(193);
     position: relative;
   }
 }
@@ -22,7 +22,7 @@
   }
 }
 
-.about__title {
+.about__sub-title {
   font-size: rem(40);
   margin-left: rem(-3);
   font-family: $en-family;
@@ -31,6 +31,8 @@
   color: $green3;
 
   @include mq("md") {
+    max-width: rem(400);
+    width: 100%;
     margin-left: rem(0);
     font-size: rem(80);
     line-height: 1.25;
@@ -50,30 +52,45 @@
   }
 }
 
+.about__container {
+  max-width: rem(600);
+  width: 100%;
+  margin: auto;
+  position: relative;
+
+  @include mq("md") {
+    max-width: rem(1080);
+  }
+}
+
 .about__img_box {
   margin-top: rem(27);
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   max-width: rem(600);
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 
   @include mq("md") {
-    margin-top: rem(-42);
+    margin-top: rem(42);
     max-width: rem(1080);
   }
 }
 
-.about__img_box img {
+.about__img_box {
   width: 100%;
 }
 
 .about__image-1 {
-  max-width: rem(128);
+  position: relative;
+  max-width: 39.9%;
   width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
   z-index: -10;
 
   @include mq("md") {
@@ -88,20 +105,17 @@
 }
 
 .about__image-2 {
-  max-width: rem(281);
+  content: "";
+  position: absolute;
+  max-width: 80%;
   width: 100%;
-  position: relative;
-  transform: translate(-11%, 14%);
-  // content: "";
-  // top: rem(26);
+  top: 20%;
   right: 0;
   z-index: -100;
 
   @include mq("md") {
     max-width: rem(880);
     top: rem(80);
-    right: rem(0);
-    // left: rem(200);
   }
 }
 
@@ -109,9 +123,10 @@
   width: 100%;
   aspect-ratio: 880/581;
   object-fit: cover;
+
   @include mq("md") {
     max-width: rem(880);
-  aspect-ratio: 880/581;
+    aspect-ratio: 880/581;
   }
 }
 
@@ -121,8 +136,11 @@
 
   @include mq("md") {
     display: flex;
-    margin-top: rem(-398);
-    margin-left: rem(198);
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 82%;
   }
 }
 
@@ -130,8 +148,9 @@
   margin-top: rem(16);
 
   @include mq("md") {
+    max-width: rem(440);
+    width: 100%;
     margin-top: rem(2);
-    // margin-right: rem(-132);
   }
 }
 
@@ -156,5 +175,11 @@
   @include mq("md") {
     margin-top: rem(40);
     margin-left: rem(41);
+  }
+}
+
+.about__btn a {
+  @include mq("md") {
+
   }
 }

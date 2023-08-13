@@ -38,7 +38,7 @@
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: rem(-78);
+    margin-top: rem(3);
   }
 }
 
@@ -145,6 +145,6 @@
   text-align: center;
 
   @include mq("md") {
-    margin-top: rem(59);
+    margin-top: rem(79);
   }
 }

@@ -1,14 +1,15 @@
 @use "global" as *;
 
 .button {
+  font-size: rem(14);
   background: $green3;
   color: $white;
-  text-align: center;
+  text-align: left;
   display: inline-block;
   width: rem(202);
-  padding: 20px 10px;
+  padding: rem(12) rem(12) rem(12) rem(39);
   border: rem(1) solid $green3;
-  box-shadow: rem(5) rem(6) rem(1) rem(0) $white, rem(4) rem(5) 0 rem(2) $green3;
+  box-shadow: rem(4) rem(6) rem(0) rem(0) $white, rem(4) rem(6) 0 rem(2) $green3;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -30,7 +31,12 @@
 
 .button:hover {
   color: $green3;
-  // background: $white;
+}
+
+/* 矢印部分の色を緑に変更 */
+.button:hover::before {
+  border-bottom-color: $green3;
+  border-right-color: $green3;
 }
 
 .button:hover::after {
@@ -43,20 +49,21 @@
 .button::before {
   content: '';
   position: absolute;
-  top: 50%;
-  right: rem(10);
+  top: 40%;
+  right: rem(42);
   /* 矢印を右にずらすためにマイナス値を設定 */
   transform: translateY(-50%);
-width: rem(40);
+  width: rem(40);
   height: rem(8);
   border-bottom: rem(1) solid $white;
   border-right: rem(1) solid $white;
   transform: skew(45deg);
 }
 
+/* 矢印部分の色を白に戻す */
 .button::before:hover {
-  border-bottom: rem(1) solid $green3;
-    border-right: rem(1) solid $green3;
+  border-bottom-color: $white;
+  border-right-color: $white;
 }
 
 

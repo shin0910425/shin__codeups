@@ -19,6 +19,16 @@
     border: rem(1) solid transparent;
     width: 100%;
     height: rem(500);
+    position: relative;
+  }
+}
+
+.blog__section-header {
+  @include mq("md") {
+    position: absolute;
+    top: 10%;
+    left: 47%;
+    transform: translateY(-50%);
   }
 }
 
