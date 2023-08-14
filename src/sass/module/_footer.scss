@@ -123,8 +123,8 @@
 }
 
 .item-child__list a {
-  margin-top: rem(-5);
-  margin-bottom: rem(5);
+  margin-top: rem(-1);
+  margin-bottom: rem(6);
 
   @include mq("md") {
     margin-top: rem(-2);
@@ -187,7 +187,7 @@
 }
 
 .footer__copyright {
-  padding: rem(26) rem(0) rem(56);
+  padding: rem(25) rem(0) rem(56);
 
   @include mq("md") {
     padding: rem(56) rem(10) rem(56);

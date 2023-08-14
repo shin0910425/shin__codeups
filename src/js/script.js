@@ -28,7 +28,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     if (windowWidth <= 767) {
       // 767px以下の場合
-      buttonOffset = 30; // -30pxのオフセット
+      buttonOffset = -14; // -30pxのオフセット
     } else {
       // 767pxより大きい場合
       buttonOffset = -20; // 20pxのオフセット
@@ -118,7 +118,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   function getSlidesPerView() {
     if (window.innerWidth <= 767) {
-      return 1.2;
+      return 1.35;
     } else {
       return 3;
     }
