@@ -2,7 +2,7 @@
 
 .information {
   padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-bottom: rem(85);
   background-color: $green2;
 
   @include mq("md") {
@@ -65,7 +65,6 @@
   line-height: 1.2;
   font-family: $jp-family;
   font-weight: $bold;
-  padding-bottom: rem(4);
   border-bottom: rem(1) solid $green3;
 
   @include mq("md") {

@@ -109,7 +109,7 @@
   position: absolute;
   max-width: 80%;
   width: 100%;
-  top: 20%;
+  top: 14%;
   right: 0;
   z-index: -100;
 
@@ -131,10 +131,11 @@
 }
 
 .about__body {
-  margin-top: rem(60);
+  margin-top: rem(50);
   padding-bottom: rem(40);
 
   @include mq("md") {
+    margin-top: rem(60);
     display: flex;
     position: absolute;
     top: 46%;
@@ -169,7 +170,7 @@
 }
 
 .about__btn {
-  margin-top: rem(40);
+  margin-top: rem(18);
   text-align: center;
 
   @include mq("md") {

@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .contact {
-  margin-top: rem(68);
-  padding-bottom: rem(30);
+  margin-top: rem(82);
+  padding-bottom: rem(105);
   width: 100%;
   position: relative;
 
@@ -16,14 +16,14 @@
   position: absolute;
   content: "";
   z-index: 10;
-  right: rem(8);
-  top: rem(57);
+  right: rem(16);
+  top: rem(-26);
   width: rem(109);
   height: rem(50);
 
   @include mq("md") {
     right: rem(50);
-    top: rem(100);
+    top: rem(-47);
     width: rem(300);
     height: rem(138);
   }
@@ -37,12 +37,13 @@
 
 .contact__wrapper.card {
   box-shadow: none;
+  padding: 0;
 
   @include mq("md") {
     display: inline-block;
     max-width: rem(1080);
     width: 100%;
-    padding: rem(80) rem(112) rem(91) rem(50);
+    padding: rem(75) rem(112) rem(91) rem(50);
     box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   }
 }
@@ -161,23 +162,34 @@
 }
 
 .contact__title.section-header {
-  margin-top: rem(25);
+  margin-top: rem(33);
+  font-size: rem(12);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  @include mq("md") {
+  margin-top: rem(12);
+  }
 }
 
-.contact-section-header__engtitle {
+.contact-title.section-header__engtitle {
   font-size: rem(80);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;
 }
 
-.contact__title.section-header {
-  margin-top: rem(4);
-  font-size: rem(12);
-  font-family: $jp-family;
-  font-weight: $regular;
-  line-height: 2;
-  letter-spacing: 0.15em;
+.contact-title.section-header__engtitle span {
+  color: $green3;
+}
+
+.contact-subtitle.section-header__jatitle {
+   font-size: rem(12);
+      margin-top: rem(-4);
+    @include mq("md") {
+      margin-top: rem(-1);
+    }
 }
 
 .contact__text {

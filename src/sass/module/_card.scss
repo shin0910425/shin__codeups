@@ -72,13 +72,13 @@
   font-family: $jp-family;
   font-weight: normal;
   margin-top: rem(4);
-  padding-bottom: rem(8);
   color: $green;
   border-bottom: rem(1) solid $green3;
 
   @include mq("md") {
     font-size: rem(24);
     margin-top: rem(8);
+  padding-bottom: rem(8);
   }
 }
 

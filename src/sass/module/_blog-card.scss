@@ -2,7 +2,7 @@
 @use "global" as *;
 
 .blog-card {
-  padding: rem(16) rem(16) rem(24);
+  padding: rem(16) rem(17) rem(24);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
   background-color: $white;
   @include mq("md") {
@@ -51,7 +51,7 @@
 }
 
 .blog-card__text {
-  margin-top: rem(16);
+  margin-top: rem(14);
   font-size: rem(16);
   font-weight: $regular;
   font-family: $jp-family;

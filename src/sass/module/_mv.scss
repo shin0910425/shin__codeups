@@ -33,11 +33,13 @@
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 50%;
+  left: 53%;
   transform: translate(-50%, -50%);
   color: $white;
+
   @include mq("md") {
     width: 100%;
+    left: 50%;
     text-align: center;
   }
 }
@@ -49,15 +51,17 @@
   line-height: 1;
   letter-spacing: 0.52em;
   color: $white;
+
   @include mq("md") {
     font-size: rem(80);
     line-height: 1;
     margin-left: rem(37);
-      margin-top: rem(104);
+    margin-top: rem(104);
   }
 }
 
 .mv__title span {
+
   // margin-left: rem(37);
   @include mq("md") {
     // margin-left: rem(5);
@@ -67,11 +71,12 @@
 .mv__subtitle {
   font-size: rem(20);
   margin-top: rem(7);
-  margin-left: rem(80);
+  margin-left: rem(50);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;
   color: $white;
+
   @include mq("md") {
     margin-top: rem(10);
     margin-left: rem(3);
