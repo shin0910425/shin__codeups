@@ -86,6 +86,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
+  // ドロワーメニュー内の <a> タグをクリックする際の処理
+  $(".js-sp-nav a").click(function () {
+    $(".js-hamburger").toggleClass("is-active");
+    $(".js-sp-nav").fadeToggle(300);
+  });
+
   // mvスライダー ------------------------------------------
   const fadeswiper = new Swiper(".mv-swiper", {
     loop: true,
