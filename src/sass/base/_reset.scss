@@ -117,3 +117,13 @@ a {
   color: inherit;
   transition: opacity 0.3s;
 }
+
+
+body.active {
+  height: 100%;
+  overflow: hidden;
+}
+
+// * {
+//   outline: 2px solid blue;
+// }

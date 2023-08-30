@@ -28,16 +28,22 @@
   // align-items: center;
   height: inherit;
   position: relative;
+  @include mq("md") {
+  padding: 0 rem(11);
+  }
+  @include mq("xl") {
+  padding: 0 rem(18);
+  }
 }
 
-.pc-nav__item:not(:first-child) {
-  @include mq("lg") {
-    margin-left: rem(40);
-  }
-  @include mq("md") {
-    margin-left: rem(22);
-  }
-}
+// .pc-nav__item:not(:first-child) {
+//   @include mq("lg") {
+//     margin-left: rem(40);
+//   }
+//   @include mq("md") {
+//     margin-left: rem(22);
+//   }
+// }
 
 .pc-nav__item--link {
   display: flex;

@@ -9,7 +9,7 @@
   width: rem(202);
   padding: rem(12) rem(12) rem(12) rem(39);
   border: rem(1) solid $green3;
-  box-shadow: rem(4) rem(6) rem(0) rem(0) $white, rem(4) rem(6) 0 rem(2) $green3;
+  // box-shadow: rem(4) rem(6) rem(0) rem(0) $white, rem(4) rem(6) 0 rem(2) $green3;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -66,47 +66,3 @@
   border-right-color: $white;
 }
 
-
-
-// .button--right {
-//   position: relative;
-//   display: inline-block;
-// }
-
-// .button--right::before {
-//   /* くの字の表示設定 */
-//   content: "";
-//   margin: auto;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   right: rem(45);
-//   /* 要素の右からの距離 */
-//   width: rem(14);
-//   height: rem(14);
-//   border-top: rem(1) solid $white;
-//   transform: rotate(45deg);
-//   /* 角度調整 */
-// }
-
-// .button--right::after {
-//   /* 棒の表示設定 */
-//   content: "";
-//   margin: auto;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   right: rem(43);
-//   /* 要素の右からの距離 */
-//   width: rem(40);
-//   height: rem(1);
-//   background: $white;
-// }
-
-// .button--right:hover::after {
-//   background: $green3;
-// }
-
-// .button--right:hover::before {
-//   border-color: $green3;
-// }

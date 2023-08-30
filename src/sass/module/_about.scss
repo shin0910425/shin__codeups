@@ -2,13 +2,8 @@
 
 .about {
   width: 100%;
-  margin-top: rem(70);
-  padding-bottom: rem(45);
 
   @include mq("md") {
-    margin-top: rem(124);
-    padding-bottom: rem(193);
-    position: relative;
   }
 }
 
@@ -19,12 +14,12 @@
 
   @include mq("md") {
     // max-width: 100%;
+    position: relative;
   }
 }
 
 .about__sub-title {
   font-size: rem(40);
-  margin-left: rem(-3);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;
@@ -37,6 +32,7 @@
     font-size: rem(80);
     line-height: 1.25;
     color: $white;
+    z-index: 20;
   }
 }
 
@@ -45,8 +41,8 @@
     position: absolute;
     content: "";
     z-index: 10;
-    right: rem(83);
-    bottom: rem(50);
+    right: rem(3);
+    bottom: rem(-150);
     width: rem(194);
     height: rem(181);
   }
@@ -57,6 +53,7 @@
   width: 100%;
   margin: auto;
   position: relative;
+  margin-top: rem(100);
 
   @include mq("md") {
     max-width: rem(1080);
@@ -73,10 +70,13 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  display: flex;
+    justify-content: flex-end;
 
   @include mq("md") {
     margin-top: rem(42);
     max-width: rem(1080);
+    
   }
 }
 
@@ -84,34 +84,14 @@
   width: 100%;
 }
 
-.about__image-1 {
-  position: relative;
-  max-width: 39.9%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -10;
-
-  @include mq("md") {
-    max-width: rem(399);
-  }
-}
-
-.about__image-1 img {
-  width: 100%;
-  aspect-ratio: 399 / 606;
-  object-fit: cover;
-}
-
 .about__image-2 {
   content: "";
-  position: absolute;
+  position: relative;
   max-width: 80%;
   width: 100%;
   top: 14%;
   right: 0;
-  z-index: -100;
+  // z-index: -100;
 
   @include mq("md") {
     max-width: rem(880);
@@ -130,6 +110,29 @@
   }
 }
 
+.about__image-1 {
+  position: absolute;
+  max-width: 39.9%;
+  width: 100%;
+  top: -25%;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+
+  @include mq("md") {
+    max-width: rem(399);
+  top: 0;
+  }
+}
+
+.about__image-1 img {
+  width: 100%;
+  aspect-ratio: 399 / 606;
+  object-fit: cover;
+}
+
+
+
 .about__body {
   margin-top: rem(50);
   padding-bottom: rem(40);
@@ -138,8 +141,8 @@
     margin-top: rem(60);
     display: flex;
     position: absolute;
-    top: 46%;
-    transform: translateY(-50%);
+    top: 28%;
+    // transform: translateY(-50%);
     right: 0;
     width: 82%;
   }
@@ -157,7 +160,6 @@
 
 .about__text {
   font-size: rem(16);
-  margin-left: rem(-6);
   font-family: $jp-family;
   font-weight: $regular;
   line-height: 1.5;

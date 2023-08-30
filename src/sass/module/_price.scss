@@ -5,8 +5,7 @@
   background-color: $green2;
 
   @include mq("md") {
-    padding: rem(100) 0;
-    position: relative;
+    padding: rem(85) 0;
   }
 }
 
@@ -17,6 +16,7 @@
 
   @include mq("md") {
     // max-width: 100%;
+    position: relative;
   }
 }
 
@@ -25,11 +25,14 @@
     position: absolute;
     content: "";
     z-index: 10;
-    left: rem(100);
-    bottom: rem(60);
+    left: rem(10);
+    bottom: rem(-40);
     width: rem(437);
     height: rem(201);
   }
+    @include mq("xl") {
+    left: rem(-40);
+    }
 }
 
 .price-card__box {
@@ -38,7 +41,7 @@
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: rem(3);
+    margin-top: rem(33);
   }
 }
 
@@ -74,7 +77,6 @@
   @include mq("md") {
     display: block;
     margin-left: rem(93);
-    margin-top: rem(30);
   }
 }
 
@@ -90,12 +92,11 @@
   }
 }
 
-.price-card__body table {
+.price-card__body dl {
   width: 100%;
 }
 
 .price-card.card__title {
-  margin-top: rem(40);
   font-size: rem(16);
   line-height: 1.5;
   font-family: $jp-family;
@@ -104,8 +105,45 @@
   color: $green;
   border-bottom: rem(1) solid $green3;
 
+
+}
+
+.price-card.card__title:not(:first-child) {
+  margin-top: rem(40);
+
   @include mq("md") {
     margin-top: rem(38);
+  }
+}
+
+.price-card__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @include mq("md") {
+    width: calc(100% - rem(200));
+  }
+}
+
+.price-card__item dt,
+.price-card__item dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-card__item dt {
+  width: 74%;
+  @include mq("md") {
+    width: 67.729%;
+  }
+}
+
+.price-card__item dd {
+  width: calc(100% - 74%);
+  @include mq("md") {
+    width: calc(100% - 67.729%);
   }
 }
 

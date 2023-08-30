@@ -1,13 +1,7 @@
 @use "global" as *;
 
 .voice {
-  margin-top: rem(84);
-  padding-bottom: rem(85);
-
   @include mq("md") {
-    margin-top: rem(140);
-    padding-bottom: rem(140);
-    position: relative;
   }
 }
 
@@ -17,7 +11,9 @@
   padding-left: rem(15);
   padding-right: rem(15);
 
-  @include mq("md") {}
+  @include mq("md") {
+    position: relative;
+  }
 }
 
 .voice__icon-image1 {
@@ -25,11 +21,14 @@
     position: absolute;
     content: "";
     z-index: 10;
-    left: rem(100);
+    left: rem(10);
     top: rem(-110);
     width: rem(300);
     height: rem(138);
   }
+    @include mq("xl") {
+    left: rem(-60);
+    }
 }
 
 .voice__icon-image2 {
@@ -37,8 +36,8 @@
     position: absolute;
     content: "";
     z-index: 10;
-    right: rem(180);
-    bottom: rem(73);
+    right: rem(25);
+    bottom: rem(-65);
     width: rem(70);
     height: rem(162);
   }

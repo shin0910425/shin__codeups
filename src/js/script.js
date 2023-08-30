@@ -92,6 +92,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-sp-nav").fadeToggle(300);
   });
 
+  // ドロワーメニュー時背景固定
+  $(".js-hamburger").click(function () {
+    $(this).toggleClass("active");
+    $(".js-sp-nav").toggleClass("active");
+    $("body").toggleClass("active");
+  });
+
   // mvスライダー ------------------------------------------
   const fadeswiper = new Swiper(".mv-swiper", {
     loop: true,

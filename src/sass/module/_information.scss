@@ -27,7 +27,7 @@
   @include mq("md") {
     display: flex;
     margin-top: rem(35);
-    padding-bottom: rem(81);
+    // padding-bottom: rem(81);
   }
 }
 
@@ -60,7 +60,7 @@
 
 .information-card.card__title {
   margin-top: rem(22);
-  margin-left: rem(-5);
+  // margin-left: rem(-5);
   font-size: rem(20);
   line-height: 1.2;
   font-family: $jp-family;

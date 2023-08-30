@@ -7,7 +7,7 @@
   margin-top: rem(28);
 
   @include mq("md") {
-    margin-top: rem(-255);
+    margin-top: rem(80);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: rem(40);

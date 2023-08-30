@@ -2,8 +2,6 @@
 
 .header {
   height: rem(80);
-  position: fixed;
-  z-index: 1000;
   width: 100%;
   background-color: rgba(13, 41, 54, 0.68);
   @include mq("md") {
@@ -12,8 +10,8 @@
 }
 
 .header.is-color {
-  background-color: $green;
-  opacity: 1;
+  // background-color: $green;
+  // opacity: 1;
 }
 
 .header__inner {
@@ -104,7 +102,6 @@
   display: none;
   @include mq("md") {
     display: block;
-    margin-top: rem(-5);
   }
 }
 
