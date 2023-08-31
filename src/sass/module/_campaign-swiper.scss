@@ -65,14 +65,14 @@
     left: rem(956);
     height: rem(80);
     width: rem(80);
-    top: rem(-40);
+    top: rem(-80);
 
   }
 
   @include mq("md") {
     height: rem(90);
     width: rem(90);
-    top: rem(-50);
+    top: rem(-90);
     left: rem(1006);
   }
 }
@@ -82,14 +82,14 @@
     right: rem(180);
     height: rem(80);
     width: rem(80);
-    top: rem(-40);
+    top: rem(-80);
 
   }
 
   @include mq("md") {
     height: rem(90);
     width: rem(90);
-    top: rem(-50);
+    top: rem(-90);
     right: rem(154);
   }
 }
