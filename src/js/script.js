@@ -111,11 +111,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // カードスライダー ------------------------------------------
-  const slideswiper = new Swiper(".campaign-swiper", {
+  const slideswiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     slidesPerView: getSlidesPerView(),
     spaceBetween: 40,
-    autoHeight: true,
+    // autoHeight: true,
     centeredSlides: true,
     autoplay: {
       delay: 2500,
@@ -141,7 +141,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slideswiper.params.slidesPerView = getSlidesPerView();
     slideswiper.update();
   });
-
 
   // 背景から画像が出る-------------------------------------------
   var EffectH = 100;

@@ -20,10 +20,30 @@
   }
 }
 
-.campaign__card {
-  @include mq("md") {
-    // margin-top: rem(40);
-  }
+.campaign-cards__items {
+  display: grid;
+  grid-auto-flow: column;
+  // align-items: flex-end;
+    /* カードを下揃えに */
+}
+
+.campaign-cards__item {
+  height: auto;
+  display: flex;
+    flex-direction: column;
+    /* カード内の要素を縦に並べるために必要 */
+    width: auto;
+      /* カードの幅を可変に */
+      max-width: 100%;
+      /* カードの最大幅を設定 */
+      display: flex;
+      flex-direction: column;
+      margin-right: rem(20);
+      /* カードの間隔を設定 */
+}
+
+.campaign-swiper__container {
+  height: 100%;
 }
 
 .campaign__card.card {
@@ -43,12 +63,15 @@
   width: 100%;
     aspect-ratio: 280/188;
     object-fit: cover;
+    height: auto;
     @include mq("md") {
     aspect-ratio: 333/223;
     }
 }
 
 .campaign__card-body {
+  flex-grow: 1;
+    /* カード内のテキスト部分を可変高さにする */
   width: 100%;
   padding: rem(16);
   padding-bottom: rem(24);
