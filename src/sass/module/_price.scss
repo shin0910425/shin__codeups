@@ -117,6 +117,7 @@
 }
 
 .price-card__item {
+  margin-top: rem(8);
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -148,7 +149,6 @@
 }
 
 .price-card__menu {
-  margin-top: rem(8);
   padding-right: rem(4);
   font-size: rem(14);
   line-height: 2;
@@ -163,7 +163,6 @@
 }
 
 .price-card__money {
-  margin-top: rem(8);
   font-size: rem(14);
   line-height: 2;
   font-family: $jp-family;

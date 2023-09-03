@@ -59,19 +59,8 @@
 
   @include mq("md") {
     padding-right: rem(82);
-    position: relative;
+    border-right: rem(1) solid $green3;
   }
-}
-
-.contact__contain::after {
-  content: "";
-  width: rem(1);
-  top: 0;
-  height: 100%;
-  align-items: center;
-  background-color: $green3;
-  position: absolute;
-  left: 100%;
 }
 
 .contact__logo {

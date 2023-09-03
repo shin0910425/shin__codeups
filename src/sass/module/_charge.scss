@@ -31,8 +31,11 @@
   line-height: 1;
   color: $green;
   // text-decoration-line: line-through;
-  background-image: linear-gradient($red, $red);
   background-position: 0 50%;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: $red;
+  text-decoration-thickness: rem(3);
   background-size: 100% rem(3);
   background-repeat: repeat-x;
   text-decoration: none;

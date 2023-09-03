@@ -57,6 +57,7 @@
 
   @include mq("md") {
     max-width: rem(1080);
+    margin-top: rem(55);
   }
 }
 
