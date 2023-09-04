@@ -113,7 +113,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // カードスライダー ------------------------------------------
   const slideswiper = new Swiper(".js-campaign-swiper", {
     loop: true,
-    slidesPerView: getSlidesPerView(),
+    // slidesPerView: getSlidesPerView(),
+    slidesPerView: 3.26,
     spaceBetween: 40,
     // autoHeight: true,
     centeredSlides: true,
@@ -141,6 +142,32 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slideswiper.params.slidesPerView = getSlidesPerView();
     slideswiper.update();
   });
+
+  // var swiper = new Swiper(".js-campaign-swiper", {
+  //   loop: true,
+  //   slidesPerView: 1.26,
+  //   breakpoints: {
+  //     768: {
+  //       slidesPerView: 3.29,
+  //       spaceBetween: 30
+  //     },
+  //     1024: {
+  //       slidesPerView: 3.49,
+  //       spaceBetween: 40
+  //     }
+  //   },
+  //   spaceBetween: 24,
+  //   speed: 2000,
+  //   autoplay: {
+  //     delay: 1000,
+  //     disableOnInteraction: false,
+  //   },
+  //   // Navigation arrows
+  //   navigation: {
+  //     nextEl: ".js-campaign-button-next",
+  //     prevEl: ".js-campaign-button-prev",
+  //   },
+  // });
 
   // 背景から画像が出る-------------------------------------------
   var EffectH = 100;
