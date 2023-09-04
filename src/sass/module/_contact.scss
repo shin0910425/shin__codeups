@@ -58,6 +58,7 @@
   width: 100%;
 
   @include mq("md") {
+    margin-top: rem(16);
     padding-right: rem(82);
     border-right: rem(1) solid $green3;
   }
@@ -153,7 +154,7 @@
 .contact-card__body {
   @include mq("md") {
     margin-left: rem(70);
-    margin-top: rem(4);
+    margin-top: rem(24);
   }
 }
 

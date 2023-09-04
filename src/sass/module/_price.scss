@@ -41,7 +41,7 @@
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: rem(33);
+    margin-top: rem(50);
   }
 }
 
@@ -87,7 +87,9 @@
 }
 
 .price-card__body {
+  margin-top: rem(39);
   @include mq("md") {
+    margin-top: 0;
     width: 50%;
   }
 }
@@ -109,7 +111,7 @@
 }
 
 .price-card.card__title:not(:first-child) {
-  margin-top: rem(40);
+  margin-top: rem(48);
 
   @include mq("md") {
     margin-top: rem(38);
@@ -178,7 +180,7 @@
 
 
 .price__btn {
-  margin-top: rem(40);
+  margin-top: rem(47);
   text-align: center;
 
   @include mq("md") {

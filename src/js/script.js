@@ -114,10 +114,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const slideswiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     // slidesPerView: getSlidesPerView(),
-    slidesPerView: 3.26,
+    slidesPerView: 3.46,
     spaceBetween: 40,
-    // autoHeight: true,
-    centeredSlides: true,
+    // centeredSlides: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -132,7 +131,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   function getSlidesPerView() {
     if (window.innerWidth <= 767) {
-      return 1.35;
+      return 1.2;
     } else {
       return 3;
     }
