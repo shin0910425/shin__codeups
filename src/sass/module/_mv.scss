@@ -42,6 +42,7 @@
   @include mq("md") {
     width: 100%;
     left: 50%;
+    transform: translate(-50%, 0%);
     text-align: center;
   }
 }
