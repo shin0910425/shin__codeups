@@ -53,7 +53,7 @@
 .information-card__body {
   @include mq("md") {
     margin-top: rem(43);
-    padding-left: rem(53);
+    margin-left: rem(53);
     width: 50%;
   }
 }
@@ -82,7 +82,7 @@
   font-weight: $regular;
 }
 
-.information__btn {
+.information__button {
   margin-top: rem(47);
   text-align: center;
 

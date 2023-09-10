@@ -34,13 +34,13 @@
   }
 }
 
-.blog__title.section-header__engtitle {
+.blog__engtitle--white {
   @include mq("md") {
     color: $white;
   }
 }
 
-.blog__title.section-header__jatitle {
+.blog__jatitle--white {
   @include mq("md") {
     color: $white;
   }
@@ -66,7 +66,7 @@
   }
 }
 
-.blog__btn {
+.blog__button {
   margin-top: rem(55);
   text-align: center;
 
