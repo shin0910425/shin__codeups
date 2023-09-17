@@ -29,10 +29,7 @@
   height: inherit;
   position: relative;
   @include mq("md") {
-  padding: 0 rem(11);
-  }
-  @include mq("xl") {
-  padding: 0 rem(18);
+  padding: 0  clamp(rem(11), 1.3vw, rem(18));
   }
 }
 

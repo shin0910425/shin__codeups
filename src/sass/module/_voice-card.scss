@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.card {
+.voice-card {
   display: inline-block;
   padding: rem(15) rem(16) rem(24);
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
@@ -10,7 +10,7 @@
   }
 }
 
-.card__box {
+.voice-card__box {
   display: flex;
 
   @include mq("md") {
@@ -19,7 +19,7 @@
   }
 }
 
-.card__mete {
+.voice-card__mete {
   @include mq("md") {
     display: flex;
     justify-content: space-between;
@@ -27,7 +27,7 @@
   }
 }
 
-.card__item {
+.voice-card__item {
   max-width: rem(150);
   width: 100%;
 
@@ -38,7 +38,7 @@
   }
 }
 
-.card__category {
+.voice-card__category {
   font-size: rem(12);
   line-height: 1.8;
   font-family: $jp-family;
@@ -51,7 +51,7 @@
   }
 }
 
-.card__tag {
+.voice-card__tag {
   display: inline-block;
   font-size: rem(12);
   line-height: 2;
@@ -65,7 +65,7 @@
   }
 }
 
-.card__title {
+.voice-card__title {
   font-size: rem(16);
   line-height: 1.5;
   font-family: $jp-family;
@@ -91,7 +91,7 @@
   }
 }
 
-.card__image img {
+.voice-card__image img {
   width: 100%;
   aspect-ratio: 150/117;
   object-fit: cover;

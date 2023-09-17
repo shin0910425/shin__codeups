@@ -15,7 +15,7 @@
 }
 
 .blog-card:not(:first-child) {
-  margin-top: rem(-1);
+  // margin-top: rem(-1);
   @include mq("md") {}
 }
 

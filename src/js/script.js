@@ -73,23 +73,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー ------------------------------------------
+  // ドロワーメニュー ------------------------------------------
   $(".js-hamburger").click(function () {
     if ($(".js-hamburger").hasClass('is-active')) {
       $('.js-hamburger').removeClass("is-active");
-      // $("html").toggleClass("is-fixed");
+      $(".header__inner").removeClass("clicked"); // ヘッダーの背景色を元に戻すためにクラスを削除
       $(".js-sp-nav").fadeOut(300);
+      $("body").removeClass("active"); // 背景固定を解除する
     } else {
       $('.js-hamburger').addClass("is-active");
-      // $("html").toggleClass("is-fixed");
       $(".js-sp-nav").fadeIn(300);
+      $(".header__inner").addClass("clicked"); // ヘッダーの背景色を変更するためにクラスを追加
+      $("body").addClass("active"); // 背景固定を適用する
     }
   });
 
   // ドロワーメニュー内の <a> タグをクリックする際の処理
   $(".js-sp-nav a").click(function () {
-    $(".js-hamburger").toggleClass("is-active");
-    $(".js-sp-nav").fadeToggle(300);
+    $(".js-hamburger").removeClass("is-active"); // ハンバーガーアイコンの状態を元に戻す
+    $(".js-sp-nav").fadeOut(300, function () {
+      $(".header__inner").removeClass("clicked"); // ヘッダーの背景色を元に戻すためにクラスを削除
+      $("body").removeClass("active"); // 背景固定を解除する
+    });
   });
 
   // ドロワーメニュー時背景固定
@@ -114,7 +119,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   const slideswiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     // slidesPerView: getSlidesPerView(),
-    slidesPerView: 3.46,
+    slidesPerView: "auto",
     spaceBetween: 40,
     // centeredSlides: true,
     autoplay: {
@@ -141,32 +146,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slideswiper.params.slidesPerView = getSlidesPerView();
     slideswiper.update();
   });
-
-  // var swiper = new Swiper(".js-campaign-swiper", {
-  //   loop: true,
-  //   slidesPerView: 1.26,
-  //   breakpoints: {
-  //     768: {
-  //       slidesPerView: 3.29,
-  //       spaceBetween: 30
-  //     },
-  //     1024: {
-  //       slidesPerView: 3.49,
-  //       spaceBetween: 40
-  //     }
-  //   },
-  //   spaceBetween: 24,
-  //   speed: 2000,
-  //   autoplay: {
-  //     delay: 1000,
-  //     disableOnInteraction: false,
-  //   },
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: ".js-campaign-button-next",
-  //     prevEl: ".js-campaign-button-prev",
-  //   },
-  // });
 
   // 背景から画像が出る-------------------------------------------
   var EffectH = 100;

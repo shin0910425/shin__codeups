@@ -5,11 +5,12 @@
   background-color: $green2;
 
   @include mq("md") {
-    padding: rem(85) 0;
+    position: relative;
+    padding: rem(85) 0 rem(100);
   }
 }
 
-.price-inner {
+.price__inner {
   padding: 0 rem(15);
   max-width: rem(600);
   width: 100%;
@@ -25,39 +26,36 @@
     position: absolute;
     content: "";
     z-index: 10;
-    left: rem(10);
-    bottom: rem(-40);
+    left: calc(50% - min(48.5vw, rem(620)));
+    bottom: rem(50);
     width: rem(437);
     height: rem(201);
   }
-    @include mq("xl") {
-    left: rem(-40);
-    }
 }
 
-.price-card__box {
+.price-list__box {
   margin-top: rem(30);
 
   @include mq("md") {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: rem(50);
+    margin-top: rem(41);
   }
 }
 
-.price-card__image {
+.price-list__image {
   @include mq("md") {
     width: 50%;
   }
 }
 
-.price-card__image img {
+.price-list__image img {
   width: 100%;
   aspect-ratio: 480/240;
   object-fit: cover;
 }
 
-.price-card__image.sp--img {
+.price-list__image.sp--img {
   width: 100%;
 
   @include mq("md") {
@@ -65,13 +63,13 @@
   }
 }
 
-.price-card__image.sp--img img {
+.price-list__image.sp--img img {
   width: 100%;
   aspect-ratio: 345/227;
   object-fit: cover;
 }
 
-.price-card__image.pc--img {
+.price-list__image.pc--img {
   display: none;
 
   @include mq("md") {
@@ -80,13 +78,13 @@
   }
 }
 
-.price-card__image.pc--img img {
+.price-list__image.pc--img img {
   width: 100%;
   aspect-ratio: 492/746;
   object-fit: cover;
 }
 
-.price-card__body {
+.price-list__body {
   margin-top: rem(39);
   @include mq("md") {
     margin-top: 0;
@@ -94,11 +92,11 @@
   }
 }
 
-.price-card__body dl {
+.price-list__body dl {
   width: 100%;
 }
 
-.price-card.card__title {
+.price-list.list__title {
   font-size: rem(16);
   line-height: 1.5;
   font-family: $jp-family;
@@ -110,15 +108,15 @@
 
 }
 
-.price-card.card__title:not(:first-child) {
+.price-list.list__title:not(:first-child) {
   margin-top: rem(48);
 
   @include mq("md") {
-    margin-top: rem(38);
+    margin-top: rem(42);
   }
 }
 
-.price-card__item {
+.price-list__item {
   margin-top: rem(8);
   display: flex;
   flex-wrap: wrap;
@@ -129,28 +127,28 @@
   }
 }
 
-.price-card__item dt,
-.price-card__item dd {
+.price-list__item dt,
+.price-list__item dd {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.price-card__item dt {
+.price-list__item dt {
   width: 74%;
   @include mq("md") {
     width: 67.729%;
   }
 }
 
-.price-card__item dd {
+.price-list__item dd {
   width: calc(100% - 74%);
   @include mq("md") {
     width: calc(100% - 67.729%);
   }
 }
 
-.price-card__menu {
+.price-list__menu {
   padding-right: rem(4);
   font-size: rem(14);
   line-height: 2;
@@ -164,7 +162,7 @@
   }
 }
 
-.price-card__money {
+.price-list__money {
   font-size: rem(14);
   line-height: 2;
   font-family: $jp-family;
@@ -184,6 +182,6 @@
   text-align: center;
 
   @include mq("md") {
-    margin-top: rem(79);
+    margin-top: rem(72);
   }
 }

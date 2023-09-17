@@ -6,10 +6,8 @@
   background-color: $green3;
 
   @include mq("md") {
-    padding-top: rem(36);
-    padding-bottom: rem(67);
-    // padding-left: rem(81);
-    // padding-right: rem(85);
+    padding-top: rem(70);
+    padding-bottom: rem(80);
   }
 }
 
@@ -29,7 +27,7 @@
 }
 
 .footer__logo-body {
-  margin-left: rem(-13);
+  margin-left: rem(0);
 
   @include mq("md") {
     display: flex;

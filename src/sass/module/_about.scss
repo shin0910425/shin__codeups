@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .about {
-  width: 100%;
 
   @include mq("md") {
+    position: relative;
   }
 }
 
@@ -17,6 +17,19 @@
     position: relative;
   }
 }
+
+.about__icon-image {
+  @include mq("md") {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    right: calc(50% - min(48.5vw, rem(640)));
+    bottom: rem(-88);
+    width: rem(194);
+  }
+}
+
+
 
 .about__sub-title {
   font-size: rem(40);
@@ -36,18 +49,6 @@
   }
 }
 
-.about__icon-image {
-  @include mq("md") {
-    position: absolute;
-    content: "";
-    z-index: 10;
-    right: rem(3);
-    bottom: rem(-150);
-    width: rem(194);
-    height: rem(181);
-  }
-}
-
 .about__container {
   max-width: rem(600);
   width: 100%;
@@ -57,7 +58,7 @@
 
   @include mq("md") {
     max-width: rem(1080);
-    margin-top: rem(55);
+    margin-top: rem(40);
   }
 }
 
@@ -86,17 +87,14 @@
 }
 
 .about__image-2 {
-  content: "";
-  position: relative;
   max-width: 80%;
   width: 100%;
   top: 14%;
   right: 0;
-  // z-index: -100;
 
   @include mq("md") {
     max-width: rem(880);
-    top: rem(80);
+    margin-top: rem(80);
   }
 }
 

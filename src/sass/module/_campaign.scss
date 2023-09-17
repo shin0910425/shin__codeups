@@ -1,9 +1,6 @@
 @use "global" as *;
 
-.campaign {
-  // overflow: hidden;
-  width: 100%;
-}
+.campaign {}
 
 .campaign__inner {
   position: relative;
@@ -11,16 +8,17 @@
 
 .campaign__box {
   margin-top: rem(28);
+  display: flex;
+  flex-wrap: wrap;
 
-  // margin-left: rem(-67);
   @include mq("md") {
     margin-top: rem(40);
-    // margin-left: rem(-10);
   }
 }
 
 .campaign__card.card {
-  // height: 100%;
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
@@ -28,7 +26,6 @@
   width: 100%;
 
   @include mq("md") {
-    // max-width: rem(333);
     width: 100%;
   }
 }
@@ -47,6 +44,8 @@
 .campaign__card-body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
   width: 100%;
   padding: rem(16);
   padding-bottom: rem(24);
@@ -56,7 +55,17 @@
   }
 }
 
+.campaign__card-body-head {
+  // display: flex;
+  // align-items: flex-start;
+  // flex-grow: 1;
+  // margin-bottom: auto;
+}
+
 .campaign__card.card__title {
+  padding-bottom: 0;
+  border: none;
+
   @include mq("md") {
     font-size: rem(16);
     font-family: $jp-family;
@@ -66,12 +75,18 @@
   }
 }
 
+.card__body.charge {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
 .campaign__button {
   text-align: center;
   margin-top: rem(45);
 
   // padding-bottom: rem(15);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(60);
   }
 }

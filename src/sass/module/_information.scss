@@ -7,11 +7,11 @@
 
   @include mq("md") {
     padding-top: rem(97);
-    padding-bottom: rem(90);
+    padding-bottom: rem(108);
   }
 }
 
-.information-inner {
+.information__inner {
   max-width: rem(600);
   width: 100%;
   // margin: auto;
@@ -21,72 +21,11 @@
   }
 }
 
-.information-card__box {
-  margin-top: rem(28);
-
-  @include mq("md") {
-    display: flex;
-    margin-top: rem(35);
-    // padding-bottom: rem(81);
-  }
-}
-
-.information-card__image {
-  width: 100%;
-
-  @include mq("md") {
-    max-width: rem(540);
-    width: 50%;
-  }
-}
-
-.information-card__image img {
-  width: 100%;
-  aspect-ratio: 345/227;
-  object-fit: cover;
-
-  @include mq("md") {
-    aspect-ratio: 540/356;
-  }
-}
-
-.information-card__body {
-  @include mq("md") {
-    margin-top: rem(43);
-    margin-left: rem(53);
-    width: 50%;
-  }
-}
-
-.information-card.card__title {
-  margin-top: rem(22);
-  // margin-left: rem(-5);
-  font-size: rem(20);
-  line-height: 1.2;
-  font-family: $jp-family;
-  font-weight: $bold;
-  border-bottom: rem(1) solid $green3;
-
-  @include mq("md") {
-    font-size: rem(24);
-    line-height: 1;
-  }
-}
-
-.information-card__text {
-  margin-top: rem(8);
-  font-size: rem(15);
-  line-height: 1.6;
-  letter-spacing: 0.05em;
-  font-family: $jp-family;
-  font-weight: $regular;
-}
-
 .information__button {
   margin-top: rem(47);
   text-align: center;
 
   @include mq("md") {
-    margin-top: rem(58);
+    margin-top: rem(42);
   }
 }
