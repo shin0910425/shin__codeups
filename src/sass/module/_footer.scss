@@ -155,8 +155,8 @@
   color: $white;
 }
 
-.footer__sp-nav--item__left,
-.footer__sp-nav--item__right {
+.footer__sp-nav-item__left,
+.footer__sp-nav-item__right {
   @include mq("md") {
     display: inline-block;
     width: 50%;
@@ -164,7 +164,7 @@
   }
 }
 
-.footer__sp-nav--item__right {
+.footer__sp-nav-item__right {
   // margin-right: rem(-9);
 
   @include mq("md") {

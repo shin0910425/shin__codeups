@@ -12,6 +12,10 @@
   }
 }
 
+.section-header__engtitle::first-letter {
+  color: $green3;
+}
+
 .section-header__engtitle span {
   color: $green3;
 }

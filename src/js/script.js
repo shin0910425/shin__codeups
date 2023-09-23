@@ -105,7 +105,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // mvスライダー ------------------------------------------
-  const fadeswiper = new Swiper(".mv-swiper", {
+  const fadeswiper = new Swiper(".js-mv-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
