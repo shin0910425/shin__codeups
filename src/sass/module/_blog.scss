@@ -27,13 +27,13 @@
   }
 }
 
-.blog__engtitle--white {
+.blog__sub--white {
   @include mq("md") {
     color: $white;
   }
 }
 
-.blog__jatitle--white {
+.blog__main--white {
   @include mq("md") {
     color: $white;
   }

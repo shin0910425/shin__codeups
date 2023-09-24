@@ -1,0 +1,170 @@
+@use "global" as *;
+
+.campaign-card {
+  box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
+}
+
+.campaign-card__container {
+  display: flex;
+  flex-grow: 1;
+  /* カード内のテキスト部分を可変高さにする */
+  height: 100%;
+}
+
+.campaign-card__link {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.campaign-card__link {
+  width: 100%;
+
+  @include mq("md") {
+    width: 100%;
+  }
+}
+
+.campaign-card__link img {
+  width: 100%;
+  aspect-ratio: 280/188;
+  object-fit: cover;
+  height: auto;
+
+  @include mq("md") {
+    aspect-ratio: 333/223;
+  }
+}
+
+.campaign-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  padding: rem(16);
+  padding-bottom: rem(24);
+
+  @include mq("md") {
+    padding: rem(23) rem(16) rem(38);
+  }
+}
+
+.campaign-card__mete {
+  @include mq("md") {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.campaign-card__tag {
+  display: inline-block;
+  font-size: rem(12);
+  line-height: 2;
+  font-family: $jp-family;
+  color: $green3;
+  padding: rem(2) rem(12);
+  border: rem(1) solid $green3;
+
+  @include mq("md") {
+    padding: rem(4) rem(16);
+  }
+}
+
+.campaign-card__body-head {
+  // display: flex;
+  // align-items: flex-start;
+  // flex-grow: 1;
+  // margin-bottom: auto;
+}
+
+.campaign-card__title {
+  padding-bottom: 0;
+  border: none;
+  font-size: rem(16);
+  line-height: 1.5;
+  font-family: $jp-family;
+  font-weight: normal;
+  margin-top: rem(4);
+  color: $green;
+  // border-bottom: rem(1) solid $green3;
+
+  @include mq("md") {
+    margin-top: rem(0);
+    padding-bottom: rem(8);
+  }
+}
+
+.campaign-card__charge-text {
+  padding-top: rem(16);
+  font-size: rem(14);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.7142;
+  color: $green;
+  text-align: center;
+  border-top: rem(1) solid $green3;
+
+  @include mq("md") {
+    padding-bottom: rem(8);
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+  }
+}
+
+.campaign-card__charge-box {
+  display: flex;
+  align-items: flex-end;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.campaign-card__charge-price-1 {
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1;
+  color: $green;
+  // text-decoration-line: line-through;
+  background-position: 0 50%;
+  text-decoration-line: line-through;
+  text-decoration-style: solid;
+  text-decoration-color: $red;
+  text-decoration-thickness: rem(3);
+  background-size: 100% rem(3);
+  background-repeat: repeat-x;
+  text-decoration: none;
+  padding: 0 rem(2) rem(3) rem(17);
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.campaign-card__charge-price-2 {
+  font-size: rem(30);
+  font-weight: $bold;
+  line-height: 1;
+  color: $green3;
+  margin-left: rem(16);
+
+  @include mq("md") {
+    font-size: rem(40);
+  }
+}
+
+.card__body.charge {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.campaign__button {
+  text-align: center;
+  margin-top: rem(45);
+
+  // padding-bottom: rem(15);
+  @include mq("md") {
+    margin-top: rem(60);
+  }
+}

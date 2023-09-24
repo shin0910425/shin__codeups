@@ -16,76 +16,16 @@
   }
 }
 
-.campaign__card.card {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-.campaign__card {
-  width: 100%;
-
-  @include mq("md") {
-    width: 100%;
-  }
-}
-
-.campaign__card img {
-  width: 100%;
-  aspect-ratio: 280/188;
-  object-fit: cover;
-  height: auto;
-
-  @include mq("md") {
-    aspect-ratio: 333/223;
-  }
-}
-
-.campaign__card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  width: 100%;
-  padding: rem(16);
-  padding-bottom: rem(24);
-
-  @include mq("md") {
-    padding: rem(23) rem(16) rem(38);
-  }
-}
-
-.campaign__card-body-head {
-  // display: flex;
-  // align-items: flex-start;
-  // flex-grow: 1;
-  // margin-bottom: auto;
-}
-
-.campaign__card.card__title {
-  padding-bottom: 0;
-  border: none;
-
-  @include mq("md") {
-    font-size: rem(16);
-    font-family: $jp-family;
-    font-weight: $normal;
-    line-height: 1.5;
-    color: $green;
-  }
-}
-
-.card__body.charge {
-  display: flex;
-  flex-direction: column;
-  margin-top: auto;
-}
+// .card__body.charge {
+//   display: flex;
+//   flex-direction: column;
+//   margin-top: auto;
+// }
 
 .campaign__button {
   text-align: center;
   margin-top: rem(45);
 
-  // padding-bottom: rem(15);
   @include mq("md") {
     margin-top: rem(60);
   }

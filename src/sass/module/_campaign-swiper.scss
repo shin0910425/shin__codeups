@@ -1,66 +1,8 @@
 @use "global" as *;
 
-.campaign-swiper {
-  // width: 100%;
-  // height: auto;
-  // overflow: visible;
-  // overflow: hidden;
-  // flex: 1;
-  margin-right: calc(50% - 50vw);
-  padding-bottom: rem(10);
-
-  @include mq("md") {
-    position: relative;
-    // overflow: visible;
-  }
-}
-
-// .campaign-swiper::before {
-//   @include mq("md") {
-//     content: "";
-//     position: absolute;
-//     top: rem(-55);
-//     left: -100%;
-//     z-index: 100;
-//     width: 100%;
-//     height: 135%;
-//     background-color: $white;
-//   }
-// }
-
 .swiper-wrapper {
  
 }
-
-.campaign-swiper__items {
-  width: 100%;
-  // height: 100%;
-  // overflow: hidden;
-  // overflow: visible;
-  // display: grid;
-  // grid-auto-flow: column;
-  // align-items: flex-end;
-  /* カードを下揃えに */
-}
-
-.campaign-swiper__item {
-  height: auto;
-  width: rem(280);
-  max-width: 100%;
-  // margin-right: rem(20);
-  @include mq("md") {
-    width: rem(333);
-  }
-}
-
-.campaign-swiper__container {
-  display: flex;
-  flex-grow: 1;
-    /* カード内のテキスト部分を可変高さにする */
-  height: 100%;
-}
-
-
 
 .swiper-slide {
   display: flex;

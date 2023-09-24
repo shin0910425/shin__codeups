@@ -7,7 +7,7 @@
   }
 }
 
-.contact-inner {
+.contact__inner {
   @include mq("md") {
   position: relative;
   }
@@ -24,13 +24,13 @@
   }
 }
 
-.contact-inner {
+.contact__inner {
   padding-right: rem(15);
   margin-left: rem(16);
   text-align: center;
 }
 
-.contact__wrapper.card {
+.contact__wrapper {
   box-shadow: none;
   padding: 0;
 
@@ -92,7 +92,7 @@
   @include mq("md") {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     margin-top: rem(24);
   }
 }
@@ -148,37 +148,37 @@
       height: 100%;
 }
 
-.contact-card__body {
+.contact__card-body {
   @include mq("md") {
-    margin-left: rem(70);
+    margin-left: rem(80);
     margin-top: rem(36);
   }
 }
 
-.contact__title.section-header {
-  margin-top: rem(33);
-  font-size: rem(12);
-  font-family: $jp-family;
-  font-weight: $regular;
-  line-height: 2;
-  letter-spacing: 0.1em;
-  @include mq("md") {
-  margin-top: rem(0);
-  }
-}
+// .contact__title.section-header {
+//   margin-top: rem(33);
+//   font-size: rem(12);
+//   font-family: $jp-family;
+//   font-weight: $regular;
+//   line-height: 2;
+//   letter-spacing: 0.1em;
+//   @include mq("md") {
+//   margin-top: rem(0);
+//   }
+// }
 
-.contact-title.section-header__engtitle {
+.section-header__sub.contact__title--large {
   font-size: rem(80);
   font-family: $en-family;
   font-weight: $regular;
   line-height: 1;
 }
 
-.contact-title.section-header__engtitle span {
+.contact-title.section-header__sub span {
   color: $green3;
 }
 
-.contact-subtitle.section-header__jatitle {
+.contact-sub.section-header__main {
    font-size: rem(12);
     @include mq("md") {
     }

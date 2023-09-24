@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.section-header__engtitle {
+.section-header__sub {
   font-size: rem(32);
   font-family: $en-family;
   font-weight: $regular;
@@ -12,15 +12,19 @@
   }
 }
 
-.section-header__engtitle::first-letter {
+.section-header__sub::first-letter {
   color: $green3;
 }
 
-.section-header__engtitle span {
+.section-header__sub.blog__sub--white::first-letter {
+  color: $white;
+}
+
+.section-header__sub span {
   color: $green3;
 }
 
-.section-header__jatitle {
+.section-header__main {
   font-size: rem(12);
   margin-top: rem(4);
   font-family: $jp-family;
