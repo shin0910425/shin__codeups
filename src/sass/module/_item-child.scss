@@ -1,8 +1,8 @@
 @use "global" as *;
 
-.item-child__list a:nth-child(1),
-.item-child__list a:nth-child(2),
-.item-child__list a:nth-child(3) {
+.sp-nav__sub-list a:nth-child(1),
+.sp-nav__sub-list a:nth-child(2),
+.sp-nav__sub-list a:nth-child(3) {
   color: $white;
   display: block;
   padding: rem(12);
@@ -12,6 +12,6 @@
   line-height: 1.125;
 }
 
-.item-child__list a {
+.sp-nav__sub-list a {
   margin-left: rem(15);
 }

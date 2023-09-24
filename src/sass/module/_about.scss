@@ -62,7 +62,7 @@
   }
 }
 
-.about__img_box {
+.about__img-box {
   margin-top: rem(27);
   margin-left: auto;
   margin-right: auto;
@@ -73,17 +73,12 @@
   justify-content: center;
   position: relative;
   display: flex;
-    justify-content: flex-end;
+  justify-content: flex-end;
 
   @include mq("md") {
     margin-top: rem(42);
     max-width: rem(1080);
-    
   }
-}
-
-.about__img_box {
-  width: 100%;
 }
 
 .about__image-2 {

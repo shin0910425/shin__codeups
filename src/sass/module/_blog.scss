@@ -39,7 +39,7 @@
   }
 }
 
-.blog-inner {
+.blog__inner {
   max-width: rem(600);
   width: 100%;
   @include mq("md") {
@@ -67,7 +67,7 @@
 }
 
 .blog__button {
-  margin-top: rem(55);
+  margin-top: rem(44);
   text-align: center;
 
   @include mq("md") {

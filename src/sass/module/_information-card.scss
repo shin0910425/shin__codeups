@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.information-card__box {
+.information__box {
   margin-top: rem(28);
 
   @include mq("md") {
@@ -10,16 +10,16 @@
   }
 }
 
-.information-card__image {
+.information__image {
   width: 100%;
 
   @include mq("md") {
     max-width: rem(540);
-    width: 50%;
+    // width: 50%;
   }
 }
 
-.information-card__image img {
+.information__image img {
   width: 100%;
   aspect-ratio: 345/227;
   object-fit: cover;
@@ -29,7 +29,7 @@
   }
 }
 
-.information-card__body {
+.information__body {
   @include mq("md") {
     margin-top: rem(43);
     margin-left: rem(53);
@@ -37,7 +37,7 @@
   }
 }
 
-.information-card__title {
+.information__sub-title {
   margin-top: rem(22);
   padding-bottom: rem(2);
   font-size: rem(20);
@@ -53,7 +53,7 @@
   }
 }
 
-.information-card__text {
+.information__text {
   margin-top: rem(8);
   font-size: rem(15);
   line-height: 1.6;

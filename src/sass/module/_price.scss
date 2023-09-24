@@ -33,7 +33,7 @@
   }
 }
 
-.price-list__box {
+.price__list-box {
   margin-top: rem(30);
 
   @include mq("md") {
@@ -43,19 +43,19 @@
   }
 }
 
-.price-list__image {
+.price__list-image {
   @include mq("md") {
     width: 50%;
   }
 }
 
-.price-list__image img {
+.price__list-image img {
   width: 100%;
   aspect-ratio: 480/240;
   object-fit: cover;
 }
 
-.price-list__image.sp--img {
+.price__list-image.sp--img {
   width: 100%;
 
   @include mq("md") {
@@ -63,13 +63,13 @@
   }
 }
 
-.price-list__image.sp--img img {
+.price__list-image.sp--img img {
   width: 100%;
   aspect-ratio: 345/227;
   object-fit: cover;
 }
 
-.price-list__image.pc--img {
+.price__list-image.pc--img {
   display: none;
 
   @include mq("md") {
@@ -78,13 +78,13 @@
   }
 }
 
-.price-list__image.pc--img img {
+.price__list-image.pc--img img {
   width: 100%;
   aspect-ratio: 492/746;
   object-fit: cover;
 }
 
-.price-list__body {
+.price__list-body {
   margin-top: rem(39);
   @include mq("md") {
     margin-top: 0;
@@ -92,11 +92,11 @@
   }
 }
 
-.price-list__body dl {
+.price__list-body dl {
   width: 100%;
 }
 
-.price-list.list__title {
+.price__sub-title {
   font-size: rem(16);
   line-height: 1.5;
   font-family: $jp-family;
@@ -104,11 +104,9 @@
   padding-bottom: rem(2);
   color: $green;
   border-bottom: rem(1) solid $green3;
-
-
 }
 
-.price-list.list__title:not(:first-child) {
+.price__sub-title:not(:first-child) {
   margin-top: rem(48);
 
   @include mq("md") {
@@ -116,7 +114,7 @@
   }
 }
 
-.price-list__item {
+.price__list-item {
   margin-top: rem(8);
   display: flex;
   flex-wrap: wrap;
@@ -127,28 +125,28 @@
   }
 }
 
-.price-list__item dt,
-.price-list__item dd {
+.price__list-item dt,
+.price__list-item dd {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.price-list__item dt {
+.price__list-item dt {
   width: 74%;
   @include mq("md") {
     width: 67.729%;
   }
 }
 
-.price-list__item dd {
+.price__list-item dd {
   width: calc(100% - 74%);
   @include mq("md") {
     width: calc(100% - 67.729%);
   }
 }
 
-.price-list__menu {
+.price__list-menu {
   padding-right: rem(4);
   font-size: rem(14);
   line-height: 2;
@@ -162,7 +160,7 @@
   }
 }
 
-.price-list__money {
+.price__list-money {
   font-size: rem(14);
   line-height: 2;
   font-family: $jp-family;
@@ -178,7 +176,7 @@
 
 
 .price__button {
-  margin-top: rem(47);
+  margin-top: rem(36);
   text-align: center;
 
   @include mq("md") {
