@@ -4,7 +4,7 @@
   position: relative;
 
   @include mq("md") {
-    padding-top: rem(100);
+    padding-top: rem(84);
   }
 }
 
@@ -24,18 +24,6 @@
     // top: 10%;
     // left: 47%;
     // transform: translateY(-50%);
-  }
-}
-
-.blog__sub--white {
-  @include mq("md") {
-    color: $white;
-  }
-}
-
-.blog__main--white {
-  @include mq("md") {
-    color: $white;
   }
 }
 

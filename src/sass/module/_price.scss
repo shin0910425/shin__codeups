@@ -45,47 +45,24 @@
 
 .price__list-image {
   @include mq("md") {
+    margin-left: rem(93);
     width: 50%;
   }
 }
 
 .price__list-image img {
   width: 100%;
-  aspect-ratio: 480/240;
+  aspect-ratio: 345 / 227;
   object-fit: cover;
-}
-
-.price__list-image.sp--img {
-  width: 100%;
 
   @include mq("md") {
-    display: none;
+    aspect-ratio: 492 / 746;
   }
-}
-
-.price__list-image.sp--img img {
-  width: 100%;
-  aspect-ratio: 345/227;
-  object-fit: cover;
-}
-
-.price__list-image.pc--img {
-  display: none;
-
-  @include mq("md") {
-    display: block;
-    margin-left: rem(93);
-  }
-}
-
-.price__list-image.pc--img img {
-  width: 100%;
-  aspect-ratio: 492/746;
-  object-fit: cover;
 }
 
 .price__list-body {
   margin-top: rem(39);
+
   @include mq("md") {
     margin-top: 0;
     width: 50%;
@@ -134,6 +111,7 @@
 
 .price__list-item dt {
   width: 74%;
+
   @include mq("md") {
     width: 67.729%;
   }
@@ -141,6 +119,7 @@
 
 .price__list-item dd {
   width: calc(100% - 74%);
+
   @include mq("md") {
     width: calc(100% - 67.729%);
   }

@@ -30,3 +30,83 @@
     margin-top: rem(60);
   }
 }
+
+.swiper-wrapper {}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+
+  @include mq("md") {
+    // width: rem(333);
+    // max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* sp時のスタイル */
+@media screen and (max-width: 767px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+/* 幅・高さを指定 */
+.swiper-button-prev {
+  @media screen and (max-width: 1124px) {
+    left: rem(956);
+    height: rem(80);
+    width: rem(80);
+    top: rem(20);
+
+  }
+
+  @include mq("md") {
+    height: rem(90);
+    width: rem(90);
+    top: rem(20);
+    left: rem(1020);
+  }
+}
+
+.swiper-button-next {
+  @media screen and (max-width: 1124px) {
+    right: rem(180);
+    height: rem(80);
+    width: rem(80);
+    top: rem(20);
+
+  }
+
+  @include mq("md") {
+    height: rem(90);
+    width: rem(90);
+    top: rem(20);
+    right: rem(178);
+  }
+}
+
+/* 矢印を消す、画像に変更 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: rem(80);
+  width: rem(80);
+  margin: auto;
+}
+
+/* 前に戻る画像パス */
+.swiper-button-prev:after {
+  background-image: url(../../assets/images/common/button-prev__img.png);
+}
+
+/* 次に進む画像パス */
+.swiper-button-next:after {
+  background-image: url(../../assets/images/common/button-next__img.png);
+}

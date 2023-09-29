@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.js-motion-txt {
+.colorbox-motion-txt {
   display: inline-block;
   position: relative;
   overflow: hidden;
   padding: 0;
 }
 
-.js-motion-txt:after {
+.colorbox-motion-txt:after {
   content: '';
   position: absolute;
   opacity: 1;
@@ -19,7 +19,7 @@
   transform: translate3d(101%, 0, 0);
 }
 
-.js-scroll.show .js-motion-txt:after {
+.colorbox-scroll.show .colorbox-motion-txt:after {
   transition-property: transform, opacity;
   transition-duration: 0.5s;
   transition-delay: 0s;
@@ -27,7 +27,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-.js-scroll.done .js-motion-txt:after {
+.colorbox-scroll.done .colorbox-motion-txt:after {
   transition-property: transform;
   transition-duration: 0.5s;
   transition-delay: 0s;
@@ -35,11 +35,11 @@
   transform: translate3d(-103%, 0, 0);
 }
 
-.js-motion-txt .js-motion-inner {
+.colorbox-motion-txt .colorbox-motion-inner {
   display: inline-block;
   opacity: 0;
 }
 
-.js-scroll.done .js-motion-txt .js-motion-inner {
+.colorbox-scroll.done .colorbox-motion-txt .colorbox-motion-inner {
   opacity: 1;
 }
