@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.campaign-mv {
+  position: relative;
+  width: 100%;
+  height: rem(460);
+  @include mq("md") {
+    height: rem(548);
+  }
+}
+
+.sub-mv__header {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+
+  @include mq("md") {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.sub-mv__title {
+  font-size: rem(40);
+  font-weight: $regular;
+  font-family: $en-family;
+  line-height: 1;
+  letter-spacing: 0.52em;
+  text-indent: 0.52em;
+  color: $white;
+
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: 1;
+  }
+}
