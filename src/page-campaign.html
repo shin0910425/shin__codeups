@@ -170,19 +170,9 @@
   </header>
 
   <!-- 下層ページのメインビュー -->
-  <div class="campaign-mv">
-    <div class="campaign-mv_inner">
-      <div class="campaign-mv_img sub-mv">
-        <picture>
-          <source media="(max-width: 767px)" srcset="./assets/images/common/campaign-mv-sp_img.jpg">
-          <img src="./assets/images/common/campaign-mv_img.jpg" width="1440" alt="魚が泳いでいる">
-        </picture>
-      </div>
-      <div class="sub-mv_wrap">
-        <div class="sub-mv__header">
-          <h1 class="sub-mv__title">Campaign</h1>
-        </div>
-      </div>
+  <div class="sub-mv">
+    <div class="sub-mv__header">
+      <h1 class="sub-mv__title">Campaign</h1>
     </div>
   </div>
 
@@ -194,139 +184,126 @@
   </div>
 
   <main>
-    <div class="campaign-body">
-      <div class="campaign__inner inner">
-        <div class="campaign__tab tub">
-
-          <ul class="news_link">
-            <li class="active" data-filter="catAll">ALL</li>
-            <li data-filter="catInfo">ライセンス講習</li>
-          </ul>
-          <ul class="news_link">
-            <li data-filter="catEvent">体験ダイビング</li>
-            <li data-filter="catRecruit">ファンダイビング</li>
+    <div class="page-campaign page-campaign-layout">
+      <div class="page-campaign__inner inner">
+        <div class="page-campaign__tab">
+          <ul class="page-campaign__tab-list js-campaign_link">
+            <li class="page-campaign__tab-item active" data-filter="catAll">ALL</li>
+            <li class="page-campaign__tab-item" data-filter="catInfo">ライセンス講習</li>
+            <li class="page-campaign__tab-item" data-filter="catEvent">体験ダイビング</li>
+            <li class="page-campaign__tab-item" data-filter="catRecruit">ファンダイビング</li>
           </ul>
 
-          <div class="news-content" data-category="catInfo">
-            <!-- <p class="news-date">2019/07/24</p>
-            <p class="tags">イベント</p>
-            <p class="news-r"><a href="#">イベント情報01：ダミーテキストダミーテキスト</a></p> -->
-            <div class="campaign-cards__item">
-              <div class="campaign-card">
-                <div class="campaign-card__container">
-                  <a href="#" class="campaign-card__link">
-                    <div>
-                      <img src="./assets/images/common/campaign_img1.jpg" alt="魚の群れ">
-                    </div>
-                    <div class="campaign-card__body">
-                      <div class="campaign-card__mete">
-                        <p class="campaign-card__tag">ライセンス講習</p>
+          <div class="page-campaign__contents">
+            <div class="page-campaign__content js-campaign-content" data-category="catInfo">
+              <div class="page-campaign-cards__item">
+                <div class="page-campaign-card">
+                  <div class="page-campaign-card__container">
+                    <a href="#" class="page-campaign-card__link">
+                      <div class="page-campaign-card__link-img">
+                        <img src="./assets/images/common/campaign_img1.jpg" alt="魚の群れ">
                       </div>
-                      <div class="campaign-card__body-head">
-                        <h3 class="campaign-card__title">ライセンス取得</h3>
-                      </div>
-                      <div class="campaign-card__charge">
-                        <p class="campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="campaign-card__charge-box">
-                          <p class="campaign-card__charge-price-1">&yen;56,000</p>
-                          <p class="campaign-card__charge-price-2">&yen;46,000</p>
+                      <div class="page-campaign-card__body">
+                        <div class="page-campaign-card__mete">
+                          <p class="page-campaign-card__tag">ライセンス講習</p>
+                        </div>
+                        <div class="page-campaign-card__body-head">
+                          <h3 class="page-campaign-card__title">ライセンス取得</h3>
+                        </div>
+                        <div class="page-campaign-card__charge">
+                          <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
+                          <div class="page-campaign-card__charge-box">
+                            <p class="page-campaign-card__charge-price-1">&yen;56,000</p>
+                            <p class="page-campaign-card__charge-price-2">&yen;46,000</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="news-content" data-category="catEvent">
-            <!-- <p class="news-date">2019/07/11</p>
-            <p class="tags">採用情報</p>
-            <p class="news-r"><a href="#">採用情報01：ダミーテキストダミーテキスト</a></p> -->
-            <div class="swiper-slide campaign-cards__item">
-              <div class="campaign-card">
-                <div class="campaign-card__container">
-                  <a href="#" class="campaign-card__link">
-                    <div>
-                      <img src="./assets/images/common/campaign_img2.jpg" alt="船と海の風景">
-                    </div>
-                    <div class="campaign-card__body">
-                      <div class="campaign-card__mete">
-                        <p class="campaign-card__tag">体験ダイビング</p>
+            <div class="page-campaign__content js-campaign-content" data-category="catEvent">
+              <div class="page-campaign-cards__item">
+                <div class="page-campaign-card">
+                  <div class="page-campaign-card__container">
+                    <a href="#" class="page-campaign-card__link">
+                      <div class="page-campaign-card__link-img">
+                        <img src="./assets/images/common/campaign_img2.jpg" alt="船と海の風景">
                       </div>
-                      <div class="campaign-card__body-head">
-                        <h3 class="campaign-card__title">貸切体験ダイビング</h3>
-                      </div>
-                      <div class="campaign-card__charge">
-                        <p class="campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="campaign-card__charge-box">
-                          <p class="campaign-card__charge-price-1">&yen;24,000</p>
-                          <p class="campaign-card__charge-price-2">&yen;18,000</p>
+                      <div class="page-campaign-card__body">
+                        <div class="page-campaign-card__mete">
+                          <p class="page-campaign-card__tag">体験ダイビング</p>
+                        </div>
+                        <div class="page-campaign-card__body-head">
+                          <h3 class="page-campaign-card__title">貸切体験ダイビング</h3>
+                        </div>
+                        <div class="page-campaign-card__charge">
+                          <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
+                          <div class="page-campaign-card__charge-box">
+                            <p class="page-campaign-card__charge-price-1">&yen;24,000</p>
+                            <p class="page-campaign-card__charge-price-2">&yen;18,000</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="news-content" data-category="catEvent">
-            <!-- <p class="news-date">2019/07/02</p>
-            <p class="tags">お知らせ</p>
-            <p class="news-r"><a href="#">お知らせ01：ダミーテキストダミーテキスト</a></p> -->
-            <div class="swiper-slide campaign-cards__item">
-              <div class="campaign-card">
-                <div class="campaign-card__container">
-                  <a href="#" class="campaign-card__link">
-                    <div>
-                      <img src="./assets/images/common/campaign_img3.jpg" alt="光っているクラゲ">
-                    </div>
-                    <div class="campaign-card__body">
-                      <div class="campaign-card__mete">
-                        <p class="campaign-card__tag">体験ダイビング</p>
+            <div class="page-campaign__content js-campaign-content" data-category="catEvent">
+              <div class="page-campaign-cards__item">
+                <div class="page-campaign-card">
+                  <div class="page-campaign-card__container">
+                    <a href="#" class="page-campaign-card__link">
+                      <div class="page-campaign-card__link-img">
+                        <img src="./assets/images/common/campaign_img3.jpg" alt="光っているクラゲ">
                       </div>
-                      <div class="campaign-card__body-head">
-                        <h3 class="campaign-card__title">ナイトダイビング</h3>
-                      </div>
-                      <div class="campaign-card__charge">
-                        <p class="campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="campaign-card__charge-box">
-                          <p class="campaign-card__charge-price-1">&yen;10,000</p>
-                          <p class="campaign-card__charge-price-2">&yen;8,000</p>
+                      <div class="page-campaign-card__body">
+                        <div class="page-campaign-card__mete">
+                          <p class="page-campaign-card__tag">体験ダイビング</p>
+                        </div>
+                        <div class="page-campaign-card__body-head">
+                          <h3 class="page-campaign-card__title">ナイトダイビング</h3>
+                        </div>
+                        <div class="page-campaign-card__charge">
+                          <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
+                          <div class="page-campaign-card__charge-box">
+                            <p class="page-campaign-card__charge-price-1">&yen;10,000</p>
+                            <p class="page-campaign-card__charge-price-2">&yen;8,000</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="news-content" data-category="catRecruit">
-            <!-- <p class="news-date">2019/07/02</p>
-            <p class="tags">お知らせ</p>
-            <p class="news-r"><a href="#">お知らせ01：ダミーテキストダミーテキスト</a></p> -->
-            <div class="swiper-slide campaign-cards__item">
-              <div class="campaign-card">
-                <div class="campaign-card__container">
-                  <a href="#" class="campaign-card__link">
-                    <div>
-                      <img src="./assets/images/common/campaign_img4.jpg" alt="ダイビングをしている様子">
-                    </div>
-                    <div class="campaign-card__body">
-                      <div class="campaign-card__mete">
-                        <p class="campaign-card__tag">ファンダイビング</p>
+            <div class="page-campaign__content js-campaign-content" data-category="catRecruit">
+              <div class="page-campaign-cards__item">
+                <div class="page-campaign-card">
+                  <div class="page-campaign-card__container">
+                    <a href="#" class="page-campaign-card__link">
+                      <div class="page-campaign-card__link-img">
+                        <img src="./assets/images/common/campaign_img4.jpg" alt="ダイビングをしている様子">
                       </div>
-                      <div class="campaign-card__body-head">
-                        <h3 class="campaign-card__title">貸切ファンダイビング</h3>
-                      </div>
-                      <div class="campaign-card__charge">
-                        <p class="campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="campaign-card__charge-box">
-                          <p class="campaign-card__charge-price-1">&yen;20,000</p>
-                          <p class="campaign-card__charge-price-2">&yen;16,000</p>
+                      <div class="page-campaign-card__body">
+                        <div class="page-campaign-card__mete">
+                          <p class="page-campaign-card__tag">ファンダイビング</p>
+                        </div>
+                        <div class="page-campaign-card__body-head">
+                          <h3 class="page-campaign-card__title">貸切ファンダイビング</h3>
+                        </div>
+                        <div class="page-campaign-card__charge">
+                          <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
+                          <div class="page-campaign-card__charge-box">
+                            <p class="page-campaign-card__charge-price-1">&yen;20,000</p>
+                            <p class="page-campaign-card__charge-price-2">&yen;16,000</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -517,6 +494,7 @@
         </nav>
       </div>
     </div>
+
   </footer>
 </body>
 

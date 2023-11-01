@@ -142,10 +142,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   }
 
-  window.addEventListener('resize', function () {
+  // スライド用のswiperインスタンスを作成
+  var slideswiper = new Swiper('.swiper-container', {
+    // 他の設定オプションをここに設定
+  });
+
+  function updateSwiperOnResize() {
     slideswiper.params.slidesPerView = getSlidesPerView();
     slideswiper.update();
-  });
+  }
+
+  // ページ読み込み時に実行
+  updateSwiperOnResize();
+
+  // 画面サイズ変更時にスライダーを更新
+  window.addEventListener('resize', updateSwiperOnResize);
+
 
   // 背景から画像が出る-------------------------------------------
   var EffectH = 100;
@@ -171,30 +183,59 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 // タブ------------------------------------------
-  var newsLink = $(".news_link li");
-  var limit = 5;
-  $(".news-content").css('display', 'none');
-  for (var i = 0; i < limit; i++) {
-    var limitNews = $(".news-content")[i];
-    $(limitNews).fadeIn();
-  }
+  // var newsLink = $(".js-campaign_link li");
+  // var limit = 4;
+  // $(".js-campaign-content").css('display', 'none');
+  // for (var i = 0; i < limit; i++) {
+  //   var limitNews = $(".js-campaign-content")[i];
+  //   $(limitNews).fadeIn();
+  // }
+  // $(newsLink).click(function () {
+  //   $(newsLink).removeClass("active");
+  //   $(this).addClass("active");
+  //   var btnFilter = $(this).attr('data-filter');
+  //   if (btnFilter == 'catAll') {
+  //     $(".js-campaign-content").css('display', 'none');
+  //     for (i = 0; i < limit; i++) {
+  //       limitNews = $(".js-campaign-content")[i];
+  //       $(limitNews).fadeIn();
+  //     }
+  //   } else {
+  //     $(".js-campaign-content").css('display', 'none');
+  //     for (i = 0; i < limit; i++) {
+  //       limitNews = $(".js-campaign-content").filter('[data-category = "' + btnFilter + '"]')[i];
+  //       $(limitNews).fadeIn();
+  //     }
+  //   }
+  // })
+
+});
+
+$(document).ready(function () {
+  // タブ------------------------------------------
+  var newsLink = $(".js-campaign_link li");
+  var limit = 4;
+  var $campaignContent = $(".js-campaign-content");
+
+  // 最初の4つのコンテンツを表示
+  $campaignContent.slice(0, limit).fadeIn();
+
   $(newsLink).click(function () {
     $(newsLink).removeClass("active");
     $(this).addClass("active");
-    var btnFilter = $(this).attr('data-filter');
-    if (btnFilter == 'catAll') {
-      $(".news-content").css('display', 'none');
-      for (i = 0; i < limit; i++) {
-        limitNews = $(".news-content")[i];
-        $(limitNews).fadeIn();
-      }
-    } else {
-      $(".news-content").css('display', 'none');
-      for (i = 0; i < limit; i++) {
-        limitNews = $(".news-content").filter('[data-category = "' + btnFilter + '"]')[i];
-        $(limitNews).fadeIn();
-      }
-    }
-  })
 
+    var btnFilter = $(this).attr('data-filter');
+    if (btnFilter === 'catAll') {
+      // 全てのコンテンツを非表示
+      $campaignContent.css('display', 'none');
+      // 最初の4つのコンテンツを表示
+      $campaignContent.slice(0, limit).fadeIn();
+    } else {
+      // 特定のカテゴリのコンテンツを非表示
+      $campaignContent.css('display', 'none');
+      // 選択されたカテゴリのコンテンツを表示
+      $campaignContent.filter('[data-category="' + btnFilter + '"]').fadeIn();
+    }
+  });
 });
+
