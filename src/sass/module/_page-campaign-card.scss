@@ -8,7 +8,7 @@
   display: flex;
   flex-grow: 1;
   /* カード内のテキスト部分を可変高さにする */
-  height: 100%;
+  // height: 100%;
 }
 
 .page-campaign-card__link {
@@ -17,10 +17,12 @@
   padding: 0;
 }
 
-.page-campaign-card__link-img {
+.page-campaign-card__link {
+  max-width: rem(280);
   width: 100%;
 
   @include mq("md") {
+    max-width: rem(520);
     width: 100%;
   }
 }
@@ -118,6 +120,10 @@
   align-items: flex-end;
   flex-grow: 1;
   width: 100%;
+
+  @include mq("md") {
+    justify-content: center;
+  }
 }
 
 .page-campaign-card__charge-price-1 {
@@ -150,5 +156,54 @@
 
   @include mq("md") {
     font-size: rem(40);
+  }
+}
+
+.page-campaign-card_box {
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.page-campaign-card_text {
+  @include mq("md") {
+    padding-bottom: rem(32);
+    font-size: rem(16);
+    line-height: 1.5;
+    font-family: $jp-family;
+    font-weight: normal;
+    color: $green;
+  }
+}
+
+.page-campaign-card__time {
+  @include mq("md") {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: rem(7);
+    font-size: rem(16);
+    line-height: 1.125;
+    font-weight: bold;
+    color: $green3;
+  }
+}
+
+.page-campaign-card_contact-text {
+  @include mq("md") {
+    text-align: center;
+    padding-bottom: rem(7);
+    font-size: rem(14);
+    font-family: $jp-family;
+    line-height: 1.128571;
+    font-weight: normal;
+    color: $green3;
+  }
+}
+
+.page-campaign-card__button {
+  @include mq("md") {
+    margin-top: rem(16);
+    text-align: center;
   }
 }

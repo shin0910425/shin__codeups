@@ -13,13 +13,14 @@
 
 .page-campaign__tab-list {
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
   // width: rem(375);
   max-width: 100%;
   margin-top: rem(53);
   padding: 0;
   list-style-type: none;
+
   @include mq("md") {
     display: flex;
   }
@@ -71,31 +72,32 @@
 
   width: rem(150);
   max-width: 100%;
+
   @include mq("md") {
-  width: rem(162);
+    width: rem(162);
   }
 }
 
 .page-campaign__contents {
-      display: flex;
-        align-items: center;
-        justify-content: center;
-      flex-direction: column;
-        gap: rem(40);
-        margin-top: rem(40);
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: rem(40);
+  margin-top: rem(40);
+
   @include mq("md") {
-      display: grid;
-      gap: rem(40);
-      grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: rem(40);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .page-campaign__content {
-    width: rem(280);
-    max-width: 100%;
-  
+  width: rem(280);
+  max-width: 100%;
+
   @include mq("md") {
-    width: rem(520);
+    width: 100%;
   }
 }
-

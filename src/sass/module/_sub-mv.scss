@@ -5,6 +5,7 @@
   height: rem(460);
   background-image: url(../images/common/campaign-mv-sp_img.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 
   @include mq(md) {
