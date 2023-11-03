@@ -161,6 +161,8 @@
 
 .page-campaign-card_box {
   @include mq("md") {
+    display: flex;
+    flex-direction: column;
     margin-top: rem(24);
   }
 }
@@ -173,6 +175,7 @@
     font-family: $jp-family;
     font-weight: normal;
     color: $green;
+    flex-grow: 1;
   }
 }
 

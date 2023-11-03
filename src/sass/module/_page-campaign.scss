@@ -80,7 +80,7 @@
 
 .page-campaign__contents {
   display: flex;
-  // align-items: center;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: rem(40);
@@ -90,6 +90,7 @@
     display: grid;
     gap: rem(40);
     grid-template-columns: repeat(2, 1fr);
+    align-items: normal;
   }
 }
 
