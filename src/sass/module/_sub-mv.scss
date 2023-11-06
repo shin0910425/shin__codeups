@@ -22,12 +22,12 @@
   font-weight: $regular;
   font-family: $en-family;
   line-height: 1;
-  letter-spacing: 0.52em;
-  text-indent: 0.52em;
+  // letter-spacing: 0.05em;
+  // text-indent: 0.52em;
   color: $white;
 
   @include mq("md") {
     font-size: rem(80);
-    line-height: 1;
+    line-height: 1.25;
   }
 }

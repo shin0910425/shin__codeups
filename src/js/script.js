@@ -143,9 +143,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
 
   // スライド用のswiperインスタンスを作成
-  var slideswiper = new Swiper('.swiper-container', {
-    // 他の設定オプションをここに設定
-  });
+  // var slideswiper = new Swiper('.swiper-container', {
+  //   // 他の設定オプションをここに設定
+  // });
 
   function updateSwiperOnResize() {
     slideswiper.params.slidesPerView = getSlidesPerView();
@@ -153,10 +153,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   }
 
   // ページ読み込み時に実行
-  updateSwiperOnResize();
+  // updateSwiperOnResize();
 
   // 画面サイズ変更時にスライダーを更新
-  window.addEventListener('resize', updateSwiperOnResize);
+  // window.addEventListener('resize', updateSwiperOnResize);
 
 
   // 背景から画像が出る-------------------------------------------
@@ -182,37 +182,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-// タブ------------------------------------------
-  // var newsLink = $(".js-campaign_link li");
-  // var limit = 4;
-  // $(".js-campaign-content").css('display', 'none');
-  // for (var i = 0; i < limit; i++) {
-  //   var limitNews = $(".js-campaign-content")[i];
-  //   $(limitNews).fadeIn();
-  // }
-  // $(newsLink).click(function () {
-  //   $(newsLink).removeClass("active");
-  //   $(this).addClass("active");
-  //   var btnFilter = $(this).attr('data-filter');
-  //   if (btnFilter == 'catAll') {
-  //     $(".js-campaign-content").css('display', 'none');
-  //     for (i = 0; i < limit; i++) {
-  //       limitNews = $(".js-campaign-content")[i];
-  //       $(limitNews).fadeIn();
-  //     }
-  //   } else {
-  //     $(".js-campaign-content").css('display', 'none');
-  //     for (i = 0; i < limit; i++) {
-  //       limitNews = $(".js-campaign-content").filter('[data-category = "' + btnFilter + '"]')[i];
-  //       $(limitNews).fadeIn();
-  //     }
-  //   }
-  // })
-
-});
-
 $(document).ready(function () {
-  // タブ------------------------------------------
+  // タブpage-campaign ------------------------------------------
   var newsLink = $(".js-campaign_link li");
   var limit = 4;
   var $campaignContent = $(".js-campaign-content");
@@ -239,3 +210,16 @@ $(document).ready(function () {
   });
 });
 
+});
+
+
+// タブpage-information ------------------------------------------
+jQuery(function ($) {
+  $('.js-tab-menu').on('click', function () {
+    $('.js-tab-menu').removeClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    $(this).addClass('is-active');
+    var number = $(this).data("number");
+    $('#' + number).addClass('is-active');
+  });
+});
