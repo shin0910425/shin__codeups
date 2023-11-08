@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.page-blog__sub-mv.sub-mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/blog-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/blog-mv_img.jpg);
+  }
+}
+
+
+
