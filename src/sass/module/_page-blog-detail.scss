@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.page-blog-detail__body {
+
+  @include mq(md) {
+    width: 66%;
+  }
+}
+
+.page-blog-detail__mete {
+  font-size: rem(14);
+  color: $green;
+  font-weight: $regular;
+  line-height: 1.2857;
+}
+
+.page-blog-detail__container {
+  margin-top: rem(8);
+}
+
+.page-blog-detail__title {
+  padding-bottom: rem(8);
+  font-size: rem(24);
+  color: $green;
+  font-family: $jp-family;
+  font-weight: $normal;
+  line-height: 1;
+  border-bottom: rem(1) solid $green3;
+
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.page-blog-detail__image {
+  width: 100%;
+  margin-top: rem(24);
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.page-blog-detail__image img {
+  width: 100%;
+  aspect-ratio: 345/231;
+  object-fit: cover;
+
+  @include mq(md) {
+    aspect-ratio: 700/468;
+  }
+}
+
+.page-blog-detail__text {
+  margin-top: rem(24);
+  font-size: rem(16);
+  color: $green;
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.5;
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.page-blog-detail__list {
+  margin-top: rem(24);
+
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.page-blog-detail__item {
+  font-size: rem(16);
+    color: $green;
+    font-family: $jp-family;
+    font-weight: $regular;
+    line-height: 1.5;
+}
+
+.page-blog-detail__item:not(:first-child) {
+  padding-top: rem(8);
+}

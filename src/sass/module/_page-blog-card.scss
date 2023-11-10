@@ -1,23 +1,23 @@
 @use "global" as *;
 
-.archive-blog-card {
+.page-blog-card {
   box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, 0.25);
 }
 
-.archive-blog-card__container {
+.page-blog-card__container {
   display: flex;
   flex-grow: 1;
   /* カード内のテキスト部分を可変高さにする */
   height: 100%;
 }
 
-.archive-blog-card__link {
+.page-blog-card__link {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
 
-.archive-blog-card__link {
+.page-blog-card__link {
   width: 100%;
 
   @include mq("md") {
@@ -25,7 +25,7 @@
   }
 }
 
-.archive-blog-card__link img {
+.page-blog-card__link img {
   width: 100%;
   aspect-ratio: 280/188;
   object-fit: cover;
@@ -36,7 +36,7 @@
   }
 }
 
-.archive-blog-card__body {
+.page-blog-card__body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +50,7 @@
   }
 }
 
-.archive-blog-card__mete {
+.page-blog-card__mete {
   @include mq("md") {
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@
   }
 }
 
-.archive-blog-card__tag {
+.page-blog-card__tag {
   display: inline-block;
   font-size: rem(12);
   line-height: 2;
@@ -72,14 +72,14 @@
   }
 }
 
-.archive-blog-card__body-head {
+.page-blog-card__body-head {
   // display: flex;
   // align-items: flex-start;
   // flex-grow: 1;
   // margin-bottom: auto;
 }
 
-.archive-blog-card__title {
+.page-blog-card__title {
   padding-bottom: 0;
   border: none;
   font-size: rem(16);
@@ -96,7 +96,7 @@
   }
 }
 
-.archive-blog-card__charge-text {
+.page-blog-card__charge-text {
   padding-top: rem(16);
   font-size: rem(14);
   font-family: $jp-family;
@@ -113,7 +113,7 @@
   }
 }
 
-.archive-blog-card__charge-box {
+.page-blog-card__charge-box {
   margin-top: rem(8);
   display: flex;
   align-items: flex-end;
@@ -122,7 +122,7 @@
   width: 100%;
 }
 
-.archive-blog-card__charge-price-1 {
+.page-blog-card__charge-price-1 {
   font-size: rem(20);
   font-weight: $bold;
   line-height: 1;
@@ -143,7 +143,7 @@
   }
 }
 
-.archive-blog-card__charge-price-2 {
+.page-blog-card__charge-price-2 {
   font-size: rem(32);
   font-weight: $bold;
   line-height: 1;
