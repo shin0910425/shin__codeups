@@ -34,6 +34,12 @@
   }
 }
 
+.page-blog__body {
+  @include mq("md") {
+    width: 66%;
+  }
+}
+
 .page-blog__items {
   display: grid;
   gap: rem(40);
@@ -41,7 +47,6 @@
   counter-reset: number;
 
   @include mq(md) {
-    width: 66%;
     row-gap: rem(80);
     column-gap: rem(40);
     grid-template-columns: repeat(2, 1fr);
