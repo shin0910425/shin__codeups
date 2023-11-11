@@ -170,7 +170,7 @@
   </header>
 
 <!-- 下層ページのメインビュー -->
-<div class="page-blog__sub-mv sub-mv">
+<div class="page-voice__sub-mv sub-mv">
   <div class="sub-mv__header">
     <h1 class="sub-mv__title">Voice</h1>
   </div>
@@ -185,18 +185,18 @@
 </div>
 
   <main>
-    <section id="campaign" class="page-voice page-voice-layout">
-      <div class="page-campaign__inner inner">
-        <div class="page-campaign__tab">
-          <ul class="page-campaign__tab-list js-campaign_link">
-            <li class="page-campaign__tab-item active" data-filter="catAll">ALL</li>
-            <li class="page-campaign__tab-item" data-filter="catInfo">ライセンス講習</li>
-            <li class="page-campaign__tab-item" data-filter="catEvent">体験ダイビング</li>
-            <li class="page-campaign__tab-item" data-filter="catRecruit">ファンダイビング</li>
+    <div class="page-voice page-voice-layout">
+      <div class="page-voice__inner inner">
+        <div class="page-voice__tub page-voice__tab">
+          <ul class="page-voice__tab-list js-voice__link">
+            <li class="page-voice__tab-item active" data-filter="catAll">ALL</li>
+            <li class="page-voice__tab-item" data-filter="catCourse">ライセンス講習</li>
+            <li class="page-voice__tab-item" data-filter="catExperience">体験ダイビング</li>
+            <li class="page-voice__tab-item" data-filter="catDiv">ファンダイビング</li>
           </ul>
 
-          <ul class="voice__cards voice-cards">
-            <li class="voice-cards__item voice-card">
+          <ul class="page-voice__contents">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catCourse">
               <a href="#" class="voice-card__link">
                 <div class="voice-card__box">
                   <div class="voice-card__item">
@@ -220,7 +220,7 @@
                 </div>
               </a>
             </li>
-            <li class="voice-cards__item voice-card">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catDiv">
               <a href="#" class="voice-card__link">
                 <div class="voice-card__box">
                   <div class="voice-card__item">
@@ -244,161 +244,109 @@
                 </div>
               </a>
             </li>
-          </ul>
-    
-          <ul class="page-campaign__contents">
-            <li class="page-campaign__content js-campaign-content" data-category="catInfo">
-
-              <div class="page-campaign-card">
-                <div class="page-campaign-card__container">
-                  <div class="page-campaign-card__link">
-                    <div class="page-campaign-card__link-img">
-                      <img src="./assets/images/common/campaign_img1.jpg" alt="魚の群れ">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catExperience">
+              <a href="#" class="voice-card__link">
+                <div class="voice-card__box">
+                  <div class="voice-card__item">
+                    <div class="voice-card__mete">
+                      <p class="voice-card__category">30代(女性)</p>
+                      <p class="voice-card__tag">体験ダイイング</p>
                     </div>
-                    <div class="page-campaign-card__body">
-                      <div class="page-campaign-card__mete">
-                        <p class="page-campaign-card__tag">ライセンス講習</p>
-                      </div>
-                      <div class="page-campaign-card__body-head">
-                        <h3 class="page-campaign-card__title">ライセンス取得</h3>
-                      </div>
-                      <div class="page-campaign-card__charge">
-                        <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="page-campaign-card__charge-box">
-                          <p class="page-campaign-card__charge-price-1">&yen;56,000</p>
-                          <p class="page-campaign-card__charge-price-2">&yen;46,000</p>
-                        </div>
-                      </div>
-                      <div class="page-campaign-card_box u-desktop">
-                        <p class="page-campaign-card_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <time class="page-campaign-card__time" datetime="2023-06-01">2023/6/1-9/30</time>
-                        <p class="page-campaign-card_contact-text">ご予約・お問い合わせはコチラ</p>
-                        <div class="page-campaign-card__button">
-                          <a href="#" class="button"><span>Contact&nbsp;us</span></a>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                  </div>
+                  <div class="voice-card__image">
+                    <div class="js-scroll colorbox-scroll"><span class="js-motion-txt colorbox-motion-txt"><span
+                          class="js-motion-inner colorbox-motion-inner">
+                          <img src="./assets/images/common/voice_img3.jpg" alt="帽子を被った女性">
+                        </span></span></div>
                   </div>
                 </div>
-              </div>
-
+                <div class="voice-card__body">
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </a>
             </li>
-            <li class="page-campaign__content js-campaign-content" data-category="catEvent">
-              <div class="page-campaign-card">
-                <div class="page-campaign-card__container">
-                  <div class="page-campaign-card__link">
-                    <div class="page-campaign-card__link-img">
-                      <img src="./assets/images/common/campaign_img2.jpg" alt="船と海の風景">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catExperience">
+              <a href="#" class="voice-card__link">
+                <div class="voice-card__box">
+                  <div class="voice-card__item">
+                    <div class="voice-card__mete">
+                      <p class="voice-card__category">20代(女性)</p>
+                      <p class="voice-card__tag">体験ダイイング</p>
                     </div>
-                    <div class="page-campaign-card__body">
-                      <div class="page-campaign-card__mete">
-                        <p class="page-campaign-card__tag">体験ダイビング</p>
-                      </div>
-                      <div class="page-campaign-card__body-head">
-                        <h3 class="page-campaign-card__title">貸切体験ダイビング</h3>
-                      </div>
-                      <div class="page-campaign-card__charge">
-                        <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="page-campaign-card__charge-box">
-                          <p class="page-campaign-card__charge-price-1">&yen;24,000</p>
-                          <p class="page-campaign-card__charge-price-2">&yen;18,000</p>
-                        </div>
-                      </div>
-                      <div class="page-campaign-card_box u-desktop">
-                        <p class="page-campaign-card_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <time class="page-campaign-card__time" datetime="2023-06-01">2023/6/1-9/30</time>
-                        <p class="page-campaign-card_contact-text">ご予約・お問い合わせはコチラ</p>
-                        <div class="page-campaign-card__button">
-                          <a href="#" class="button"><span>Contact&nbsp;us</span></a>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                  </div>
+                  <div class="voice-card__image">
+                    <div class="js-scroll colorbox-scroll"><span class="js-motion-txt colorbox-motion-txt"><span
+                          class="js-motion-inner colorbox-motion-inner">
+                          <img src="./assets/images/common/voice_img4.jpg" alt="笑顔の男性">
+                        </span></span></div>
                   </div>
                 </div>
-              </div>
+                <div class="voice-card__body">
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </a>
             </li>
-            <li class="page-campaign__content js-campaign-content" data-category="catEvent">
-              <div class="page-campaign-card">
-                <div class="page-campaign-card__container">
-                  <div class="page-campaign-card__link">
-                    <div class="page-campaign-card__link-img">
-                      <img src="./assets/images/common/campaign_img3.jpg" alt="光っているクラゲ">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catDiv">
+              <a href="#" class="voice-card__link">
+                <div class="voice-card__box">
+                  <div class="voice-card__item">
+                    <div class="voice-card__mete">
+                      <p class="voice-card__category">30代(カップル)</p>
+                      <p class="voice-card__tag">ファンダイビング</p>
                     </div>
-                    <div class="page-campaign-card__body">
-                      <div class="page-campaign-card__mete">
-                        <p class="page-campaign-card__tag">体験ダイビング</p>
-                      </div>
-                      <div class="page-campaign-card__body-head">
-                        <h3 class="page-campaign-card__title">ナイトダイビング</h3>
-                      </div>
-                      <div class="page-campaign-card__charge">
-                        <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="page-campaign-card__charge-box">
-                          <p class="page-campaign-card__charge-price-1">&yen;10,000</p>
-                          <p class="page-campaign-card__charge-price-2">&yen;8,000</p>
-                        </div>
-                      </div>
-                      <div class="page-campaign-card_box u-desktop">
-                        <p class="page-campaign-card_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <time class="page-campaign-card__time" datetime="2023-06-01">2023/6/1-9/30</time>
-                        <p class="page-campaign-card_contact-text">ご予約・お問い合わせはコチラ</p>
-                        <div class="page-campaign-card__button">
-                          <a href="#" class="button"><span>Contact&nbsp;us</span></a>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                  </div>
+                  <div class="voice-card__image">
+                    <div class="js-scroll colorbox-scroll"><span class="js-motion-txt colorbox-motion-txt"><span
+                          class="js-motion-inner colorbox-motion-inner">
+                          <img src="./assets/images/common/voice_img5.jpg" alt="帽子を被った女性">
+                        </span></span></div>
                   </div>
                 </div>
-              </div>
+                <div class="voice-card__body">
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </a>
             </li>
-            <li class="page-campaign__content js-campaign-content" data-category="catRecruit">
-              <div class="page-campaign-card">
-                <div class="page-campaign-card__container">
-                  <div class="page-campaign-card__link">
-                    <div class="page-campaign-card__link-img">
-                      <img src="./assets/images/common/campaign_img4.jpg" alt="ダイビングをしている様子">
+            <li class="page-voice__item voice-card js-voice-content" data-category="catCourse">
+              <a href="#" class="voice-card__link">
+                <div class="voice-card__box">
+                  <div class="voice-card__item">
+                    <div class="voice-card__mete">
+                      <p class="voice-card__category">20代(女性)</p>
+                      <p class="voice-card__tag">ライセンス講習</p>
                     </div>
-                    <div class="page-campaign-card__body">
-                      <div class="page-campaign-card__mete">
-                        <p class="page-campaign-card__tag">ファンダイビング</p>
-                      </div>
-                      <div class="page-campaign-card__body-head">
-                        <h3 class="page-campaign-card__title">貸切ファンダイビング</h3>
-                      </div>
-                      <div class="page-campaign-card__charge">
-                        <p class="page-campaign-card__charge-text">全部コミコミ(お一人様)</p>
-                        <div class="page-campaign-card__charge-box">
-                          <p class="page-campaign-card__charge-price-1">&yen;20,000</p>
-                          <p class="page-campaign-card__charge-price-2">&yen;16,000</p>
-                        </div>
-                      </div>
-                      <div class="page-campaign-card_box u-desktop">
-                        <p class="page-campaign-card_text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                          ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                        </p>
-                        <time class="page-campaign-card__time" datetime="2023-06-01">2023/6/1-9/30</time>
-                        <p class="page-campaign-card_contact-text">ご予約・お問い合わせはコチラ</p>
-                        <div class="page-campaign-card__button">
-                          <a href="#" class="button"><span>Contact&nbsp;us</span></a>
-                        </div>
-                      </div>
-                    </div>
+                    <p class="voice-card__title">ここにタイトルが入ります。ここにタイトル</p>
+                  </div>
+                  <div class="voice-card__image">
+                    <div class="js-scroll colorbox-scroll"><span class="js-motion-txt colorbox-motion-txt"><span
+                          class="js-motion-inner colorbox-motion-inner">
+                          <img src="./assets/images/common/voice_img6.jpg" alt="笑顔の男性">
+                        </span></span></div>
                   </div>
                 </div>
-              </div>
+                <div class="voice-card__body">
+                  <p class="voice-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                    ここにテキストが入ります。ここにテキストが入ります。</p>
+                </div>
+              </a>
             </li>
           </ul>
+
         </div>
       </div>
-    </section>
+    </div>
 
-    <nav class="pagination u-desktop">
+    <nav class="pagination">
       <div class="wp-pagination">
         <a class="prev page-numbers" href="">&lsaquo;</a>
         <span aria-current="page" class="page-numbers current">1</span>

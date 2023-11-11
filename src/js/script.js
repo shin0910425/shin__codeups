@@ -183,10 +183,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 $(document).ready(function () {
-  // タブpage-campaign ------------------------------------------
-  var newsLink = $(".js-campaign_link li");
+  // タブpage-campaign・page-voice ------------------------------------------
+  var newsLink = $(".js-campaign__link,.js-voice__link li");
   var limit = 4;
-  var $campaignContent = $(".js-campaign-content");
+  var $campaignContent = $(".js-campaign-content,.js-voice-content");
 
   // 最初の4つのコンテンツを表示
   $campaignContent.slice(0, limit).fadeIn();

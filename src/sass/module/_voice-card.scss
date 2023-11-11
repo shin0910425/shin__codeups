@@ -28,7 +28,7 @@
 }
 
 .voice-card__item {
-  max-width: rem(150);
+  min-width: rem(150);
   width: 100%;
 
   @include mq("md") {
@@ -84,6 +84,7 @@
 .voice-card__image {
   width: 100%;
   margin-left: rem(13);
+  text-align: center;
 
   @include mq("md") {
     margin-left: rem(16);

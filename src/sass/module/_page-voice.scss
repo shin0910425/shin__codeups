@@ -1,24 +1,35 @@
 @use "global" as *;
 
-.page-campaign__sub-mv.sub-mv {
+.page-voice__inner {
+  max-width: rem(600);
+  width: 100%;
+  padding-left: rem(15);
+  padding-right: rem(15);
+
+  @include mq("md") {
+    // position: relative;
+  }
+}
+
+.page-voice__sub-mv.sub-mv {
   position: relative;
   height: rem(460);
-  background-image: url(../images/common/campaign-mv-sp_img.jpg);
+  background-image: url(../images/common/voice-mv-sp_img.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @include mq(md) {
     height: rem(548);
-    background-image: url(../images/common/campaign-mv_img.jpg);
+    background-image: url(../images/common/voice-mv_img.jpg);
   }
 }
 
-.page-campaign__tab {
+.page-voice__tab {
   margin: 0 auto;
 }
 
-.page-campaign__tab-list {
+.page-voice__tab-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 22px;
@@ -30,10 +41,11 @@
 
   @include mq("md") {
     display: flex;
+    margin-top: rem(150);
   }
 }
 
-.page-campaign__tab-list li {
+.page-voice__tab-list li {
   margin-left: 2px;
   font-size: rem(14);
   border: $green3 1px solid;
@@ -46,11 +58,11 @@
   line-height: 1;
 }
 
-.page-campaign__tab-list li:first-child {
+.page-voice__tab-list li:first-child {
   margin-left: 0;
 }
 
-.page-campaign__tab-list li:after {
+.page-voice__tab-list li:after {
   content: '';
   position: absolute;
   width: 0;
@@ -64,18 +76,18 @@
   transform: translateX(-50%);
 }
 
-.page-campaign__tab-list li.active,
-.page-campaign__tab-list li:hover {
+.page-voice__tab-list li.active,
+.page-voice__tab-list li:hover {
   background: $green3;
   color: $white;
   font-weight: $normal;
 }
 
-.page-campaign__tab-list li:hover:after {
+.page-voice__tab-list li:hover:after {
   display: $normal;
 }
 
-.page-campaign__tab-item {
+.page-voice__tab-item {
 
   width: rem(150);
   max-width: 100%;
@@ -85,7 +97,7 @@
   }
 }
 
-.page-campaign__contents {
+.page-voice__contents {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,13 +107,13 @@
 
   @include mq("md") {
     display: grid;
-    gap: rem(40);
+    gap: rem(80) rem(40);
     grid-template-columns: repeat(2, 1fr);
     align-items: normal;
   }
 }
 
-.page-campaign__content {
+.page-voice__content {
   width: rem(280);
   max-width: 100%;
 
