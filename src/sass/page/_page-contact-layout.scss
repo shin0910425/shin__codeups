@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.page-contact-layout {
+  margin-top: rem(55);
+
+    @include mq("md") {
+      margin-top: rem(150);
+    }
+}
