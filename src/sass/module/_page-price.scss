@@ -1,0 +1,143 @@
+@use "global" as *;
+
+.page-price__sub-mv.sub-mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/price-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/price-mv_img.jpg);
+  }
+}
+
+.page-price__inner {
+  margin: auto;
+  padding: 0 rem(20);
+  max-width: rem(600);
+  width: 100%;
+
+  @include mq(md) {
+    padding: 0 rem(25);
+    max-width: rem(750);
+    // display: flex;
+  }
+}
+
+.page-price__inner {
+  padding: 0 rem(15);
+  max-width: rem(600);
+  width: 100%;
+
+  @include mq("md") {
+    // max-width: 100%;
+    position: relative;
+  }
+}
+
+.page-price__icon-image {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    left: calc(50% - min(48.5vw, rem(620)));
+    bottom: rem(50);
+    width: rem(437);
+    height: rem(201);
+  }
+}
+
+.page-price__list-body {
+
+  margin-top: rem(40);
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+
+  // max-width: 1000px;
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+  }
+}
+
+.page-price__list-title {
+
+  @include mq("md") {
+    display: grid;
+    gap: 0;
+    // grid-template-columns: repeat(1, 1fr);
+    width: 30%;
+  }
+}
+
+.page-price__sub-title {
+  padding: rem(8) 0;
+  font-size: rem(16);
+  font-weight: $bold;
+  font-family: $jp-family;
+  line-height: 1.5;
+  border: 1px solid $green3;
+  width: 100%;
+  text-align: center;
+  background-color: $green3;
+  color: $white;
+
+  @include mq("md") {
+    padding-top: rem(40);
+  }
+}
+
+.page-price__box {
+  width: 100%;
+  border-collapse: collapse;
+
+  @include mq("md") {
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+  }
+}
+
+.page-price__list-item {
+  height: 60px;
+
+  @include mq("md") {}
+}
+
+.page-price__list-menu {
+  width: 60%;
+  padding: rem(8) 0;
+  font-size: rem(16);
+  font-weight: $regular;
+  font-family: $jp-family;
+  line-height: 1.5;
+  text-align: center;
+  color: $green;
+  border: 1px solid $green3;
+
+  @include mq("md") {
+    width: 68%;
+    padding-left: rem(16);
+    text-align: left;
+  }
+}
+
+.page-price__list-money {
+  width: 40%;
+  padding: rem(18);
+  font-weight: $regular;
+  font-family: $jp-family;
+  line-height: 1.5;
+  color: $green;
+  text-align: right;
+  color: $green;
+  border: 1px solid $green3;
+
+  @include mq("md") {
+    width: 32%;
+  }
+}
