@@ -69,6 +69,22 @@
   flex-grow: 1;
 }
 
+.form__privacy {
+  margin-top: rem(40);
+  @include mq("md") {
+  margin-top: rem(80);
+  }
+}
+
+.form__privacy-text {
+  font-size: rem(14);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.57143;
+  text-align: center;
+  color: $black;
+}
+
 .form__submit {
   margin-top: rem(60);
   text-align: center;

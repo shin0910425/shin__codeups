@@ -208,7 +208,7 @@
           </dl>
 
           <dl class="form__wrap">
-            <dt class="form__label">お問合わせ項目</dt>
+            <dt class="form__label">お問合わせ項目<span>必須</span></dt>
             <dd class="form__checkbox form-checkbox">
               <label><input type="checkbox" name="sns" value="Twitter"><span>ダイビング講習について</span></label>
               <label><input type="checkbox" name="sns" value="Instagram"><span>ファンデイビングについて</span></label>
@@ -235,7 +235,6 @@
                     <label><input type="radio" name="category" value="その他"><span>その他</span></label>
                   </dd>
                 </dl> -->
-         
 
           <dl class="form__wrap form__wrap--textarea">
             <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
@@ -243,8 +242,17 @@
               <textarea name="message"></textarea>
             </dd>
           </dl>
+
+          <div class="form__privacy">
+            <div class="form__checkbox form-checkbox">
+              <div class="form__privacy-text form-checkbox">
+                <label><input type="checkbox" name="text" value="privacy"><span>個人情報の取り扱いについて同意のうえ送信します</span></label>
+              </div>
+            </div>
+          </div>
+
           <div class="form__submit form-submit">
-           <input type="submit" value="Send" class="button">
+            <input type="submit" value="Send" class="button">
           </div>
         </form>
       </div>
