@@ -14,6 +14,11 @@
   background-image: none;
 }
 
+.form-input.form-error input {
+  border: 1px solid $red;
+  background: rgba(201, 72, 0, 0.20);
+}
+
 .form-input input:focus {
   border: 1px solid #ccc;
   box-shadow: none;
@@ -22,4 +27,8 @@
 
 .form-input ::placeholder {
   color: $green2;
+}
+
+.form-input.form-error ::placeholder {
+  color: $white;
 }

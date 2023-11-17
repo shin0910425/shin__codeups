@@ -40,3 +40,25 @@
   }
 }
 
+.page-contact__error-wrap {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-contact__error-text {
+  padding-bottom: rem(40);
+  font-size: rem(14);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $red;
+  text-align: left;
+  display: inline-block;
+  text-indent: rem(-7);
+
+  @include mq("md") {}
+}
+
+.page-contact__error-text span {
+  display: inline-block;
+}
