@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .form-input input {
-  padding: rem(8) rem(15);
+  padding: rem(8) rem(16);
   width: 100%;
-  font-size: rem(15);
+  font-weight: $regular;
+  font-family: $jp-family;
+  font-size: rem(16);
   line-height: 1;
   border-radius: 0;
   border: 1px solid #ccc;
@@ -16,4 +18,8 @@
   border: 1px solid #ccc;
   box-shadow: none;
   outline: none;
+}
+
+.form-input ::placeholder {
+  color: $green2;
 }

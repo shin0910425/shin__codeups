@@ -190,20 +190,20 @@
         <form class="contact__form form" action="">
           <dl class="form__wrap">
             <dt class="form__label">名前<span>必須</span></dt>
-            <dd class="form__input form-input">
-              <input type="text">
+            <dd class="form__input form-input ">
+              <input type="text" placeholder="沖縄&emsp;太郎" name="name" required>
             </dd>
           </dl>
           <dl class="form__wrap">
             <dt class="form__label">メールアドレス<span>必須</span></dt>
             <dd class="form__input form-input">
-              <input type="email">
+              <input type="email" placeholder="aaa000@ggmail.com" name="email" required>
             </dd>
           </dl>
           <dl class="form__wrap">
             <dt class="form__label">電話番号<span>必須</span></dt>
             <dd class="form__input form-input">
-              <input type="tel">
+              <input type="tel" placeholder="000-0000-0000" name="tel" required>
             </dd>
           </dl>
 
@@ -244,15 +244,14 @@
           </dl>
 
           <div class="form__privacy">
-            <div class="form__checkbox form-checkbox">
+            <div class="form__checkbox form-checkbox--privacy">
               <div class="form__privacy-text form-checkbox">
                 <label><input type="checkbox" name="text" value="privacy"><span>個人情報の取り扱いについて同意のうえ送信します</span></label>
               </div>
             </div>
           </div>
-
           <div class="form__submit form-submit">
-            <input type="submit" value="Send" class="button">
+            <div class="button"><span>Send</span></div>
           </div>
         </form>
       </div>

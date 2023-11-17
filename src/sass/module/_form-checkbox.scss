@@ -37,7 +37,7 @@
   left: 0;
   transform: translateY(-50%);
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid $green3;
   display: block;
   width: rem(15);
   height: rem(15);
@@ -53,12 +53,17 @@
   display: block;
   width: rem(15);
   height: rem(8);
-  border-bottom: rem(3) solid #000;
-  border-left: rem(3) solid #000;
+  border-bottom: rem(3) solid $red;
+  border-left: rem(3) solid $red;
   transition: .3s;
   opacity: 0;
 }
 
 .form-checkbox input:checked+span::after {
   opacity: 1;
+}
+
+.form-checkbox--privacy input+span::before {
+  width: rem(22);
+  height: rem(22);
 }
