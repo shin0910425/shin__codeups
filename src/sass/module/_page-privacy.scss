@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.page-privacy__sub-mv.sub-mv {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/price-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/price-mv_img.jpg);
+  }
+}
+
+.page-privacy__inner {
+  margin: auto;
+  padding: 0 rem(15);
+  max-width: rem(600);
+  width: 100%;
+
+  @include mq(md) {
+    padding: 0 rem(25);
+    max-width: rem(750);
+    position: relative;
+    // display: flex;
+  }
+}
+
+.page-privacy__icon-image {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    z-index: 10;
+    left: calc(50% - min(48.5vw, rem(620)));
+    bottom: rem(50);
+    width: rem(437);
+    height: rem(201);
+  }
+}
+
+.page-privacy__title {
+  font-size: rem(24);
+  font-family: $jp-family;
+  font-weight: $normal;
+  line-height: 1;
+  color: $green;
+
+  @include mq("md") {
+    font-size: rem(32);
+  }
+}
+
+.page-privacy__text-box {
+  margin-top: rem(40);
+}
+
+.page-privacy__text {
+  padding-bottom: rem(40);
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 2;
+  color: $green;
+}
+
+.page-privacy__text-block {
+  margin-top: rem(40);
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 2;
+  color: $green;
+}
+
+.page-privacy__text-block span {}
+
+.page-privacy__text-number {
+  padding-left: rem(12);
+  font-size: rem(16);
+  font-family: $jp-family;
+  font-weight: $regular;
+  line-height: 2;
+  color: $green;
+}
+
+.page-privacy__text-number span {
+  display: inline-block;
+  margin-right: rem(5);
+  text-indent: rem(-12);
+}
