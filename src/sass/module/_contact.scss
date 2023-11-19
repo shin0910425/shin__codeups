@@ -201,3 +201,10 @@
     margin-top: rem(35);
   }
 }
+
+.contact__button.button-layout__404 {
+  padding-bottom: rem(100);
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}

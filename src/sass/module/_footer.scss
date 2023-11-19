@@ -11,6 +11,13 @@
   }
 }
 
+// .footer.footer-layout__404 {
+//   padding-top: rem(100);
+//   @include mq("md") {
+//     padding-top: rem(100);
+//   }
+// }
+
 .footer a:hover {
   opacity: 0.7;
 }
@@ -34,6 +41,13 @@
     display: flex;
     margin-left: 0;
     margin-top: 0;
+  }
+}
+
+.footer__logo-body.page--404 {
+  margin-top: rem(80);
+  @include mq("md") {
+  margin-top: rem(17);
   }
 }
 

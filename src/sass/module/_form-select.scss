@@ -7,7 +7,7 @@
   line-height: 1;
   border-radius: 0;
   border: 1px solid #ccc;
-  background-image: url(./../images/common/arrow.svg);
+  // background-image: url(./../images/common/arrow.svg);
   background-repeat: no-repeat;
   background-size: rem(15);
   background-position: right rem(15) top rem(15);
@@ -23,4 +23,31 @@
   border: 1px solid #ccc;
   box-shadow: none;
   outline: none;
+}
+
+.form-select select {
+  -webkit-appearance: none;
+  appearance: none;
+  /* デフォルトの矢印を無効 */
+}
+
+.form-select select::-ms-expand {
+  display: none;
+  /* デフォルトの矢印を無効(IE用) */
+}
+
+.form-select {
+  position: relative;
+}
+
+.form-select::before {
+  border-style: solid;
+  border-width: rem(10) rem(6) 0 rem(6);
+  border-color: $green3 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  right: rem(9);
+  top: rem(15);
+  width: 0;
+  pointer-events: none;
 }

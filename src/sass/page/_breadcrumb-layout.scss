@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.breadcrumb.breadcrumb-layout__404 {
+  margin-top: 0;
+  padding-top: rem(90);
+  background-color: $green3;
+  color: $white;
+
+    @include mq("md") {
+      padding-top: rem(100);
+    }
+}

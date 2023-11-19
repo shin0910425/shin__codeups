@@ -18,6 +18,12 @@
   z-index: 1;
 }
 
+.button.button__404 {
+  color: $green3;
+  background-color: $white;
+  border: rem(1) solid $white;
+}
+
 .button::first-letter {
   text-transform: uppercase;
 }
@@ -34,6 +40,10 @@
   z-index: -2;
 }
 
+.button.button__404::before {
+  border: rem(1) solid $white;
+}
+
 .button::after {
   background-color: $white;
   position: absolute;
@@ -46,6 +56,10 @@
   transform-origin: left top;
   transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
+}
+
+.button.button__404::after {
+  background-color: $green3;
 }
 
 .button:hover::after {
@@ -75,6 +89,10 @@
   transition: 0.2s background-color;
 }
 
+.button.button__404 span::after {
+    background-image: url(../images/common/button-arrow_img2.png);
+}
+
 .button:hover {
 
   @include mq("md") {
@@ -83,6 +101,9 @@
   }
 }
 
+.button.button__404:hover {
+  color: $white;
+}
 
 .button:hover span::after {
 
@@ -91,7 +112,12 @@
   }
 }
 
+.button.button__404:hover span::after {
+  background-image: url(../images/common/button-arrow_img1.png);
+}
+
 .button__text {
   color: $white;
   text-transform: capitalize;
 }
+
