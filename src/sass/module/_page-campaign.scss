@@ -14,6 +14,33 @@
   }
 }
 
+// .page-campaign__icon-image {
+//   @include mq("md") {
+//     position: absolute;
+//     display: block;
+//     z-index: 10;
+//     right: calc(50% - min(48.5vw, rem(640)));
+//     bottom: rem(-88);
+//     width: rem(194);
+//   }
+// }
+
+.page-campaign__icon-image1 {
+  position: absolute;
+  content: "";
+  z-index: -10;
+  left: calc(50% - min(48.5vw, rem(620)));
+  bottom: rem(190);
+  width: rem(120);
+  height: rem(55);
+
+  @include mq("md") {
+    bottom: rem(-25);
+    width: rem(300);
+    height: rem(138);
+  }
+}
+
 .page-campaign__tab {
   margin: 0 auto;
 }
@@ -30,6 +57,7 @@
 
   @include mq("md") {
     display: flex;
+    margin-top: rem(150);
   }
 }
 
