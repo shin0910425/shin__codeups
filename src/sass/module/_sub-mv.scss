@@ -35,3 +35,157 @@
 .sub-mv__title.title--nowrap {
   white-space: nowrap;
 }
+
+.sub-mv__campaign {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/campaign-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/campaign-mv_img.jpg);
+  }
+}
+
+.sub-mv__about {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/about-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/about-mv_img.jpg);
+  }
+}
+
+.sub-mv__information {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/information-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/information-mv_img.jpg);
+  }
+}
+
+.sub-mv__blog {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/blog-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/blog-mv_img.jpg);
+  }
+}
+
+.sub-mv__voice {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/voice-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/voice-mv_img.jpg);
+  }
+}
+
+.sub-mv__price {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/price-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/price-mv_img.jpg);
+  }
+}
+
+.sub-mv__faq {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/faq-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/faq-mv_img.jpg);
+  }
+}
+
+.sub-mv__contact {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/contact-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/contact-mv_img.jpg);
+  }
+}
+
+.sub-mv__sitemap {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/site-map-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/site-map-mv_img.jpg);
+  }
+}
+
+.sub-mv__privacy {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/site-map-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/site-map-mv_img.jpg);
+  }
+}
+
+.sub-mv__terms {
+  position: relative;
+  height: rem(460);
+  background-image: url(../images/common/site-map-mv-sp_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    height: rem(548);
+    background-image: url(../images/common/site-map-mv_img.jpg);
+  }
+}

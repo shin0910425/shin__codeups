@@ -1,18 +1,24 @@
 @use "global" as *;
 
-.page-faq__sub-mv.sub-mv {
+.page-faq {
   position: relative;
-  height: rem(460);
-  background-image: url(../images/common/faq-mv-sp_img.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+}
 
-  @include mq(md) {
-    height: rem(548);
-    background-image: url(../images/common/faq-mv_img.jpg);
+.page-faq__icon-image1 {
+position: absolute;
+  display: block;
+  z-index: -10;
+  left: calc(50% - min(48.5vw, rem(640)));
+  top: rem(-25);
+  height: rem(55);
+  width: rem(120);
+
+  @include mq("md") {
+    top: rem(-68);
+    height: rem(138);
+    width: rem(300);
   }
-}  
+}
 
 .page-faq__inner {
   margin: auto;

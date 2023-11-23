@@ -1,17 +1,23 @@
 @use "global" as *;
 
-.page-contact__sub-mv.sub-mv {
+.page-contact {
   position: relative;
-  height: rem(460);
-  background-image: url(../images/common/contact-mv-sp_img.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+}
 
-  @include mq(md) {
-    height: rem(548);
-    background-image: url(../images/common/contact-mv_img.jpg);
-  }
+.page-contact__icon-image1 {
+  position: absolute;
+    display: block;
+    z-index: -10;
+    left: calc(50% - min(48.5vw, rem(640)));
+    top: rem(-25);
+    height: rem(55);
+    width: rem(120);
+  
+    @include mq("md") {
+      top: rem(-68);
+      height: rem(138);
+      width: rem(300);
+    }
 }
 
 .page-contact__inner {
@@ -28,17 +34,6 @@
   }
 }
 
-.page-contact__icon-image {
-  @include mq("md") {
-    position: absolute;
-    content: "";
-    z-index: 10;
-    left: calc(50% - min(48.5vw, rem(620)));
-    bottom: rem(50);
-    width: rem(437);
-    height: rem(201);
-  }
-}
 
 .page-contact__error-wrap {
   margin: 0 auto;

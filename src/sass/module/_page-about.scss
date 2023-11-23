@@ -1,34 +1,8 @@
 @use "global" as *;
 
-.page-about__sub-mv.sub-mv {
-  position: relative;
-  height: rem(460);
-  background-image: url(../images/common/about-mv-sp_img.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  @include mq(md) {
-    height: rem(548);
-    background-image: url(../images/common/about-mv_img.jpg);
-  }
-}
-
 .about {
-
+  position: relative;
   @include mq("md") {
-    position: relative;
-  }
-}
-
-.page-about__inner {
-  max-width: rem(600);
-  width: 100%;
-  // margin: auto;
-
-  @include mq("md") {
-    // max-width: 100%;
-    position: relative;
   }
 }
 
@@ -42,7 +16,7 @@
   height: rem(55);
 
   @include mq("md") {
-    top: rem(788);
+    top: rem(687);
     width: rem(300);
     height: rem(138);
     z-index: -10;
@@ -50,18 +24,26 @@
 }
 
 .page-about__icon-image {
-  position: absolute;
-  display: block;
-  z-index: 10;
-  right: calc(50% - min(48.5vw, rem(637)));
-  top: rem(3187);
-  width: rem(109);
-  height: rem(55);
-
+  display: none;
   @include mq("md") {
-    top: rem(1542);
+    position: absolute;
+      display: block;
+      z-index: 10;
+      right: calc(50% - min(48.5vw, rem(637)));
+    top: rem(1444);
     width: rem(300);
     height: rem(138);
+  }
+}
+
+.page-about__inner {
+  max-width: rem(600);
+  width: 100%;
+  // margin: auto;
+
+  @include mq("md") {
+    // max-width: 100%;
+    position: relative;
   }
 }
 

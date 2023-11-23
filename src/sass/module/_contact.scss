@@ -1,23 +1,26 @@
 @use "global" as *;
 
 .contact {
-
+  position: relative;
   @include mq("md") {
-    position: relative;
   }
 }
 
 .contact__inner {
-  @include mq("md") {
   position: relative;
+  @include mq("md") {
   }
 }
 
 .contact__icon-image {
+  position: absolute;
+  z-index: 10;
+  right: calc(50% - min(48.5vw, rem(670)));
+  top: rem(-10);
+  width: rem(109);
+  height: rem(50);
+
   @include mq("md") {
-    position: absolute;
-    z-index: 10;
-    right: calc(50% - min(48.5vw, rem(670)));
     top: rem(-60);
     width: rem(300);
     height: rem(138);
@@ -142,10 +145,10 @@
 }
 
 .contact__form-map iframe {
-    aspect-ratio: 295/160;
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
+  aspect-ratio: 295/160;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .contact__body {
@@ -169,6 +172,7 @@
 
 .contact__title.section-header {
   margin-top: rem(50);
+
   @include mq("md") {
     margin-top: 0;
   }
@@ -179,9 +183,9 @@
 }
 
 .contact-sub.section-header__main {
-   font-size: rem(12);
-    @include mq("md") {
-    }
+  font-size: rem(12);
+
+  @include mq("md") {}
 }
 
 .contact__text {
@@ -204,6 +208,7 @@
 
 .contact__button.button-layout__404 {
   padding-bottom: rem(100);
+
   @include mq("md") {
     margin-top: rem(50);
   }

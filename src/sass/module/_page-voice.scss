@@ -1,5 +1,25 @@
 @use "global" as *;
 
+.page-voice {
+  position: relative;
+}
+
+.page-voice__icon-image1 {
+  position: absolute;
+  display: block;
+  z-index: -10;
+  left: calc(50% - min(48.5vw, rem(640)));
+  top: rem(-25);
+  height: rem(55);
+  width: rem(120);
+
+  @include mq("md") {
+    top: rem(-68);
+    height: rem(138);
+    width: rem(300);
+  }
+}
+
 .page-voice__inner {
   max-width: rem(600);
   width: 100%;
@@ -8,20 +28,6 @@
 
   @include mq("md") {
     // position: relative;
-  }
-}
-
-.page-voice__sub-mv.sub-mv {
-  position: relative;
-  height: rem(460);
-  background-image: url(../images/common/voice-mv-sp_img.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  @include mq(md) {
-    height: rem(548);
-    background-image: url(../images/common/voice-mv_img.jpg);
   }
 }
 

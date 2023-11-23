@@ -1,5 +1,25 @@
 @use "global" as *;
 
+.page-contact-thanks {
+  position: relative;
+}
+
+.page-contact-thanks__icon-image1 {
+  position: absolute;
+  display: block;
+  z-index: -10;
+  left: calc(50% - min(48.5vw, rem(640)));
+  top: rem(-25);
+  height: rem(55);
+  width: rem(120);
+
+  @include mq("md") {
+    top: rem(-68);
+    height: rem(138);
+    width: rem(300);
+  }
+}
+
 .page-contact-thanks__inner.inner {
   padding-right: rem(15);
   padding-left: rem(15);
