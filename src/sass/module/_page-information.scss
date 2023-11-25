@@ -10,7 +10,7 @@
 .page-information__icon-image1 {
 position: absolute;
   display: block;
-  z-index: 10;
+  z-index: -10;
   left: calc(50% - min(48.5vw, rem(640)));
   top: rem(-25);
   height: rem(55);

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.information-tub {
+.information-tab {
 
 }
 
@@ -22,6 +22,9 @@
   cursor: pointer;
 
   @include mq(md) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
     padding: rem(30);
     // max-width: rem(250);
     font-size: rem(24);
@@ -40,6 +43,33 @@
 .information-tab__menu-item.is-active {
   color: $white;
   background-color: $green3;
+}
+
+.information-tab__menu-icon {
+  display: none;
+
+  @include mq("md") {
+    display: block;
+    width: rem(64);
+    max-width: 100%;
+    height: rem(64);
+    padding-right: rem(8);
+  }
+}
+
+/* 通常時のアイコンの色を#408F95に変更 */
+.information-tab__icon img {
+  filter: invert(52%) sepia(46%) saturate(485%) hue-rotate(136deg) brightness(87%) contrast(83%);
+  color: #408F95;
+  /* 通常時のアイコンの色 */
+}
+
+/* アクティブ時のアイコンの色を#fffに変更 */
+.information-tab__menu-item.js-tab-menu.is-active .information-tab__icon img {
+  // filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(110deg) brightness(98%) contrast(108%);
+  filter: brightness(1) invert(0);
+  color: #fff;
+  /* アクティブ時のアイコンの色 */
 }
 
 .information-tab__content {
