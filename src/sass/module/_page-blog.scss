@@ -35,6 +35,7 @@
 
 .page-blog__wrapper {
   display: block;
+
   @include mq("md") {
     display: flex;
   }
@@ -164,23 +165,11 @@
 }
 
 .page-blog__sidebar-item {
-  padding-top: rem(24);
-  // position: relative;
-  // border-top: 1px solid rgba($color: #234F5E, $alpha: .2);
+  margin-top: rem(24);
 }
 
 .page-blog__sidebar-item+.page-blog__sidebar-item {
   margin-top: rem(64);
-}
-
-.page-blog__sidebar-item::before {
-  content: "";
-  position: absolute;
-  top: rem(-1);
-  left: 0;
-  width: rem(80);
-  height: 1px;
-  background-color: #73B2C8;
 }
 
 .page-blog__sidebar-title {
@@ -193,6 +182,15 @@
   border-left: 8px solid $green3;
   display: flex;
   align-items: center;
+}
+
+.page-blog__sidebar-title::before {
+  content: "";
+  background: url(../images/common/sidebar-whale-icon_img.png) center/cover;
+  display: inline-block;
+  width: rem(50);
+  height: rem(50);
+  padding-right: rem(8);
 }
 
 .page-blog__ranking-item {
@@ -296,7 +294,7 @@
   margin-top: rem(24);
 }
 
-.page-blog_year {
+.page-blog_year1 {
   font-size: rem(24);
   font-family: $jp-family;
   color: $green3;
@@ -304,12 +302,49 @@
   line-height: 1;
 }
 
+.page-blog_year1::before {
+  content: "";
+  background: url(../images/common/triangle-bottom_img.png) center/cover;
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(8);
+}
+
+.page-blog_year2 {
+  font-size: rem(24);
+  font-family: $jp-family;
+  color: $green3;
+  font-weight: $regular;
+  line-height: 1;
+}
+
+.page-blog_year2::before {
+  content: "";
+  background: url(../images/common/triangle-right_img.png) center/cover;
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(8);
+}
+
 .page-blog__category-items {
   padding-left: rem(8);
 }
 
 .page-blog__category-item {
+  margin-top: rem(4);
+  margin-left: rem(24);
   padding: rem(4) 0;
+}
+
+.page-blog__category-item::before {
+  content: "";
+  background: url(../images/common/triangle-right_img.png) center/cover;
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(8);
 }
 
 .page-blog__category-month {
@@ -319,4 +354,3 @@
   font-weight: $regular;
   line-height: 1;
 }
-

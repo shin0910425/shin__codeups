@@ -224,9 +224,23 @@ jQuery(function ($) {
   });
 });
 
-jQuery(function ($) {
-  $('.js-faq-question').on('click', function () {
-    $(this).next().slideToggle();
-    $(this).toggleClass('is-open');
+// faq アコーディオン------------------------------------------
+
+// jQuery(function ($) {
+//   $('.js-faq-question').on('click', function () {
+//     $(this).next().slideToggle();
+//     $(this).toggleClass('is-open');
+//   });
+// });
+
+
+
+  $(function () {
+    $(".faq-list__item:first-of-type .faq-list__item-answer").css("display", "block");
+    $(".faq-list__item:first-of-type .faq-list__item-question").addClass("is-open");
+    $(".faq-list__item-question").on("click", function () {
+      $(this).next().slideToggle(200);
+      $(this).toggleClass("is-open", 200);
+    });
   });
-});
+
