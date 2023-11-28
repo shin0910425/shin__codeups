@@ -83,3 +83,14 @@
 .page-blog-detail__item:not(:first-child) {
   padding-top: rem(8);
 }
+
+.page-blog-detail__item::before {
+  content: "";
+  background: url(../images/common/hitode-green_img.svg) center/cover;
+  display: inline-block;
+  align-items: center;
+  width: rem(18);
+  height: rem(18);
+  margin-right: rem(9);
+  vertical-align: middle;
+}

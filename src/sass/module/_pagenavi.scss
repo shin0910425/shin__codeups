@@ -12,9 +12,9 @@
   text-decoration: none;
   // border-radius: 6px;
   background: #fff;
-  width: 50px;
-  height: 50px;
-  padding: 18px 0;
+  width: rem(50);
+  height: rem(50);
+  padding: rem(13) 0;
   border: 2px solid $green3;
   color: $green3;
   line-height: 1;
@@ -32,11 +32,17 @@
   font-weight: bold;
 }
 
+.page-numbers {
+  transition: .3s;
+}
+
 .prev.page-numbers {
   margin: rem(8) rem(35);
   font-size: 15px;
+  transition: .3s;
 }
 
 .next.page-numbers {
   margin: rem(8) rem(35);
+  transition: .3s;
 }
