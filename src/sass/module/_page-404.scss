@@ -73,38 +73,12 @@
   text-align: center;
 }
 
-
-.page-404__image {
-
-  // max-width: 80%;
-  // width: 100%;
-  // top: 14%;
-  // right: 0;
-
-  @include mq("md") {
-    // max-width: rem(880);
-  }
-}
-
-// .page-404__image img {
-//   width: 100%;
-//   aspect-ratio: 880/581;
-//   object-fit: cover;
-
-//   @include mq("md") {
-//     max-width: rem(880);
-//     aspect-ratio: 880/581;
-//   }
-// }
-
 .page-404__button {
   text-align: center;
+  padding-bottom: rem(100);
 
   @include mq("md") {
     margin-left: rem(41);
+    margin-top: rem(50);
   }
-}
-
-.page-about__btn a {
-  @include mq("md") {}
 }
